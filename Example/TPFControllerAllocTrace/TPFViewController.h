@@ -10,4 +10,7 @@
 
 @interface TPFViewController : UIViewController
 
+- (IBAction)goAction:(id)sender;
+- (IBAction)goNavAction:(id)sender;
+
 @end

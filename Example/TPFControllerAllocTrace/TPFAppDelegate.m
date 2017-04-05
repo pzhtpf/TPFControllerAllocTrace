@@ -7,12 +7,15 @@
 //
 
 #import "TPFAppDelegate.h"
+#import <TPFControllerAllocTrace/TPFControllerAllocTrace.h>
 
 @implementation TPFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    [TPFControllerAllocTrace sharedControllerAllocTrace];
     return YES;
 }
 

@@ -1,0 +1,6 @@
+framework module Pods_TPFControllerAllocTrace_Example {
+  umbrella header "Pods-TPFControllerAllocTrace_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

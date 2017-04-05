@@ -1,0 +1,6 @@
+framework module TPFControllerAllocTrace {
+  umbrella header "TPFControllerAllocTrace-umbrella.h"
+
+  export *
+  module * { export * }
+}
