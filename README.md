@@ -23,9 +23,11 @@ pod "TPFControllerAllocTrace"
 ```
 ## Usage
 
-\#if DEBUG
+```ruby
+#if DEBUG
     [TPFControllerAllocTrace sharedControllerAllocTrace];
-\#endif
+#endif
+```
 
 ## Author
 
