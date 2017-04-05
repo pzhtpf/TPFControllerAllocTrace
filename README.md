@@ -21,6 +21,11 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "TPFControllerAllocTrace"
 ```
+## Usage
+
+#if DEBUG
+    [TPFControllerAllocTrace sharedControllerAllocTrace];
+#endif
 
 ## Author
 
