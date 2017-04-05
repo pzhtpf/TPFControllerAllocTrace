@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TPFControllerAllocTrace_Example' do
+  pod 'TPFControllerAllocTrace', :path => '../'
+
+  target 'TPFControllerAllocTrace_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
