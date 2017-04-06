@@ -44,7 +44,7 @@
                               withOptions:AspectPositionAfter
                                usingBlock:^(id <AspectInfo> aspectInfo){
                                    UIViewController *viewController = aspectInfo.instance;
-                                   NSString *className = [self getClassName:viewController];
+                                   NSString *className = [weakSlef getClassName:viewController];
                                    [weakSlef.controllersDictionary setValue:[self startTimer:className] forKey:className];
                                }
                                     error:&error];
@@ -53,7 +53,7 @@
     [UIViewController aspect_hookSelector:sel withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo) {
         
         UIViewController *viewController = aspectInfo.instance;
-        NSString *className = [self getClassName:viewController];
+        NSString *className = [weakSlef getClassName:viewController];
         [weakSlef invalidateTimer:className];
         
         NSLog(@"%@ dealloc",className);
@@ -65,7 +65,7 @@
         UINavigationController *navigationController = aspectInfo.instance;
         NSArray *viewControllers = [navigationController viewControllers];
         UIViewController  *viewController = viewControllers.lastObject;
-        NSString *className = [self getClassName:viewController];
+        NSString *className = [weakSlef getClassName:viewController];
         [weakSlef.controllersDictionary setValue:[self startTimer:className] forKey:className];
         
     } error:NULL];
