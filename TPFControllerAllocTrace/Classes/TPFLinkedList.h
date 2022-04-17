@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TPFLinkedList : NSObject
 
 @property (strong, nonatomic) NSString *className;
+@property (strong, nonatomic) NSString *propertyName;
 @property (strong, nonatomic) NSString *address;
 @property (strong, nonatomic) TPFLinkedList *next;
 @property (strong, nonatomic) TPFLinkedList *childrens;

@@ -11,6 +11,8 @@
 #endif
 
 #import "TPFControllerAllocTrace.h"
+#import "TPFCycleRetainManager.h"
+#import "TPFLinkedList.h"
 
 FOUNDATION_EXPORT double TPFControllerAllocTraceVersionNumber;
 FOUNDATION_EXPORT const unsigned char TPFControllerAllocTraceVersionString[];

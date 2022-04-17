@@ -1,3 +1,4 @@
+ENV['SWIFT_VERSION'] = '5'
 use_frameworks!
 
 target 'TPFControllerAllocTrace_Example' do

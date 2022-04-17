@@ -13,6 +13,10 @@
 @interface SecondViewController ()
 
 @property(strong,nonatomic) TestAllocBlock *testAllocBlock;
+@property(strong,nonatomic) NSObject *strongObject;
+@property(weak,nonatomic) NSObject *weakObject;
+@property(nonatomic,copy) NSObject *testCopyObject;
+@property(nonatomic) NSObject *defaultObject;
 
 @end
 
@@ -25,8 +29,11 @@
     self.testAllocBlock = [TestAllocBlock new];
     self.testAllocBlock.testAllocBlock  = ^{
     
-        [self loadData];
+//        [self loadData];
     };
+    
+    self.strongObject = [[NSObject alloc] init];
+    self.weakObject = self.strongObject;
 }
 -(void)loadData{
 

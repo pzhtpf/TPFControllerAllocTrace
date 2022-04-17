@@ -24,7 +24,7 @@
     self.testAllocBlock = [TestAllocBlock new];
     self.testAllocBlock.testAllocBlock  = ^{
         
-        [self loadData];
+//        [self loadData];
     };
 }
 -(void)loadData{

@@ -8,6 +8,7 @@
 
 #import "TPFControllerAllocTrace.h"
 #import <Aspects/Aspects.h>
+#import "TPFCycleRetainManager.h"
 
 @interface TPFControllerAllocTrace ()
 
@@ -44,6 +45,7 @@
                               withOptions:AspectPositionAfter
                                usingBlock:^(id <AspectInfo> aspectInfo){
                                    UIViewController *viewController = aspectInfo.instance;
+        [[TPFCycleRetainManager shared] analyse:viewController];
                                    NSString *className = [weakSlef getClassName:viewController];
                                    [weakSlef.controllersDictionary setValue:[self startTimer:className] forKey:className];
                                }
@@ -65,6 +67,7 @@
         UINavigationController *navigationController = aspectInfo.instance;
         NSArray *viewControllers = [navigationController viewControllers];
         UIViewController  *viewController = viewControllers.lastObject;
+        [[TPFCycleRetainManager shared] analyse:viewController];
         NSString *className = [weakSlef getClassName:viewController];
         [weakSlef.controllersDictionary setValue:[self startTimer:className] forKey:className];
         
