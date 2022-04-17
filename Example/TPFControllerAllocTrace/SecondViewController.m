@@ -16,7 +16,7 @@
 @property(strong,nonatomic) NSObject *strongObject;
 @property(weak,nonatomic) NSObject *weakObject;
 @property(nonatomic,copy) NSObject *testCopyObject;
-@property(nonatomic) NSObject *defaultObject;
+@property(nonatomic) UIViewController *defaultObject;
 
 @end
 
@@ -34,6 +34,7 @@
     
     self.strongObject = [[NSObject alloc] init];
     self.weakObject = self.strongObject;
+    self.defaultObject = self;
 }
 -(void)loadData{
 
