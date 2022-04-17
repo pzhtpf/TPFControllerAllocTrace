@@ -20,6 +20,10 @@
 		3B33FC62A0EEFC6E8DF0ED7B01F24B33 /* TPFControllerAllocTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = DC65ABA2C13A8140849B0EB1BA4B2A68 /* TPFControllerAllocTrace.m */; };
 		3B83A2F08BC090A6FD3EBA869E1BD39D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1D1CA3866C7FEF484F5FB60857B352B /* QuartzCore.framework */; };
 		421CDD701AEE0F2458A84200366CDD0F /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FC49AA0F872E65B7AC632EA3A8B379F /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		4668A35C280BB19900B3CE86 /* TPFCycleRetainManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4668A35A280BB19900B3CE86 /* TPFCycleRetainManager.h */; };
+		4668A35D280BB19900B3CE86 /* TPFCycleRetainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4668A35B280BB19900B3CE86 /* TPFCycleRetainManager.m */; };
+		46F5FFB1280BBC82008A17C0 /* TPFLinkedList.h in Headers */ = {isa = PBXBuildFile; fileRef = 46F5FFAF280BBC82008A17C0 /* TPFLinkedList.h */; };
+		46F5FFB2280BBC82008A17C0 /* TPFLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 46F5FFB0280BBC82008A17C0 /* TPFLinkedList.m */; };
 		506D761F91EC3583789A837C559972FE /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52C08ECB217D691B206F61F93D9628DD /* FBSnapshotTestCase-dummy.m */; };
 		53A6604404DC7467907A16F0F08A2511 /* Pods-TPFControllerAllocTrace_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 12CCFA0025177414D7EFDA14B06A40E8 /* Pods-TPFControllerAllocTrace_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		640776F175B648FBC2E43C16ECF3F39B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12FDC9A2E5906D97065B658B3E1A8E7F /* UIKit.framework */; };
@@ -79,10 +83,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08601CEF100D21BB31E21D42B8562A0D /* Pods_TPFControllerAllocTrace_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TPFControllerAllocTrace_Tests.framework; path = "Pods-TPFControllerAllocTrace_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		08601CEF100D21BB31E21D42B8562A0D /* Pods_TPFControllerAllocTrace_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TPFControllerAllocTrace_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A1F884D443A9AE16DE3398975E47BCA /* TPFControllerAllocTrace-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPFControllerAllocTrace-prefix.pch"; sourceTree = "<group>"; };
 		0BDD583EEFBF4634DCCE1270741BF26A /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
-		0F3134DA633F2781AE5F4C457B91B47B /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F3134DA633F2781AE5F4C457B91B47B /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		12020F5895FF1EECABFB57A0D6BE4C47 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		12CCFA0025177414D7EFDA14B06A40E8 /* Pods-TPFControllerAllocTrace_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TPFControllerAllocTrace_Tests-umbrella.h"; sourceTree = "<group>"; };
 		12FDC9A2E5906D97065B658B3E1A8E7F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -95,14 +99,18 @@
 		308CD6F0526E13F13F3FB9DE73D9F968 /* Pods-TPFControllerAllocTrace_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPFControllerAllocTrace_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		34B1EA9566A433AF59DF03728869DE0F /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		35A648294AC17D5499E2BE8C57B03FB6 /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
-		3E68D9C8D4DFAC8D6E70D054BF142711 /* Aspects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Aspects.framework; path = Aspects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E68D9C8D4DFAC8D6E70D054BF142711 /* Aspects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Aspects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F4C37565B90E526B7183724889795F2 /* Pods-TPFControllerAllocTrace_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPFControllerAllocTrace_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		4058CD9A5C9370F6D096C339F8C23D10 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4210D6300F5770A91E98FD37701C7781 /* TPFControllerAllocTrace-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPFControllerAllocTrace-umbrella.h"; sourceTree = "<group>"; };
 		4253DC5629B239B753C5F61DEC1447FD /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		4258874840B15DE941429CB4BD45BF7C /* Pods-TPFControllerAllocTrace_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TPFControllerAllocTrace_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4380D6644F03B0E0DF1CF3094B54D2C4 /* Pods-TPFControllerAllocTrace_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TPFControllerAllocTrace_Example-dummy.m"; sourceTree = "<group>"; };
-		49B4A1785770AF443A0DF72DEABBC21D /* Aspects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = Aspects.modulemap; sourceTree = "<group>"; };
+		4668A35A280BB19900B3CE86 /* TPFCycleRetainManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPFCycleRetainManager.h; sourceTree = "<group>"; };
+		4668A35B280BB19900B3CE86 /* TPFCycleRetainManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPFCycleRetainManager.m; sourceTree = "<group>"; };
+		46F5FFAF280BBC82008A17C0 /* TPFLinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPFLinkedList.h; sourceTree = "<group>"; };
+		46F5FFB0280BBC82008A17C0 /* TPFLinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPFLinkedList.m; sourceTree = "<group>"; };
+		49B4A1785770AF443A0DF72DEABBC21D /* Aspects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Aspects.modulemap; sourceTree = "<group>"; };
 		4BDA81636E8B617BE782C945BA733EC1 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		4D9125DEBFB91065AB4792BD90486E1F /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		4E0CAE454D841469815297E6A92C018D /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
@@ -114,20 +122,20 @@
 		684C24FBBDD33A5A28FA77FB0562B8CA /* Pods-TPFControllerAllocTrace_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TPFControllerAllocTrace_Example-resources.sh"; sourceTree = "<group>"; };
 		70783253117C060E6F836FA826B48369 /* TPFControllerAllocTrace-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPFControllerAllocTrace-dummy.m"; sourceTree = "<group>"; };
 		72BA34644CE7C9C0267CE040AE7A18A2 /* Aspects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
-		7341BC4028882FB425499F787191EF30 /* Pods-TPFControllerAllocTrace_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TPFControllerAllocTrace_Tests.modulemap"; sourceTree = "<group>"; };
+		7341BC4028882FB425499F787191EF30 /* Pods-TPFControllerAllocTrace_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TPFControllerAllocTrace_Tests.modulemap"; sourceTree = "<group>"; };
 		73A66B433392CB48F845DC4D4BA88AFC /* Pods-TPFControllerAllocTrace_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TPFControllerAllocTrace_Tests-dummy.m"; sourceTree = "<group>"; };
 		75586EC69E329BC26D262F529751B661 /* Pods-TPFControllerAllocTrace_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPFControllerAllocTrace_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		7DF7C042DB47FEB81153315AC38523BC /* TPFControllerAllocTrace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TPFControllerAllocTrace.framework; path = TPFControllerAllocTrace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DF7C042DB47FEB81153315AC38523BC /* TPFControllerAllocTrace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TPFControllerAllocTrace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F460EDC72FA911A365CFB5A5A95D617 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		805D153ED7D8D4962D69F85ECECE2446 /* Aspects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
 		891675EA81C75C0F7F745B51DCBF64F8 /* Pods-TPFControllerAllocTrace_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPFControllerAllocTrace_Example.release.xcconfig"; sourceTree = "<group>"; };
-		8C69CC63D1840103B296DF85F2518C13 /* Pods-TPFControllerAllocTrace_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TPFControllerAllocTrace_Example.modulemap"; sourceTree = "<group>"; };
+		8C69CC63D1840103B296DF85F2518C13 /* Pods-TPFControllerAllocTrace_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TPFControllerAllocTrace_Example.modulemap"; sourceTree = "<group>"; };
 		931FD49E1F92642072C08BB776C56549 /* TPFControllerAllocTrace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = TPFControllerAllocTrace.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		95311CDF2016F88BE7A56E6279D455FC /* Pods-TPFControllerAllocTrace_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TPFControllerAllocTrace_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		95391FB38F97BFF0DC26B1CF802F3838 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
-		9D35C7E0A7F1D6DED3588E48F6137CFA /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		A896348804F149E0F006B958198CB141 /* TPFControllerAllocTrace.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TPFControllerAllocTrace.modulemap; sourceTree = "<group>"; };
+		9D35C7E0A7F1D6DED3588E48F6137CFA /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		A896348804F149E0F006B958198CB141 /* TPFControllerAllocTrace.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = TPFControllerAllocTrace.modulemap; sourceTree = "<group>"; };
 		B10FAC60956CE8C17E70DE9D18697DD8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B96355539166A912CA7A03A4450FB70B /* Aspects.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Aspects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBB45EBB61277F3C945B14CE48350D60 /* Pods-TPFControllerAllocTrace_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TPFControllerAllocTrace_Example-umbrella.h"; sourceTree = "<group>"; };
@@ -143,7 +151,7 @@
 		E180E9214F710AE629C01015E49971F8 /* Pods-TPFControllerAllocTrace_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TPFControllerAllocTrace_Example-frameworks.sh"; sourceTree = "<group>"; };
 		E1D1CA3866C7FEF484F5FB60857B352B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		E3524AD13A7773F157E18B614C7F244E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EC3ACD8B7CB56AB324CCF31584F20A2F /* Pods_TPFControllerAllocTrace_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TPFControllerAllocTrace_Example.framework; path = "Pods-TPFControllerAllocTrace_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC3ACD8B7CB56AB324CCF31584F20A2F /* Pods_TPFControllerAllocTrace_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TPFControllerAllocTrace_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD4BDA0C87A5735B141482FBDA84EFDF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD8DE580C59537504F7ED81025A5CF76 /* Aspects.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Aspects.xcconfig; sourceTree = "<group>"; };
 		FF136FFEB31E6967C41931FD8C3BF3CA /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
@@ -214,7 +222,6 @@
 				72BA34644CE7C9C0267CE040AE7A18A2 /* Aspects.m */,
 				94BAFEB545C12EBD2309A6A41D330D40 /* Support Files */,
 			);
-			name = Aspects;
 			path = Aspects;
 			sourceTree = "<group>";
 		};
@@ -247,7 +254,6 @@
 				343FF52172D76C3B06DCAC376099216C /* Support Files */,
 				3619C602FA5FDBDBD8A1EAE1D4695996 /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -411,8 +417,11 @@
 			children = (
 				931FD49E1F92642072C08BB776C56549 /* TPFControllerAllocTrace.h */,
 				DC65ABA2C13A8140849B0EB1BA4B2A68 /* TPFControllerAllocTrace.m */,
+				4668A35A280BB19900B3CE86 /* TPFCycleRetainManager.h */,
+				4668A35B280BB19900B3CE86 /* TPFCycleRetainManager.m */,
+				46F5FFAF280BBC82008A17C0 /* TPFLinkedList.h */,
+				46F5FFB0280BBC82008A17C0 /* TPFLinkedList.m */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -421,7 +430,6 @@
 			children = (
 				E160C2BEB2C07EE57D17C67EF61E5DCB /* Classes */,
 			);
-			name = TPFControllerAllocTrace;
 			path = TPFControllerAllocTrace;
 			sourceTree = "<group>";
 		};
@@ -464,7 +472,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4668A35C280BB19900B3CE86 /* TPFCycleRetainManager.h in Headers */,
 				CFD67683D4712DECC980FB8FD06477D5 /* TPFControllerAllocTrace-umbrella.h in Headers */,
+				46F5FFB1280BBC82008A17C0 /* TPFLinkedList.h in Headers */,
 				894572F0AF1FAF4270E1643D1CA5D377 /* TPFControllerAllocTrace.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,6 +593,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
@@ -629,8 +640,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4668A35D280BB19900B3CE86 /* TPFCycleRetainManager.m in Sources */,
 				AF94E563B0BA0B05AD6EC32DC19440B1 /* TPFControllerAllocTrace-dummy.m in Sources */,
 				3B33FC62A0EEFC6E8DF0ED7B01F24B33 /* TPFControllerAllocTrace.m in Sources */,
+				46F5FFB2280BBC82008A17C0 /* TPFLinkedList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
