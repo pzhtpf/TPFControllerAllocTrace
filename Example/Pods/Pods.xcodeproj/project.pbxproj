@@ -13,6 +13,10 @@
 		248E0EAA99075412A5C025A5AA869E87 /* Pods-TPFControllerAllocTrace_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4327D5650CFCC7F70BA95A9C0D47E8 /* Pods-TPFControllerAllocTrace_Tests-dummy.m */; };
 		290C4374F93450179E91F5D3DEEBEE53 /* TPFControllerAllocTrace-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABAFDE70F5DA193DF091637EB3BADCF4 /* TPFControllerAllocTrace-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		32CD7A2F475F049A6D089B7CE044D11F /* Aspects.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD62DA6A02F916536F956E84ABC66DD /* Aspects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46B4F6E6281E883300046A0C /* TPFRetainCycleDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 46B4F6E4281E883300046A0C /* TPFRetainCycleDetector.h */; };
+		46B4F6E7281E883300046A0C /* TPFRetainCycleDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B4F6E5281E883300046A0C /* TPFRetainCycleDetector.m */; };
+		46B4F6EA281E8B2A00046A0C /* TPFIvarReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 46B4F6E8281E8B2A00046A0C /* TPFIvarReference.h */; };
+		46B4F6EB281E8B2A00046A0C /* TPFIvarReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B4F6E9281E8B2A00046A0C /* TPFIvarReference.m */; };
 		4753436B75AEDBB95FC6F2F19A0FCBB9 /* TPFControllerAllocTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B834EDC1D513F0DB0271B601804F02C /* TPFControllerAllocTrace.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4AB40EC5B249DD4EDA159A88129856C6 /* TPFControllerAllocTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BE6E4BF678908E9998F1B26031AF9A /* TPFControllerAllocTrace.m */; };
 		62DE5FBB4569EB9E5A290A86D853B388 /* Pods-TPFControllerAllocTrace_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F44B2E0907FA069F3B0D39AC39BADBB /* Pods-TPFControllerAllocTrace_Example-dummy.m */; };
@@ -63,7 +67,7 @@
 /* Begin PBXFileReference section */
 		023DD45F7A3C15CFB2BE5C85F762AA33 /* TPFControllerAllocTrace.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TPFControllerAllocTrace.modulemap; sourceTree = "<group>"; };
 		0BEF354513450CFCFC730BF06AE88F98 /* Pods-TPFControllerAllocTrace_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TPFControllerAllocTrace_Example"; path = Pods_TPFControllerAllocTrace_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		104C6C2B748A6F759BE80D4AF735E65B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		104C6C2B748A6F759BE80D4AF735E65B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		16F58986BBFEFDD5C4AA4E6C12622A2D /* Aspects.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Aspects.debug.xcconfig; sourceTree = "<group>"; };
 		1A7FBCECD6695DC380F092022962CCD2 /* Pods-TPFControllerAllocTrace_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPFControllerAllocTrace_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		1CD3979E193C8B3BC9A114FF281357C7 /* TPFLinkedList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFLinkedList.h; path = TPFControllerAllocTrace/Classes/TPFLinkedList.h; sourceTree = "<group>"; };
@@ -74,10 +78,14 @@
 		36C61049C9501D0DD50141133F2319CB /* TPFControllerAllocTrace */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TPFControllerAllocTrace; path = TPFControllerAllocTrace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		391097EBCD06283A66C89668282098A0 /* TPFCycleRetainManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFCycleRetainManager.h; path = TPFControllerAllocTrace/Classes/TPFCycleRetainManager.h; sourceTree = "<group>"; };
 		3CC8550FEED48C2032851ACD2AC556BE /* Pods-TPFControllerAllocTrace_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPFControllerAllocTrace_Example.release.xcconfig"; sourceTree = "<group>"; };
-		447E43423A9847BAF5DADA972F06D82A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		447E43423A9847BAF5DADA972F06D82A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		46B4F6E4281E883300046A0C /* TPFRetainCycleDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TPFRetainCycleDetector.h; path = TPFControllerAllocTrace/Classes/TPFRetainCycleDetector.h; sourceTree = "<group>"; };
+		46B4F6E5281E883300046A0C /* TPFRetainCycleDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TPFRetainCycleDetector.m; path = TPFControllerAllocTrace/Classes/TPFRetainCycleDetector.m; sourceTree = "<group>"; };
+		46B4F6E8281E8B2A00046A0C /* TPFIvarReference.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPFIvarReference.h; sourceTree = "<group>"; };
+		46B4F6E9281E8B2A00046A0C /* TPFIvarReference.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPFIvarReference.m; sourceTree = "<group>"; };
 		4EE80ECC0EEC45944E60127D1C0CD215 /* Pods-TPFControllerAllocTrace_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPFControllerAllocTrace_Example-Info.plist"; sourceTree = "<group>"; };
 		4FD5DF6D0B82EEC2B04AA9C80E046619 /* Pods-TPFControllerAllocTrace_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TPFControllerAllocTrace_Example.modulemap"; sourceTree = "<group>"; };
-		525B4D69D63D1BE44D755DEA1DB8CBC9 /* TPFControllerAllocTrace.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TPFControllerAllocTrace.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		525B4D69D63D1BE44D755DEA1DB8CBC9 /* TPFControllerAllocTrace.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TPFControllerAllocTrace.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		5435A31B6BE4D9FD33F4F8E4FC4AD580 /* Pods-TPFControllerAllocTrace_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TPFControllerAllocTrace_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5630DEABDEA929A0D846BA74109EE8A5 /* Aspects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Aspects-prefix.pch"; sourceTree = "<group>"; };
 		5F44B2E0907FA069F3B0D39AC39BADBB /* Pods-TPFControllerAllocTrace_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TPFControllerAllocTrace_Example-dummy.m"; sourceTree = "<group>"; };
@@ -92,7 +100,7 @@
 		9808BF74538141204E4EB5B49809FE77 /* Aspects */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Aspects; path = Aspects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B834EDC1D513F0DB0271B601804F02C /* TPFControllerAllocTrace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFControllerAllocTrace.h; path = TPFControllerAllocTrace/Classes/TPFControllerAllocTrace.h; sourceTree = "<group>"; };
 		9CF695696D72D5EDE8A0B2D1C1896F9D /* Aspects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Aspects-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AA1288182EE1C25E425912B90502942C /* Pods-TPFControllerAllocTrace_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TPFControllerAllocTrace_Tests-umbrella.h"; sourceTree = "<group>"; };
 		ABAFDE70F5DA193DF091637EB3BADCF4 /* TPFControllerAllocTrace-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPFControllerAllocTrace-umbrella.h"; sourceTree = "<group>"; };
 		AF0BFC26D84112CBBE52F093C2C327E7 /* TPFLinkedList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFLinkedList.m; path = TPFControllerAllocTrace/Classes/TPFLinkedList.m; sourceTree = "<group>"; };
@@ -154,6 +162,10 @@
 				70BE6E4BF678908E9998F1B26031AF9A /* TPFControllerAllocTrace.m */,
 				391097EBCD06283A66C89668282098A0 /* TPFCycleRetainManager.h */,
 				D2F4641DCE95DE6ED7E41A6F3A58250B /* TPFCycleRetainManager.m */,
+				46B4F6E4281E883300046A0C /* TPFRetainCycleDetector.h */,
+				46B4F6E5281E883300046A0C /* TPFRetainCycleDetector.m */,
+				46B4F6E8281E8B2A00046A0C /* TPFIvarReference.h */,
+				46B4F6E9281E8B2A00046A0C /* TPFIvarReference.m */,
 				1CD3979E193C8B3BC9A114FF281357C7 /* TPFLinkedList.h */,
 				AF0BFC26D84112CBBE52F093C2C327E7 /* TPFLinkedList.m */,
 				E0840E55B1BD0EBF207FAEA3F76F08C4 /* Pod */,
@@ -170,7 +182,6 @@
 				5FAC52A31AD0A1062C627E9AD9760C31 /* Aspects.m */,
 				D7AB404821ADE8D3D5A3E0E60B958018 /* Support Files */,
 			);
-			name = Aspects;
 			path = Aspects;
 			sourceTree = "<group>";
 		};
@@ -319,8 +330,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4753436B75AEDBB95FC6F2F19A0FCBB9 /* TPFControllerAllocTrace.h in Headers */,
+				46B4F6EA281E8B2A00046A0C /* TPFIvarReference.h in Headers */,
 				290C4374F93450179E91F5D3DEEBEE53 /* TPFControllerAllocTrace-umbrella.h in Headers */,
 				6C7DEB3B8D5AE83911B25AC6DB2EF1DF /* TPFCycleRetainManager.h in Headers */,
+				46B4F6E6281E883300046A0C /* TPFRetainCycleDetector.h in Headers */,
 				6944F2087753B70D3C8998232340912E /* TPFLinkedList.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -497,7 +510,9 @@
 			files = (
 				4AB40EC5B249DD4EDA159A88129856C6 /* TPFControllerAllocTrace.m in Sources */,
 				E22FFA64B049E43214A06E8C55EF2B85 /* TPFControllerAllocTrace-dummy.m in Sources */,
+				46B4F6EB281E8B2A00046A0C /* TPFIvarReference.m in Sources */,
 				AAA2EFB23DE28B68D437EEC200B0995D /* TPFCycleRetainManager.m in Sources */,
+				46B4F6E7281E883300046A0C /* TPFRetainCycleDetector.m in Sources */,
 				A00C526FE469C7D5C39B48B7538D470D /* TPFLinkedList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -704,8 +719,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
