@@ -19,6 +19,8 @@
 		46B4F6EB281E8B2A00046A0C /* TPFIvarReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B4F6E9281E8B2A00046A0C /* TPFIvarReference.m */; };
 		46B4F6EE2820CF8900046A0C /* TPFClassStrongLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 46B4F6EC2820CF8900046A0C /* TPFClassStrongLayout.h */; };
 		46B4F6EF2820CF8900046A0C /* TPFClassStrongLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B4F6ED2820CF8900046A0C /* TPFClassStrongLayout.m */; };
+		46B4F6F22820FA1F00046A0C /* TPFBlockStrongRelationDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 46B4F6F02820FA1F00046A0C /* TPFBlockStrongRelationDetector.h */; };
+		46B4F6F32820FA1F00046A0C /* TPFBlockStrongRelationDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B4F6F12820FA1F00046A0C /* TPFBlockStrongRelationDetector.m */; };
 		4753436B75AEDBB95FC6F2F19A0FCBB9 /* TPFControllerAllocTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B834EDC1D513F0DB0271B601804F02C /* TPFControllerAllocTrace.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4AB40EC5B249DD4EDA159A88129856C6 /* TPFControllerAllocTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BE6E4BF678908E9998F1B26031AF9A /* TPFControllerAllocTrace.m */; };
 		62DE5FBB4569EB9E5A290A86D853B388 /* Pods-TPFControllerAllocTrace_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F44B2E0907FA069F3B0D39AC39BADBB /* Pods-TPFControllerAllocTrace_Example-dummy.m */; };
@@ -87,6 +89,8 @@
 		46B4F6E9281E8B2A00046A0C /* TPFIvarReference.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPFIvarReference.m; sourceTree = "<group>"; };
 		46B4F6EC2820CF8900046A0C /* TPFClassStrongLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPFClassStrongLayout.h; sourceTree = "<group>"; };
 		46B4F6ED2820CF8900046A0C /* TPFClassStrongLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPFClassStrongLayout.m; sourceTree = "<group>"; };
+		46B4F6F02820FA1F00046A0C /* TPFBlockStrongRelationDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPFBlockStrongRelationDetector.h; sourceTree = "<group>"; };
+		46B4F6F12820FA1F00046A0C /* TPFBlockStrongRelationDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPFBlockStrongRelationDetector.m; sourceTree = "<group>"; };
 		4EE80ECC0EEC45944E60127D1C0CD215 /* Pods-TPFControllerAllocTrace_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPFControllerAllocTrace_Example-Info.plist"; sourceTree = "<group>"; };
 		4FD5DF6D0B82EEC2B04AA9C80E046619 /* Pods-TPFControllerAllocTrace_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TPFControllerAllocTrace_Example.modulemap"; sourceTree = "<group>"; };
 		525B4D69D63D1BE44D755DEA1DB8CBC9 /* TPFControllerAllocTrace.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TPFControllerAllocTrace.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -172,6 +176,8 @@
 				46B4F6E9281E8B2A00046A0C /* TPFIvarReference.m */,
 				46B4F6EC2820CF8900046A0C /* TPFClassStrongLayout.h */,
 				46B4F6ED2820CF8900046A0C /* TPFClassStrongLayout.m */,
+				46B4F6F02820FA1F00046A0C /* TPFBlockStrongRelationDetector.h */,
+				46B4F6F12820FA1F00046A0C /* TPFBlockStrongRelationDetector.m */,
 				1CD3979E193C8B3BC9A114FF281357C7 /* TPFLinkedList.h */,
 				AF0BFC26D84112CBBE52F093C2C327E7 /* TPFLinkedList.m */,
 				E0840E55B1BD0EBF207FAEA3F76F08C4 /* Pod */,
@@ -335,6 +341,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46B4F6F22820FA1F00046A0C /* TPFBlockStrongRelationDetector.h in Headers */,
 				4753436B75AEDBB95FC6F2F19A0FCBB9 /* TPFControllerAllocTrace.h in Headers */,
 				46B4F6EA281E8B2A00046A0C /* TPFIvarReference.h in Headers */,
 				46B4F6EE2820CF8900046A0C /* TPFClassStrongLayout.h in Headers */,
@@ -517,6 +524,7 @@
 			files = (
 				4AB40EC5B249DD4EDA159A88129856C6 /* TPFControllerAllocTrace.m in Sources */,
 				E22FFA64B049E43214A06E8C55EF2B85 /* TPFControllerAllocTrace-dummy.m in Sources */,
+				46B4F6F32820FA1F00046A0C /* TPFBlockStrongRelationDetector.m in Sources */,
 				46B4F6EB281E8B2A00046A0C /* TPFIvarReference.m in Sources */,
 				46B4F6EF2820CF8900046A0C /* TPFClassStrongLayout.m in Sources */,
 				AAA2EFB23DE28B68D437EEC200B0995D /* TPFCycleRetainManager.m in Sources */,

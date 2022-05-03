@@ -6,10 +6,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TPFIvarReference.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface TPFClassStrongLayout : NSObject
+
+- (NSArray *)getObjectStrongReferences:(id)obj layoutCache:(NSMutableDictionary *)layoutCache;
 
 @end
 

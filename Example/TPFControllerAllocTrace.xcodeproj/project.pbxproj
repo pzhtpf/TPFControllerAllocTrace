@@ -74,7 +74,7 @@
 		D38862B4D100361C0E01AB7B /* Pods_TPFControllerAllocTrace_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TPFControllerAllocTrace_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEE7832407F502342AD14533 /* Pods-TPFControllerAllocTrace_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPFControllerAllocTrace_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TPFControllerAllocTrace_Example/Pods-TPFControllerAllocTrace_Example.release.xcconfig"; sourceTree = "<group>"; };
 		ECD7F84ED5CEFD661C89C1CE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		FDBEE19CD643189A9F0FEC6F /* TPFControllerAllocTrace.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TPFControllerAllocTrace.podspec; path = ../TPFControllerAllocTrace.podspec; sourceTree = "<group>"; };
+		FDBEE19CD643189A9F0FEC6F /* TPFControllerAllocTrace.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TPFControllerAllocTrace.podspec; path = ../TPFControllerAllocTrace.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +270,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);

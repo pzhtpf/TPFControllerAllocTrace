@@ -7,7 +7,6 @@
 
 #import "TPFClassStrongLayout.h"
 #import <objc/runtime.h>
-#import "TPFIvarReference.h"
 
 @interface TPFClassStrongLayout ()
 

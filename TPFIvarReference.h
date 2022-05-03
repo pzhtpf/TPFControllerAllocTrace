@@ -26,6 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly, nonnull) Ivar ivar;
 
 - (NSUInteger)indexInIvarLayout;
+- (id)objectReferenceFromObject:(id)object;
 
 - (nonnull instancetype)initWithIvar:(nonnull Ivar)ivar;
 

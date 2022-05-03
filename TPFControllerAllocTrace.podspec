@@ -32,6 +32,18 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'TPFControllerAllocTrace/Classes/**/*'
   
+  mrr_files = [
+      'TPFControllerAllocTrace/TPFBlockStrongRelationDetector.h',
+    ]
+
+    files = Pathname.glob("TPFControllerAllocTrace/**/*.{h,m,mm}")
+    files = files.map {|file| file.to_path}
+    files = files.reject {|file| mrr_files.include?(file)}
+
+    s.requires_arc = files.sort + [
+      'rcd_fishhook/**/*.{c,h}'
+    ]
+  
   # s.resource_bundles = {
   #   'TPFControllerAllocTrace' => ['TPFControllerAllocTrace/Assets/*.png']
   # }
