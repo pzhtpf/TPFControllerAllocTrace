@@ -1,14 +1,21 @@
 PODS:
   - Aspects (1.4.1)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
   - TPFControllerAllocTrace (0.1.2):
     - Aspects (~> 1.4.1)
 
 DEPENDENCIES:
+  - FBSnapshotTestCase
   - TPFControllerAllocTrace (from `../`)
 
 SPEC REPOS:
   trunk:
     - Aspects
+    - FBSnapshotTestCase
 
 EXTERNAL SOURCES:
   TPFControllerAllocTrace:
@@ -16,8 +23,9 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
-  TPFControllerAllocTrace: 1cca73c41b85f5696029b81a0aa756d481610eac
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+  TPFControllerAllocTrace: 122347f55a5882f5574a589d67f556e58c466066
 
-PODFILE CHECKSUM: a7b351365f5b7a77be28dd6bef18c15df08c6e60
+PODFILE CHECKSUM: 79525e53e300a4fe3b138f2ca99d1e9d7e4fd98e
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

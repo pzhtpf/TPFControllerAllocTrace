@@ -7,59 +7,87 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		152083E8800BC87B0E96291F75DF609B /* Pods-TPFControllerAllocTrace_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA1288182EE1C25E425912B90502942C /* Pods-TPFControllerAllocTrace_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C055C66EC9B8B236C79D7E72225D44F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		218AAFD4C55A074825F329C60BE86B53 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FAC52A31AD0A1062C627E9AD9760C31 /* Aspects.m */; };
-		248E0EAA99075412A5C025A5AA869E87 /* Pods-TPFControllerAllocTrace_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF4327D5650CFCC7F70BA95A9C0D47E8 /* Pods-TPFControllerAllocTrace_Tests-dummy.m */; };
-		290C4374F93450179E91F5D3DEEBEE53 /* TPFControllerAllocTrace-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ABAFDE70F5DA193DF091637EB3BADCF4 /* TPFControllerAllocTrace-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		32CD7A2F475F049A6D089B7CE044D11F /* Aspects.h in Headers */ = {isa = PBXBuildFile; fileRef = DCD62DA6A02F916536F956E84ABC66DD /* Aspects.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		46B4F6E6281E883300046A0C /* TPFRetainCycleDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 46B4F6E4281E883300046A0C /* TPFRetainCycleDetector.h */; };
-		46B4F6E7281E883300046A0C /* TPFRetainCycleDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B4F6E5281E883300046A0C /* TPFRetainCycleDetector.m */; };
-		46B4F6EA281E8B2A00046A0C /* TPFIvarReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 46B4F6E8281E8B2A00046A0C /* TPFIvarReference.h */; };
-		46B4F6EB281E8B2A00046A0C /* TPFIvarReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B4F6E9281E8B2A00046A0C /* TPFIvarReference.m */; };
-		46B4F6EE2820CF8900046A0C /* TPFClassStrongLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 46B4F6EC2820CF8900046A0C /* TPFClassStrongLayout.h */; };
-		46B4F6EF2820CF8900046A0C /* TPFClassStrongLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B4F6ED2820CF8900046A0C /* TPFClassStrongLayout.m */; };
-		46B4F6F22820FA1F00046A0C /* TPFBlockStrongRelationDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 46B4F6F02820FA1F00046A0C /* TPFBlockStrongRelationDetector.h */; };
-		46B4F6F32820FA1F00046A0C /* TPFBlockStrongRelationDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 46B4F6F12820FA1F00046A0C /* TPFBlockStrongRelationDetector.m */; };
-		4753436B75AEDBB95FC6F2F19A0FCBB9 /* TPFControllerAllocTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B834EDC1D513F0DB0271B601804F02C /* TPFControllerAllocTrace.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4AB40EC5B249DD4EDA159A88129856C6 /* TPFControllerAllocTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 70BE6E4BF678908E9998F1B26031AF9A /* TPFControllerAllocTrace.m */; };
-		62DE5FBB4569EB9E5A290A86D853B388 /* Pods-TPFControllerAllocTrace_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F44B2E0907FA069F3B0D39AC39BADBB /* Pods-TPFControllerAllocTrace_Example-dummy.m */; };
-		6944F2087753B70D3C8998232340912E /* TPFLinkedList.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CD3979E193C8B3BC9A114FF281357C7 /* TPFLinkedList.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6AE486895FC78491156202632D440774 /* Aspects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CF695696D72D5EDE8A0B2D1C1896F9D /* Aspects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6C7DEB3B8D5AE83911B25AC6DB2EF1DF /* TPFCycleRetainManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 391097EBCD06283A66C89668282098A0 /* TPFCycleRetainManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6D289F0DC8129C7880B29B234037A236 /* Pods-TPFControllerAllocTrace_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DDA3659988F6E71DAFDE31AB4892EAED /* Pods-TPFControllerAllocTrace_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		92F60F5227597977DB86D6D5EE4D0C1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A00C526FE469C7D5C39B48B7538D470D /* TPFLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = AF0BFC26D84112CBBE52F093C2C327E7 /* TPFLinkedList.m */; };
-		AAA2EFB23DE28B68D437EEC200B0995D /* TPFCycleRetainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2F4641DCE95DE6ED7E41A6F3A58250B /* TPFCycleRetainManager.m */; };
-		DEE83DABDD50AC4347BAFBA4ABD5056B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		E22FFA64B049E43214A06E8C55EF2B85 /* TPFControllerAllocTrace-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BF337884B14C2F0115AB514A4AF49F21 /* TPFControllerAllocTrace-dummy.m */; };
-		E8BDF388FD6B23326DC29F32350C1242 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		F1EFC0357C236119D052A8A80A126190 /* Aspects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 95256A292923C71DE3DC8210BB1573DE /* Aspects-dummy.m */; };
+		0F38C7D6951F691E22673B4E31B8B1A8 /* TPFLinkedList.h in Headers */ = {isa = PBXBuildFile; fileRef = BF1C1BD8AF06C2F33C701EDE93F7698C /* TPFLinkedList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1854037F35A3DB8369DA08CEA219A938 /* TPFRetainCycleDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 6020003C68185E304EA9BC5EF27383AC /* TPFRetainCycleDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C055C66EC9B8B236C79D7E72225D44F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		1F84FE646CD1D7BAFFB58C243277AFF8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CDFA138148BF3DA69B1A54598F7485D /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2078DD97B1DA10F69213A19049B5AAC7 /* TPFIvarReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 97829F6D85B54C31C3B39C7E0B18E6FB /* TPFIvarReference.m */; };
+		218AAFD4C55A074825F329C60BE86B53 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 197FE839C5F002E37C1EBE6FFD6AF178 /* Aspects.m */; };
+		25FFAEA4C16C633C131B68E0A07C11B7 /* TPFControllerAllocTrace-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D8EDBC71D43A1B8C498D787D94EF760 /* TPFControllerAllocTrace-dummy.m */; };
+		2975A09730FD83DC0897129A11EA6585 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643893CE73E9B5350FA5FE58DEA36F9B /* SwiftSupport.swift */; };
+		2B88C28DD20CBFA7B3AEB21A365197FE /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AE52DA8FA39BA106907B56AF2967653 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2BBF2BEB757D392CFB94C2629832ADEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		2CB61F6FA511CAACB43A50DC3A82E0DD /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A81998693A4754362128A4A4BE143CF /* UIImage+Snapshot.m */; };
+		2ECCAC52EF4C74E1032E0BC646BBE5B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		30D475DF57C0C682A723231E7BCA0D14 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF39346819E396DB45AE71CCE466EC1 /* FBSnapshotTestCasePlatform.m */; };
+		31708C428AB80DB834345431E0B0A0F4 /* TPFIvarReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 115281C1F495B320DE9EA1C6A68E1BDD /* TPFIvarReference.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32CD7A2F475F049A6D089B7CE044D11F /* Aspects.h in Headers */ = {isa = PBXBuildFile; fileRef = ADB4D1A955E9F2FC6E0B39496F39BC10 /* Aspects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		373413256658309F9053CE22BF62077E /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 3754708A7E8A65D65B16BF77CE2DD324 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		3FBD991F7115B23B990ADB2BE1F915F5 /* TPFControllerAllocTrace-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA51CB969910A533D4D65658C60D0AAC /* TPFControllerAllocTrace-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D75803AF707B8416C1FFC7870D3DCC1 /* TPFControllerAllocTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = C39EB263547CC3AB0A7838FE8273FDEA /* TPFControllerAllocTrace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5558B876B579BC1E79BD3D2B19148329 /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = FA7E3E46FF27BC445667BFA3A852FBC4 /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		598B90E3EC81A8E3B61AABBE9B4F7BB5 /* TPFLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = EB4C055E63E6D7C8C3715B3F55D5845E /* TPFLinkedList.m */; };
+		5B82FFA07283E6E9CB40F94AC6C869BD /* TPFClassStrongLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2093EA58C3EB29D90FB48C8FB5D9D0DD /* TPFClassStrongLayout.m */; };
+		5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C49C71357B6E21568C3EE4C39EB1842C /* FBSnapshotTestCase-dummy.m */; };
+		62DE5FBB4569EB9E5A290A86D853B388 /* Pods-TPFControllerAllocTrace_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A559FC959A681926C00E5D0B97D1431 /* Pods-TPFControllerAllocTrace_Example-dummy.m */; };
+		640CCE9C3A28AA3CA15510899F9140EE /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E694AF33402AF8C3BA5BC98B7180FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67F1963AA7C9EDB78127AD5F566A4949 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = F53AB0EE50D0C39C98781246A8500E9A /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		6AE486895FC78491156202632D440774 /* Aspects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B9C3B1BCEB73E4B4B59A4CA025EB7B8 /* Aspects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D07B8E9C5F96911504666A8C72DB5F9 /* TPFCycleRetainManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CBC34F00E8E9688E96B230212B356890 /* TPFCycleRetainManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6D289F0DC8129C7880B29B234037A236 /* Pods-TPFControllerAllocTrace_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E3343D3A6D4E7071FD14E03A97D88F1 /* Pods-TPFControllerAllocTrace_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6ED36199FA1FFA0872273E72D2C81DA4 /* TPFBlockStrongRelationDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 37CB5C06628199C278AD3296E507C801 /* TPFBlockStrongRelationDetector.m */; };
+		74339C58AC4E5631FB8C0E662668A796 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3771F364E76CD831B38EAE69417D8F /* UIApplication+StrictKeyWindow.m */; };
+		75C16DF2AC8D8847A77F7326131A7E69 /* Pods-TPFControllerAllocTrace_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EC3540D6AF86EED830CE8B0ED22D87 /* Pods-TPFControllerAllocTrace_Tests-dummy.m */; };
+		776202DE0A04343B58238CA3860D8A51 /* TPFRetainCycleDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2995100D47235F081710D32849BD865F /* TPFRetainCycleDetector.m */; };
+		7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 124B1CC96259D5D4E57AB3A64A2A8E14 /* FBSnapshotTestCase.m */; };
+		875A310EAF4D0C136C3FFFF5E0335BE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
+		8AE19756F0126FE92AF625E36F3D70FE /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A90AE7467B3B2DF32D20B847794D34F /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		9D3C5E2F56838937146191468A893244 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E658F388F01C72599CA75537950B6095 /* XCTest.framework */; };
+		AF7ABAD4F01FBBFF083517827DFDFBE0 /* TPFCycleRetainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B57768D4269F2CCEB2DFC13E49E803EB /* TPFCycleRetainManager.m */; };
+		B361AA8402CCB3C90E6040DDCDE18B36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 1770789E772196B2122B319849301652 /* UIImage+Compare.m */; };
+		BBFA8126104079A30FF027BFFC00C377 /* TPFBlockStrongRelationDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 46E407D19CCF6B7195079B71F767466E /* TPFBlockStrongRelationDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = F93447081A6AA61F3CA6DB111F7E1492 /* FBSnapshotTestController.m */; };
+		C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
+		CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C6C2EB11DFC22FB7B368524101777 /* UIImage+Diff.m */; };
+		CE2A0367829B0276F62F5F4C6D8F1DBB /* Pods-TPFControllerAllocTrace_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4371C6EDD3291F0FD745A0E2F69867E3 /* Pods-TPFControllerAllocTrace_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D093E1F02DF2A85CFC2169953AF66B15 /* TPFControllerAllocTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D8C874C55E6A0BBFE460AFBF8B956DB /* TPFControllerAllocTrace.m */; };
+		E8BDF388FD6B23326DC29F32350C1242 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		EDE03ED920583AF79DAFE2F4357AB60C /* TPFClassStrongLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 992E39A1698B9AE9E1319E1FDF31809A /* TPFClassStrongLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F1EFC0357C236119D052A8A80A126190 /* Aspects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1321B43BFEAC6D1976985E0E1DDCA /* Aspects-dummy.m */; };
+		FF8307B7346F4D3BA13C11AECFE6EDD0 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B9D09297263C0C0C3F4A276D31BC905 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5D79B4B43DC53FD11633876F5ADB3269 /* PBXContainerItemProxy */ = {
+		596537041112DD7F267451692FA1C2CE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C6539905C4D50932B36244650B93C79B;
 			remoteInfo = Aspects;
 		};
-		85A18591A57399670C5D6432741F5C9E /* PBXContainerItemProxy */ = {
+		624D9C706196EC09F4220EEC0D9F3424 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 3B89F64F5589E679D2540491A0F28C65;
-			remoteInfo = TPFControllerAllocTrace;
+			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
+			remoteInfo = FBSnapshotTestCase;
 		};
-		96880682FF4434D86D44F1294F62C872 /* PBXContainerItemProxy */ = {
+		9E694F37D3E3A2647E2D17EE08CE0985 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BB7C47AE03AF62942895C70C06F17C23;
 			remoteInfo = "Pods-TPFControllerAllocTrace_Example";
 		};
-		E0994F31ED46D7104E9117288F474E6F /* PBXContainerItemProxy */ = {
+		CB63DCFAFD02A2D7C7960FED7239EE31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B89F64F5589E679D2540491A0F28C65;
+			remoteInfo = TPFControllerAllocTrace;
+		};
+		E76C53631A046A5F2A2EDEFD3C586890 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -69,70 +97,105 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		023DD45F7A3C15CFB2BE5C85F762AA33 /* TPFControllerAllocTrace.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TPFControllerAllocTrace.modulemap; sourceTree = "<group>"; };
+		06C3C31F5CFF8B9933482B9D10732995 /* Pods-TPFControllerAllocTrace_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPFControllerAllocTrace_Tests-Info.plist"; sourceTree = "<group>"; };
+		0A3C6C2EB11DFC22FB7B368524101777 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
+		0A559FC959A681926C00E5D0B97D1431 /* Pods-TPFControllerAllocTrace_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TPFControllerAllocTrace_Example-dummy.m"; sourceTree = "<group>"; };
 		0BEF354513450CFCFC730BF06AE88F98 /* Pods-TPFControllerAllocTrace_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TPFControllerAllocTrace_Example"; path = Pods_TPFControllerAllocTrace_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		104C6C2B748A6F759BE80D4AF735E65B /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		16F58986BBFEFDD5C4AA4E6C12622A2D /* Aspects.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Aspects.debug.xcconfig; sourceTree = "<group>"; };
-		1A7FBCECD6695DC380F092022962CCD2 /* Pods-TPFControllerAllocTrace_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPFControllerAllocTrace_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		1CD3979E193C8B3BC9A114FF281357C7 /* TPFLinkedList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFLinkedList.h; path = TPFControllerAllocTrace/Classes/TPFLinkedList.h; sourceTree = "<group>"; };
-		1D78B6A2A04AA07DBCE3377C53CDF8F3 /* Pods-TPFControllerAllocTrace_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPFControllerAllocTrace_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		20A66D171168BF11C1A07254425710D9 /* Pods-TPFControllerAllocTrace_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TPFControllerAllocTrace_Tests.modulemap"; sourceTree = "<group>"; };
+		0E3343D3A6D4E7071FD14E03A97D88F1 /* Pods-TPFControllerAllocTrace_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TPFControllerAllocTrace_Example-umbrella.h"; sourceTree = "<group>"; };
+		115281C1F495B320DE9EA1C6A68E1BDD /* TPFIvarReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFIvarReference.h; path = TPFControllerAllocTrace/Classes/TPFIvarReference.h; sourceTree = "<group>"; };
+		124B1CC96259D5D4E57AB3A64A2A8E14 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		1770789E772196B2122B319849301652 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
+		1973B2E632127F4EBA16BA89CC658283 /* Pods-TPFControllerAllocTrace_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPFControllerAllocTrace_Example.release.xcconfig"; sourceTree = "<group>"; };
+		197FE839C5F002E37C1EBE6FFD6AF178 /* Aspects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
+		1AE52DA8FA39BA106907B56AF2967653 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		2093EA58C3EB29D90FB48C8FB5D9D0DD /* TPFClassStrongLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFClassStrongLayout.m; path = TPFControllerAllocTrace/Classes/TPFClassStrongLayout.m; sourceTree = "<group>"; };
+		2995100D47235F081710D32849BD865F /* TPFRetainCycleDetector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFRetainCycleDetector.m; path = TPFControllerAllocTrace/Classes/TPFRetainCycleDetector.m; sourceTree = "<group>"; };
+		2DD881ECB80429B6FC77CFD2EF38DDA2 /* Pods-TPFControllerAllocTrace_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPFControllerAllocTrace_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2FD5EC4B0577DA0D2BB577A23DC75A82 /* Pods-TPFControllerAllocTrace_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TPFControllerAllocTrace_Tests"; path = Pods_TPFControllerAllocTrace_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		357552BB925253A4F1802C92924AD446 /* Pods-TPFControllerAllocTrace_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TPFControllerAllocTrace_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		31E694AF33402AF8C3BA5BC98B7180FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
+		3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		36C61049C9501D0DD50141133F2319CB /* TPFControllerAllocTrace */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TPFControllerAllocTrace; path = TPFControllerAllocTrace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		391097EBCD06283A66C89668282098A0 /* TPFCycleRetainManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFCycleRetainManager.h; path = TPFControllerAllocTrace/Classes/TPFCycleRetainManager.h; sourceTree = "<group>"; };
-		3CC8550FEED48C2032851ACD2AC556BE /* Pods-TPFControllerAllocTrace_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPFControllerAllocTrace_Example.release.xcconfig"; sourceTree = "<group>"; };
-		447E43423A9847BAF5DADA972F06D82A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		46B4F6E4281E883300046A0C /* TPFRetainCycleDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TPFRetainCycleDetector.h; path = TPFControllerAllocTrace/Classes/TPFRetainCycleDetector.h; sourceTree = "<group>"; };
-		46B4F6E5281E883300046A0C /* TPFRetainCycleDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TPFRetainCycleDetector.m; path = TPFControllerAllocTrace/Classes/TPFRetainCycleDetector.m; sourceTree = "<group>"; };
-		46B4F6E8281E8B2A00046A0C /* TPFIvarReference.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPFIvarReference.h; sourceTree = "<group>"; };
-		46B4F6E9281E8B2A00046A0C /* TPFIvarReference.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPFIvarReference.m; sourceTree = "<group>"; };
-		46B4F6EC2820CF8900046A0C /* TPFClassStrongLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPFClassStrongLayout.h; sourceTree = "<group>"; };
-		46B4F6ED2820CF8900046A0C /* TPFClassStrongLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPFClassStrongLayout.m; sourceTree = "<group>"; };
-		46B4F6F02820FA1F00046A0C /* TPFBlockStrongRelationDetector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TPFBlockStrongRelationDetector.h; sourceTree = "<group>"; };
-		46B4F6F12820FA1F00046A0C /* TPFBlockStrongRelationDetector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TPFBlockStrongRelationDetector.m; sourceTree = "<group>"; };
-		4EE80ECC0EEC45944E60127D1C0CD215 /* Pods-TPFControllerAllocTrace_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPFControllerAllocTrace_Example-Info.plist"; sourceTree = "<group>"; };
-		4FD5DF6D0B82EEC2B04AA9C80E046619 /* Pods-TPFControllerAllocTrace_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TPFControllerAllocTrace_Example.modulemap"; sourceTree = "<group>"; };
-		525B4D69D63D1BE44D755DEA1DB8CBC9 /* TPFControllerAllocTrace.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = TPFControllerAllocTrace.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		5435A31B6BE4D9FD33F4F8E4FC4AD580 /* Pods-TPFControllerAllocTrace_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TPFControllerAllocTrace_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5630DEABDEA929A0D846BA74109EE8A5 /* Aspects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Aspects-prefix.pch"; sourceTree = "<group>"; };
-		5F44B2E0907FA069F3B0D39AC39BADBB /* Pods-TPFControllerAllocTrace_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TPFControllerAllocTrace_Example-dummy.m"; sourceTree = "<group>"; };
-		5FAC52A31AD0A1062C627E9AD9760C31 /* Aspects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
-		60FE1CAC4604C17E5B3846E74514E5EB /* TPFControllerAllocTrace-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPFControllerAllocTrace-prefix.pch"; sourceTree = "<group>"; };
-		66826D884F9483FC840592E2864DBD96 /* TPFControllerAllocTrace-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TPFControllerAllocTrace-Info.plist"; sourceTree = "<group>"; };
-		70BE6E4BF678908E9998F1B26031AF9A /* TPFControllerAllocTrace.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFControllerAllocTrace.m; path = TPFControllerAllocTrace/Classes/TPFControllerAllocTrace.m; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		89128D84AD9AA0B49E813220877B2A5A /* Pods-TPFControllerAllocTrace_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TPFControllerAllocTrace_Example-frameworks.sh"; sourceTree = "<group>"; };
-		8A1068BE3C38FAE3D2714A06214B780F /* TPFControllerAllocTrace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPFControllerAllocTrace.release.xcconfig; sourceTree = "<group>"; };
-		95256A292923C71DE3DC8210BB1573DE /* Aspects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Aspects-dummy.m"; sourceTree = "<group>"; };
+		36F744778B5237B13150518EE18A5536 /* TPFControllerAllocTrace.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TPFControllerAllocTrace.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		3754708A7E8A65D65B16BF77CE2DD324 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		37CB5C06628199C278AD3296E507C801 /* TPFBlockStrongRelationDetector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFBlockStrongRelationDetector.m; path = TPFControllerAllocTrace/Classes/TPFBlockStrongRelationDetector.m; sourceTree = "<group>"; };
+		3A81998693A4754362128A4A4BE143CF /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		3B04AEE6FB55531B365B11927CF76C69 /* Pods-TPFControllerAllocTrace_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPFControllerAllocTrace_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3E01DBD8AA916AA478A4EBC79F36F526 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
+		406E61BDB76251C796D11FDD642E9AF6 /* Pods-TPFControllerAllocTrace_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPFControllerAllocTrace_Example-Info.plist"; sourceTree = "<group>"; };
+		4371C6EDD3291F0FD745A0E2F69867E3 /* Pods-TPFControllerAllocTrace_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TPFControllerAllocTrace_Tests-umbrella.h"; sourceTree = "<group>"; };
+		46E407D19CCF6B7195079B71F767466E /* TPFBlockStrongRelationDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFBlockStrongRelationDetector.h; path = TPFControllerAllocTrace/Classes/TPFBlockStrongRelationDetector.h; sourceTree = "<group>"; };
+		4FE1321B43BFEAC6D1976985E0E1DDCA /* Aspects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Aspects-dummy.m"; sourceTree = "<group>"; };
+		566BEF80AC06168197B5EFFC846EEC93 /* Pods-TPFControllerAllocTrace_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TPFControllerAllocTrace_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		58D51D67698AD19D85A858881529490E /* TPFControllerAllocTrace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPFControllerAllocTrace.debug.xcconfig; sourceTree = "<group>"; };
+		5B9D09297263C0C0C3F4A276D31BC905 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		5BA05E029D88A010E81354B033D749F9 /* Aspects.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Aspects.release.xcconfig; sourceTree = "<group>"; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CDFA138148BF3DA69B1A54598F7485D /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		6020003C68185E304EA9BC5EF27383AC /* TPFRetainCycleDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFRetainCycleDetector.h; path = TPFControllerAllocTrace/Classes/TPFRetainCycleDetector.h; sourceTree = "<group>"; };
+		643893CE73E9B5350FA5FE58DEA36F9B /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		68EC3540D6AF86EED830CE8B0ED22D87 /* Pods-TPFControllerAllocTrace_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TPFControllerAllocTrace_Tests-dummy.m"; sourceTree = "<group>"; };
+		6A19FBE5575CF7605D2DF311DBA0AD51 /* Pods-TPFControllerAllocTrace_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TPFControllerAllocTrace_Example-frameworks.sh"; sourceTree = "<group>"; };
+		6D48E28FC3F528435447EB8D2A8BB270 /* Pods-TPFControllerAllocTrace_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPFControllerAllocTrace_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		6D8C874C55E6A0BBFE460AFBF8B956DB /* TPFControllerAllocTrace.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFControllerAllocTrace.m; path = TPFControllerAllocTrace/Classes/TPFControllerAllocTrace.m; sourceTree = "<group>"; };
+		6DF39346819E396DB45AE71CCE466EC1 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		86E22B8E70D8EA90283F28A772E5751C /* Pods-TPFControllerAllocTrace_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TPFControllerAllocTrace_Tests.modulemap"; sourceTree = "<group>"; };
+		93886BDC6B2460B2D34A3F23793A33B2 /* Pods-TPFControllerAllocTrace_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPFControllerAllocTrace_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		93DB5306EAEF95199EE48CCA37175AFD /* TPFControllerAllocTrace.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TPFControllerAllocTrace.modulemap; sourceTree = "<group>"; };
+		9650281AAE148D9EF721B19CDD86E1F6 /* TPFControllerAllocTrace-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TPFControllerAllocTrace-Info.plist"; sourceTree = "<group>"; };
+		97829F6D85B54C31C3B39C7E0B18E6FB /* TPFIvarReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFIvarReference.m; path = TPFControllerAllocTrace/Classes/TPFIvarReference.m; sourceTree = "<group>"; };
 		9808BF74538141204E4EB5B49809FE77 /* Aspects */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Aspects; path = Aspects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9B834EDC1D513F0DB0271B601804F02C /* TPFControllerAllocTrace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFControllerAllocTrace.h; path = TPFControllerAllocTrace/Classes/TPFControllerAllocTrace.h; sourceTree = "<group>"; };
-		9CF695696D72D5EDE8A0B2D1C1896F9D /* Aspects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Aspects-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AA1288182EE1C25E425912B90502942C /* Pods-TPFControllerAllocTrace_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TPFControllerAllocTrace_Tests-umbrella.h"; sourceTree = "<group>"; };
-		ABAFDE70F5DA193DF091637EB3BADCF4 /* TPFControllerAllocTrace-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPFControllerAllocTrace-umbrella.h"; sourceTree = "<group>"; };
-		AF0BFC26D84112CBBE52F093C2C327E7 /* TPFLinkedList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFLinkedList.m; path = TPFControllerAllocTrace/Classes/TPFLinkedList.m; sourceTree = "<group>"; };
-		B3803C7FFD9EF7F91F6E5137F39F0A10 /* Pods-TPFControllerAllocTrace_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPFControllerAllocTrace_Tests-Info.plist"; sourceTree = "<group>"; };
-		BF337884B14C2F0115AB514A4AF49F21 /* TPFControllerAllocTrace-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPFControllerAllocTrace-dummy.m"; sourceTree = "<group>"; };
-		C334B765B84D0C8D78EF3F38EA9286C5 /* Pods-TPFControllerAllocTrace_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPFControllerAllocTrace_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C530B022392C0A5103D1F1C6FBBBA352 /* Aspects-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Aspects-Info.plist"; sourceTree = "<group>"; };
-		C7E696462E55F1324FC4608F5A408B4F /* Pods-TPFControllerAllocTrace_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPFControllerAllocTrace_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		CF5C035531B90AF27DC75D87AED3B5A3 /* Pods-TPFControllerAllocTrace_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPFControllerAllocTrace_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D2F4641DCE95DE6ED7E41A6F3A58250B /* TPFCycleRetainManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFCycleRetainManager.m; path = TPFControllerAllocTrace/Classes/TPFCycleRetainManager.m; sourceTree = "<group>"; };
-		D650BF34B7E8E319C2BFA9CC2B00C41B /* Aspects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Aspects.modulemap; sourceTree = "<group>"; };
-		DCD62DA6A02F916536F956E84ABC66DD /* Aspects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
-		DDA3659988F6E71DAFDE31AB4892EAED /* Pods-TPFControllerAllocTrace_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TPFControllerAllocTrace_Example-umbrella.h"; sourceTree = "<group>"; };
-		DED6A0507BCCB6C0985776F337D63911 /* TPFControllerAllocTrace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPFControllerAllocTrace.debug.xcconfig; sourceTree = "<group>"; };
-		DF4327D5650CFCC7F70BA95A9C0D47E8 /* Pods-TPFControllerAllocTrace_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TPFControllerAllocTrace_Tests-dummy.m"; sourceTree = "<group>"; };
-		EE2C1076A0C40B18AD0F44B8D1604B26 /* Aspects.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Aspects.release.xcconfig; sourceTree = "<group>"; };
+		992E39A1698B9AE9E1319E1FDF31809A /* TPFClassStrongLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFClassStrongLayout.h; path = TPFControllerAllocTrace/Classes/TPFClassStrongLayout.h; sourceTree = "<group>"; };
+		9A90AE7467B3B2DF32D20B847794D34F /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		9B3771F364E76CD831B38EAE69417D8F /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
+		9B9C3B1BCEB73E4B4B59A4CA025EB7B8 /* Aspects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Aspects-umbrella.h"; sourceTree = "<group>"; };
+		9D8EDBC71D43A1B8C498D787D94EF760 /* TPFControllerAllocTrace-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPFControllerAllocTrace-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ADB4D1A955E9F2FC6E0B39496F39BC10 /* Aspects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
+		B57768D4269F2CCEB2DFC13E49E803EB /* TPFCycleRetainManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFCycleRetainManager.m; path = TPFControllerAllocTrace/Classes/TPFCycleRetainManager.m; sourceTree = "<group>"; };
+		B86704042694C09B2A77E80FD8B2076E /* TPFControllerAllocTrace-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPFControllerAllocTrace-prefix.pch"; sourceTree = "<group>"; };
+		BB90BA1BCCF22072A4FE3A39E8D527DF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		BBE771D520AEFC4D7D91171AC9B3A01A /* Aspects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Aspects-prefix.pch"; sourceTree = "<group>"; };
+		BEE507466084D52588FD6E1CFB88D936 /* Pods-TPFControllerAllocTrace_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPFControllerAllocTrace_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		BF1C1BD8AF06C2F33C701EDE93F7698C /* TPFLinkedList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFLinkedList.h; path = TPFControllerAllocTrace/Classes/TPFLinkedList.h; sourceTree = "<group>"; };
+		C118C5DE49AE2A96CAE62E7D59E1A6CE /* Aspects-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Aspects-Info.plist"; sourceTree = "<group>"; };
+		C39EB263547CC3AB0A7838FE8273FDEA /* TPFControllerAllocTrace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFControllerAllocTrace.h; path = TPFControllerAllocTrace/Classes/TPFControllerAllocTrace.h; sourceTree = "<group>"; };
+		C49C71357B6E21568C3EE4C39EB1842C /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
+		CBC34F00E8E9688E96B230212B356890 /* TPFCycleRetainManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFCycleRetainManager.h; path = TPFControllerAllocTrace/Classes/TPFCycleRetainManager.h; sourceTree = "<group>"; };
+		D38338C1CCF07ADBE4ECA15BF83002D5 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
+		DA4EA2F0304C97802AB58F6E00138BD5 /* TPFControllerAllocTrace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPFControllerAllocTrace.release.xcconfig; sourceTree = "<group>"; };
+		DF5DD14182F53BBD808F444125B8113A /* Pods-TPFControllerAllocTrace_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TPFControllerAllocTrace_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E4FFA2E57F588F992530838C21222725 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		EA51CB969910A533D4D65658C60D0AAC /* TPFControllerAllocTrace-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPFControllerAllocTrace-umbrella.h"; sourceTree = "<group>"; };
+		EB4C055E63E6D7C8C3715B3F55D5845E /* TPFLinkedList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFLinkedList.m; path = TPFControllerAllocTrace/Classes/TPFLinkedList.m; sourceTree = "<group>"; };
+		F124695CC9FE1DD930DD5E9D1AEBCA5D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F459A2F826A3621E3E48148FB05E4D40 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		F490EA7C9FC2FDB1D0A6937A28EDD042 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
+		F53AB0EE50D0C39C98781246A8500E9A /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
+		F53C8841F890A6A81B43E314B010B5CC /* Aspects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Aspects.modulemap; sourceTree = "<group>"; };
+		F93447081A6AA61F3CA6DB111F7E1492 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		FA7E3E46FF27BC445667BFA3A852FBC4 /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
+		FCBE1644D5E7885C195350AB27FE7049 /* Aspects.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Aspects.debug.xcconfig; sourceTree = "<group>"; };
+		FE3814F3CD455AFE4597ACBC52DA0A11 /* Pods-TPFControllerAllocTrace_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TPFControllerAllocTrace_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FF6A9A546EE06FDEE802326832E7FC80 /* Pods-TPFControllerAllocTrace_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TPFControllerAllocTrace_Example.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		4F422C2F89F8408A554FE1EB5BE82278 /* Frameworks */ = {
+		528AB1FE1ADBBFED291DFD484176381E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				92F60F5227597977DB86D6D5EE4D0C1C /* Foundation.framework in Frameworks */,
+				2BBF2BEB757D392CFB94C2629832ADEB /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		74A4ACA62BD7486A2B641507C25F3A17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B361AA8402CCB3C90E6040DDCDE18B36 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,14 +207,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		78654FB3A4FDB398225057257478B00C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DEE83DABDD50AC4347BAFBA4ABD5056B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D8B86F1E13947E9D6F9146258B71DDC7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -160,79 +215,159 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E3B880388FF17A336FBF90E30E537508 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2ECCAC52EF4C74E1032E0BC646BBE5B9 /* Foundation.framework in Frameworks */,
+				C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */,
+				875A310EAF4D0C136C3FFFF5E0335BE4 /* UIKit.framework in Frameworks */,
+				9D3C5E2F56838937146191468A893244 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1C3A428EBDDA570B05F2B45886EDA785 /* TPFControllerAllocTrace */ = {
+		11336A603CC56412063F41A48E6C4DF0 /* FBSnapshotTestCase */ = {
 			isa = PBXGroup;
 			children = (
-				9B834EDC1D513F0DB0271B601804F02C /* TPFControllerAllocTrace.h */,
-				70BE6E4BF678908E9998F1B26031AF9A /* TPFControllerAllocTrace.m */,
-				391097EBCD06283A66C89668282098A0 /* TPFCycleRetainManager.h */,
-				D2F4641DCE95DE6ED7E41A6F3A58250B /* TPFCycleRetainManager.m */,
-				46B4F6E4281E883300046A0C /* TPFRetainCycleDetector.h */,
-				46B4F6E5281E883300046A0C /* TPFRetainCycleDetector.m */,
-				46B4F6E8281E8B2A00046A0C /* TPFIvarReference.h */,
-				46B4F6E9281E8B2A00046A0C /* TPFIvarReference.m */,
-				46B4F6EC2820CF8900046A0C /* TPFClassStrongLayout.h */,
-				46B4F6ED2820CF8900046A0C /* TPFClassStrongLayout.m */,
-				46B4F6F02820FA1F00046A0C /* TPFBlockStrongRelationDetector.h */,
-				46B4F6F12820FA1F00046A0C /* TPFBlockStrongRelationDetector.m */,
-				1CD3979E193C8B3BC9A114FF281357C7 /* TPFLinkedList.h */,
-				AF0BFC26D84112CBBE52F093C2C327E7 /* TPFLinkedList.m */,
-				E0840E55B1BD0EBF207FAEA3F76F08C4 /* Pod */,
-				771CEC47644D704612C76FDA1D45259B /* Support Files */,
+				A001E9C32EF6C7BBBEE0C4653F0190AD /* Core */,
+				845C8C8C3566FB0E78192F4FF4E6BC33 /* Support Files */,
+				60FB955D1BDDAEEF8ADD256DA41935EB /* SwiftSupport */,
 			);
-			name = TPFControllerAllocTrace;
-			path = ../..;
+			name = FBSnapshotTestCase;
+			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
-		1E0487670B267FE1993E0BCD25BA2DAD /* Aspects */ = {
+		1CDBBF315EDA7BF223AF2054E0E3D419 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DCD62DA6A02F916536F956E84ABC66DD /* Aspects.h */,
-				5FAC52A31AD0A1062C627E9AD9760C31 /* Aspects.m */,
-				D7AB404821ADE8D3D5A3E0E60B958018 /* Support Files */,
+				8AEE878D0A1120A437A667E7EF339C9E /* Aspects */,
+				11336A603CC56412063F41A48E6C4DF0 /* FBSnapshotTestCase */,
 			);
-			path = Aspects;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		45A671AF45151A29277489AB14A57300 /* Pods-TPFControllerAllocTrace_Tests */ = {
+		22BD0AAE444D394D99126F94B1EBB580 /* Pods-TPFControllerAllocTrace_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				20A66D171168BF11C1A07254425710D9 /* Pods-TPFControllerAllocTrace_Tests.modulemap */,
-				5435A31B6BE4D9FD33F4F8E4FC4AD580 /* Pods-TPFControllerAllocTrace_Tests-acknowledgements.markdown */,
-				1A7FBCECD6695DC380F092022962CCD2 /* Pods-TPFControllerAllocTrace_Tests-acknowledgements.plist */,
-				DF4327D5650CFCC7F70BA95A9C0D47E8 /* Pods-TPFControllerAllocTrace_Tests-dummy.m */,
-				B3803C7FFD9EF7F91F6E5137F39F0A10 /* Pods-TPFControllerAllocTrace_Tests-Info.plist */,
-				AA1288182EE1C25E425912B90502942C /* Pods-TPFControllerAllocTrace_Tests-umbrella.h */,
-				C334B765B84D0C8D78EF3F38EA9286C5 /* Pods-TPFControllerAllocTrace_Tests.debug.xcconfig */,
-				CF5C035531B90AF27DC75D87AED3B5A3 /* Pods-TPFControllerAllocTrace_Tests.release.xcconfig */,
+				86E22B8E70D8EA90283F28A772E5751C /* Pods-TPFControllerAllocTrace_Tests.modulemap */,
+				FE3814F3CD455AFE4597ACBC52DA0A11 /* Pods-TPFControllerAllocTrace_Tests-acknowledgements.markdown */,
+				6D48E28FC3F528435447EB8D2A8BB270 /* Pods-TPFControllerAllocTrace_Tests-acknowledgements.plist */,
+				68EC3540D6AF86EED830CE8B0ED22D87 /* Pods-TPFControllerAllocTrace_Tests-dummy.m */,
+				566BEF80AC06168197B5EFFC846EEC93 /* Pods-TPFControllerAllocTrace_Tests-frameworks.sh */,
+				06C3C31F5CFF8B9933482B9D10732995 /* Pods-TPFControllerAllocTrace_Tests-Info.plist */,
+				4371C6EDD3291F0FD745A0E2F69867E3 /* Pods-TPFControllerAllocTrace_Tests-umbrella.h */,
+				2DD881ECB80429B6FC77CFD2EF38DDA2 /* Pods-TPFControllerAllocTrace_Tests.debug.xcconfig */,
+				93886BDC6B2460B2D34A3F23793A33B2 /* Pods-TPFControllerAllocTrace_Tests.release.xcconfig */,
 			);
 			name = "Pods-TPFControllerAllocTrace_Tests";
 			path = "Target Support Files/Pods-TPFControllerAllocTrace_Tests";
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		25D6EFEEA725EE9302C70B705A27D002 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				F124695CC9FE1DD930DD5E9D1AEBCA5D /* LICENSE */,
+				BB90BA1BCCF22072A4FE3A39E8D527DF /* README.md */,
+				36F744778B5237B13150518EE18A5536 /* TPFControllerAllocTrace.podspec */,
 			);
-			name = iOS;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		62B414718326647138EBD8CE17E9BC0F /* Development Pods */ = {
+		60FB955D1BDDAEEF8ADD256DA41935EB /* SwiftSupport */ = {
 			isa = PBXGroup;
 			children = (
-				1C3A428EBDDA570B05F2B45886EDA785 /* TPFControllerAllocTrace */,
+				643893CE73E9B5350FA5FE58DEA36F9B /* SwiftSupport.swift */,
+			);
+			name = SwiftSupport;
+			sourceTree = "<group>";
+		};
+		70D3EF7F6BFE824857811C05DC01F915 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBF31910BB8481B9C3056754EB3A7503 /* TPFControllerAllocTrace */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		7207C84B7470EBF7EF7C26D1AE753AA7 /* Products */ = {
+		712D66BED2A1058FFF289AE3FFBE04C8 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADC924337A9116D3F7A74C49044C27E5 /* Pods-TPFControllerAllocTrace_Example */,
+				22BD0AAE444D394D99126F94B1EBB580 /* Pods-TPFControllerAllocTrace_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		83FA99B69B87ACF0214481BB56D8245D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				93DB5306EAEF95199EE48CCA37175AFD /* TPFControllerAllocTrace.modulemap */,
+				9D8EDBC71D43A1B8C498D787D94EF760 /* TPFControllerAllocTrace-dummy.m */,
+				9650281AAE148D9EF721B19CDD86E1F6 /* TPFControllerAllocTrace-Info.plist */,
+				B86704042694C09B2A77E80FD8B2076E /* TPFControllerAllocTrace-prefix.pch */,
+				EA51CB969910A533D4D65658C60D0AAC /* TPFControllerAllocTrace-umbrella.h */,
+				58D51D67698AD19D85A858881529490E /* TPFControllerAllocTrace.debug.xcconfig */,
+				DA4EA2F0304C97802AB58F6E00138BD5 /* TPFControllerAllocTrace.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TPFControllerAllocTrace";
+			sourceTree = "<group>";
+		};
+		845C8C8C3566FB0E78192F4FF4E6BC33 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4FFA2E57F588F992530838C21222725 /* FBSnapshotTestCase.modulemap */,
+				C49C71357B6E21568C3EE4C39EB1842C /* FBSnapshotTestCase-dummy.m */,
+				3E01DBD8AA916AA478A4EBC79F36F526 /* FBSnapshotTestCase-Info.plist */,
+				F459A2F826A3621E3E48148FB05E4D40 /* FBSnapshotTestCase-prefix.pch */,
+				5CDFA138148BF3DA69B1A54598F7485D /* FBSnapshotTestCase-umbrella.h */,
+				D38338C1CCF07ADBE4ECA15BF83002D5 /* FBSnapshotTestCase.debug.xcconfig */,
+				F490EA7C9FC2FDB1D0A6937A28EDD042 /* FBSnapshotTestCase.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FBSnapshotTestCase";
+			sourceTree = "<group>";
+		};
+		8AEE878D0A1120A437A667E7EF339C9E /* Aspects */ = {
+			isa = PBXGroup;
+			children = (
+				ADB4D1A955E9F2FC6E0B39496F39BC10 /* Aspects.h */,
+				197FE839C5F002E37C1EBE6FFD6AF178 /* Aspects.m */,
+				C52A2799C44F093F2DC69BB81B414666 /* Support Files */,
+			);
+			name = Aspects;
+			path = Aspects;
+			sourceTree = "<group>";
+		};
+		A001E9C32EF6C7BBBEE0C4653F0190AD /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				5B9D09297263C0C0C3F4A276D31BC905 /* FBSnapshotTestCase.h */,
+				124B1CC96259D5D4E57AB3A64A2A8E14 /* FBSnapshotTestCase.m */,
+				31E694AF33402AF8C3BA5BC98B7180FF /* FBSnapshotTestCasePlatform.h */,
+				6DF39346819E396DB45AE71CCE466EC1 /* FBSnapshotTestCasePlatform.m */,
+				1AE52DA8FA39BA106907B56AF2967653 /* FBSnapshotTestController.h */,
+				F93447081A6AA61F3CA6DB111F7E1492 /* FBSnapshotTestController.m */,
+				FA7E3E46FF27BC445667BFA3A852FBC4 /* UIApplication+StrictKeyWindow.h */,
+				9B3771F364E76CD831B38EAE69417D8F /* UIApplication+StrictKeyWindow.m */,
+				9A90AE7467B3B2DF32D20B847794D34F /* UIImage+Compare.h */,
+				1770789E772196B2122B319849301652 /* UIImage+Compare.m */,
+				F53AB0EE50D0C39C98781246A8500E9A /* UIImage+Diff.h */,
+				0A3C6C2EB11DFC22FB7B368524101777 /* UIImage+Diff.m */,
+				3754708A7E8A65D65B16BF77CE2DD324 /* UIImage+Snapshot.h */,
+				3A81998693A4754362128A4A4BE143CF /* UIImage+Snapshot.m */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		A975184BB750BF8B753BD08EF6194F63 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				9808BF74538141204E4EB5B49809FE77 /* Aspects */,
+				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */,
 				0BEF354513450CFCFC730BF06AE88F98 /* Pods-TPFControllerAllocTrace_Example */,
 				2FD5EC4B0577DA0D2BB577A23DC75A82 /* Pods-TPFControllerAllocTrace_Tests */,
 				36C61049C9501D0DD50141133F2319CB /* TPFControllerAllocTrace */,
@@ -240,123 +375,123 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		771CEC47644D704612C76FDA1D45259B /* Support Files */ = {
+		ADC924337A9116D3F7A74C49044C27E5 /* Pods-TPFControllerAllocTrace_Example */ = {
 			isa = PBXGroup;
 			children = (
-				023DD45F7A3C15CFB2BE5C85F762AA33 /* TPFControllerAllocTrace.modulemap */,
-				BF337884B14C2F0115AB514A4AF49F21 /* TPFControllerAllocTrace-dummy.m */,
-				66826D884F9483FC840592E2864DBD96 /* TPFControllerAllocTrace-Info.plist */,
-				60FE1CAC4604C17E5B3846E74514E5EB /* TPFControllerAllocTrace-prefix.pch */,
-				ABAFDE70F5DA193DF091637EB3BADCF4 /* TPFControllerAllocTrace-umbrella.h */,
-				DED6A0507BCCB6C0985776F337D63911 /* TPFControllerAllocTrace.debug.xcconfig */,
-				8A1068BE3C38FAE3D2714A06214B780F /* TPFControllerAllocTrace.release.xcconfig */,
+				FF6A9A546EE06FDEE802326832E7FC80 /* Pods-TPFControllerAllocTrace_Example.modulemap */,
+				DF5DD14182F53BBD808F444125B8113A /* Pods-TPFControllerAllocTrace_Example-acknowledgements.markdown */,
+				BEE507466084D52588FD6E1CFB88D936 /* Pods-TPFControllerAllocTrace_Example-acknowledgements.plist */,
+				0A559FC959A681926C00E5D0B97D1431 /* Pods-TPFControllerAllocTrace_Example-dummy.m */,
+				6A19FBE5575CF7605D2DF311DBA0AD51 /* Pods-TPFControllerAllocTrace_Example-frameworks.sh */,
+				406E61BDB76251C796D11FDD642E9AF6 /* Pods-TPFControllerAllocTrace_Example-Info.plist */,
+				0E3343D3A6D4E7071FD14E03A97D88F1 /* Pods-TPFControllerAllocTrace_Example-umbrella.h */,
+				3B04AEE6FB55531B365B11927CF76C69 /* Pods-TPFControllerAllocTrace_Example.debug.xcconfig */,
+				1973B2E632127F4EBA16BA89CC658283 /* Pods-TPFControllerAllocTrace_Example.release.xcconfig */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/TPFControllerAllocTrace";
+			name = "Pods-TPFControllerAllocTrace_Example";
+			path = "Target Support Files/Pods-TPFControllerAllocTrace_Example";
 			sourceTree = "<group>";
 		};
-		B84838792520FEA17E577925088067DE /* Targets Support Files */ = {
+		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FF24105F3E47BE2EC8C6D39D57DFB62F /* Pods-TPFControllerAllocTrace_Example */,
-				45A671AF45151A29277489AB14A57300 /* Pods-TPFControllerAllocTrace_Tests */,
+				FB2668559AE577E6E8078C0C291AD417 /* iOS */,
 			);
-			name = "Targets Support Files";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C52A2799C44F093F2DC69BB81B414666 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F53C8841F890A6A81B43E314B010B5CC /* Aspects.modulemap */,
+				4FE1321B43BFEAC6D1976985E0E1DDCA /* Aspects-dummy.m */,
+				C118C5DE49AE2A96CAE62E7D59E1A6CE /* Aspects-Info.plist */,
+				BBE771D520AEFC4D7D91171AC9B3A01A /* Aspects-prefix.pch */,
+				9B9C3B1BCEB73E4B4B59A4CA025EB7B8 /* Aspects-umbrella.h */,
+				FCBE1644D5E7885C195350AB27FE7049 /* Aspects.debug.xcconfig */,
+				5BA05E029D88A010E81354B033D749F9 /* Aspects.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Aspects";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				62B414718326647138EBD8CE17E9BC0F /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				D4235D072F0DC7818942872CBFF5FCF4 /* Pods */,
-				7207C84B7470EBF7EF7C26D1AE753AA7 /* Products */,
-				B84838792520FEA17E577925088067DE /* Targets Support Files */,
+				70D3EF7F6BFE824857811C05DC01F915 /* Development Pods */,
+				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
+				1CDBBF315EDA7BF223AF2054E0E3D419 /* Pods */,
+				A975184BB750BF8B753BD08EF6194F63 /* Products */,
+				712D66BED2A1058FFF289AE3FFBE04C8 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		DBF31910BB8481B9C3056754EB3A7503 /* TPFControllerAllocTrace */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				46E407D19CCF6B7195079B71F767466E /* TPFBlockStrongRelationDetector.h */,
+				37CB5C06628199C278AD3296E507C801 /* TPFBlockStrongRelationDetector.m */,
+				992E39A1698B9AE9E1319E1FDF31809A /* TPFClassStrongLayout.h */,
+				2093EA58C3EB29D90FB48C8FB5D9D0DD /* TPFClassStrongLayout.m */,
+				C39EB263547CC3AB0A7838FE8273FDEA /* TPFControllerAllocTrace.h */,
+				6D8C874C55E6A0BBFE460AFBF8B956DB /* TPFControllerAllocTrace.m */,
+				CBC34F00E8E9688E96B230212B356890 /* TPFCycleRetainManager.h */,
+				B57768D4269F2CCEB2DFC13E49E803EB /* TPFCycleRetainManager.m */,
+				115281C1F495B320DE9EA1C6A68E1BDD /* TPFIvarReference.h */,
+				97829F6D85B54C31C3B39C7E0B18E6FB /* TPFIvarReference.m */,
+				BF1C1BD8AF06C2F33C701EDE93F7698C /* TPFLinkedList.h */,
+				EB4C055E63E6D7C8C3715B3F55D5845E /* TPFLinkedList.m */,
+				6020003C68185E304EA9BC5EF27383AC /* TPFRetainCycleDetector.h */,
+				2995100D47235F081710D32849BD865F /* TPFRetainCycleDetector.m */,
+				25D6EFEEA725EE9302C70B705A27D002 /* Pod */,
+				83FA99B69B87ACF0214481BB56D8245D /* Support Files */,
 			);
-			name = Frameworks;
+			name = TPFControllerAllocTrace;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		D4235D072F0DC7818942872CBFF5FCF4 /* Pods */ = {
+		FB2668559AE577E6E8078C0C291AD417 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				1E0487670B267FE1993E0BCD25BA2DAD /* Aspects */,
+				57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */,
+				3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */,
+				1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */,
+				E658F388F01C72599CA75537950B6095 /* XCTest.framework */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		D7AB404821ADE8D3D5A3E0E60B958018 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D650BF34B7E8E319C2BFA9CC2B00C41B /* Aspects.modulemap */,
-				95256A292923C71DE3DC8210BB1573DE /* Aspects-dummy.m */,
-				C530B022392C0A5103D1F1C6FBBBA352 /* Aspects-Info.plist */,
-				5630DEABDEA929A0D846BA74109EE8A5 /* Aspects-prefix.pch */,
-				9CF695696D72D5EDE8A0B2D1C1896F9D /* Aspects-umbrella.h */,
-				16F58986BBFEFDD5C4AA4E6C12622A2D /* Aspects.debug.xcconfig */,
-				EE2C1076A0C40B18AD0F44B8D1604B26 /* Aspects.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Aspects";
-			sourceTree = "<group>";
-		};
-		E0840E55B1BD0EBF207FAEA3F76F08C4 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				104C6C2B748A6F759BE80D4AF735E65B /* LICENSE */,
-				447E43423A9847BAF5DADA972F06D82A /* README.md */,
-				525B4D69D63D1BE44D755DEA1DB8CBC9 /* TPFControllerAllocTrace.podspec */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		FF24105F3E47BE2EC8C6D39D57DFB62F /* Pods-TPFControllerAllocTrace_Example */ = {
-			isa = PBXGroup;
-			children = (
-				4FD5DF6D0B82EEC2B04AA9C80E046619 /* Pods-TPFControllerAllocTrace_Example.modulemap */,
-				357552BB925253A4F1802C92924AD446 /* Pods-TPFControllerAllocTrace_Example-acknowledgements.markdown */,
-				1D78B6A2A04AA07DBCE3377C53CDF8F3 /* Pods-TPFControllerAllocTrace_Example-acknowledgements.plist */,
-				5F44B2E0907FA069F3B0D39AC39BADBB /* Pods-TPFControllerAllocTrace_Example-dummy.m */,
-				89128D84AD9AA0B49E813220877B2A5A /* Pods-TPFControllerAllocTrace_Example-frameworks.sh */,
-				4EE80ECC0EEC45944E60127D1C0CD215 /* Pods-TPFControllerAllocTrace_Example-Info.plist */,
-				DDA3659988F6E71DAFDE31AB4892EAED /* Pods-TPFControllerAllocTrace_Example-umbrella.h */,
-				C7E696462E55F1324FC4608F5A408B4F /* Pods-TPFControllerAllocTrace_Example.debug.xcconfig */,
-				3CC8550FEED48C2032851ACD2AC556BE /* Pods-TPFControllerAllocTrace_Example.release.xcconfig */,
-			);
-			name = "Pods-TPFControllerAllocTrace_Example";
-			path = "Target Support Files/Pods-TPFControllerAllocTrace_Example";
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9709B711E8BC875E22C89A9775F8A83C /* Headers */ = {
+		52D513580F055A94BE4DA0E26444E054 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46B4F6F22820FA1F00046A0C /* TPFBlockStrongRelationDetector.h in Headers */,
-				4753436B75AEDBB95FC6F2F19A0FCBB9 /* TPFControllerAllocTrace.h in Headers */,
-				46B4F6EA281E8B2A00046A0C /* TPFIvarReference.h in Headers */,
-				46B4F6EE2820CF8900046A0C /* TPFClassStrongLayout.h in Headers */,
-				290C4374F93450179E91F5D3DEEBEE53 /* TPFControllerAllocTrace-umbrella.h in Headers */,
-				6C7DEB3B8D5AE83911B25AC6DB2EF1DF /* TPFCycleRetainManager.h in Headers */,
-				46B4F6E6281E883300046A0C /* TPFRetainCycleDetector.h in Headers */,
-				6944F2087753B70D3C8998232340912E /* TPFLinkedList.h in Headers */,
+				BBFA8126104079A30FF027BFFC00C377 /* TPFBlockStrongRelationDetector.h in Headers */,
+				EDE03ED920583AF79DAFE2F4357AB60C /* TPFClassStrongLayout.h in Headers */,
+				4D75803AF707B8416C1FFC7870D3DCC1 /* TPFControllerAllocTrace.h in Headers */,
+				3FBD991F7115B23B990ADB2BE1F915F5 /* TPFControllerAllocTrace-umbrella.h in Headers */,
+				6D07B8E9C5F96911504666A8C72DB5F9 /* TPFCycleRetainManager.h in Headers */,
+				31708C428AB80DB834345431E0B0A0F4 /* TPFIvarReference.h in Headers */,
+				0F38C7D6951F691E22673B4E31B8B1A8 /* TPFLinkedList.h in Headers */,
+				1854037F35A3DB8369DA08CEA219A938 /* TPFRetainCycleDetector.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D70DCF41A135A802422D0B3D077C5C45 /* Headers */ = {
+		D4CF7A53AFE8275DDE075747E8245F97 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				152083E8800BC87B0E96291F75DF609B /* Pods-TPFControllerAllocTrace_Tests-umbrella.h in Headers */,
+				FF8307B7346F4D3BA13C11AECFE6EDD0 /* FBSnapshotTestCase.h in Headers */,
+				1F84FE646CD1D7BAFFB58C243277AFF8 /* FBSnapshotTestCase-umbrella.h in Headers */,
+				640CCE9C3A28AA3CA15510899F9140EE /* FBSnapshotTestCasePlatform.h in Headers */,
+				2B88C28DD20CBFA7B3AEB21A365197FE /* FBSnapshotTestController.h in Headers */,
+				5558B876B579BC1E79BD3D2B19148329 /* UIApplication+StrictKeyWindow.h in Headers */,
+				8AE19756F0126FE92AF625E36F3D70FE /* UIImage+Compare.h in Headers */,
+				67F1963AA7C9EDB78127AD5F566A4949 /* UIImage+Diff.h in Headers */,
+				373413256658309F9053CE22BF62077E /* UIImage+Snapshot.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,22 +512,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFD870F996D3DE6909465B772385E3D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE2A0367829B0276F62F5F4C6D8F1DBB /* Pods-TPFControllerAllocTrace_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		3B89F64F5589E679D2540491A0F28C65 /* TPFControllerAllocTrace */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2A5F000A821FDAEDAF98D6FF1218EA23 /* Build configuration list for PBXNativeTarget "TPFControllerAllocTrace" */;
+			buildConfigurationList = EA8A2C8F7EA7E74BBE5C49DC3BC4A985 /* Build configuration list for PBXNativeTarget "TPFControllerAllocTrace" */;
 			buildPhases = (
-				9709B711E8BC875E22C89A9775F8A83C /* Headers */,
-				233C94981747E9780C9B4655A1DF51C6 /* Sources */,
-				78654FB3A4FDB398225057257478B00C /* Frameworks */,
-				BCF42FCF056C22754CDEE6159D85CB58 /* Resources */,
+				52D513580F055A94BE4DA0E26444E054 /* Headers */,
+				55E3B058C63AC8DBFC269CF725E0FC61 /* Sources */,
+				528AB1FE1ADBBFED291DFD484176381E /* Frameworks */,
+				6527148C3A92259A88A13277A2499EE2 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				76AE860423758A187E3B9364A4059068 /* PBXTargetDependency */,
+				F81A20499AE0EED9874517E64527150A /* PBXTargetDependency */,
 			);
 			name = TPFControllerAllocTrace;
 			productName = TPFControllerAllocTrace;
@@ -401,21 +544,40 @@
 		};
 		568254CE39907467BD458E6B91FBB897 /* Pods-TPFControllerAllocTrace_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 69692847EA7A3053340FAF19C3F31F3C /* Build configuration list for PBXNativeTarget "Pods-TPFControllerAllocTrace_Tests" */;
+			buildConfigurationList = 35C6967301B0601C6C09C6FFED47B9B0 /* Build configuration list for PBXNativeTarget "Pods-TPFControllerAllocTrace_Tests" */;
 			buildPhases = (
-				D70DCF41A135A802422D0B3D077C5C45 /* Headers */,
-				4EE13BE9955A575D9CEFA33D7AD0A922 /* Sources */,
-				4F422C2F89F8408A554FE1EB5BE82278 /* Frameworks */,
-				425002306A6195351471AAAE37171438 /* Resources */,
+				EFD870F996D3DE6909465B772385E3D7 /* Headers */,
+				5983FD7E1CCD022424E26F9852C05FB7 /* Sources */,
+				74A4ACA62BD7486A2B641507C25F3A17 /* Frameworks */,
+				E55D77293D5B4446FE97511482D5FF34 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6D2EB880B722C0985232A9C436057E94 /* PBXTargetDependency */,
+				9E1679C95102C6160F4390AF032C0448 /* PBXTargetDependency */,
+				39008DE3EBA6EC568FE18712ACBA6F22 /* PBXTargetDependency */,
 			);
 			name = "Pods-TPFControllerAllocTrace_Tests";
 			productName = Pods_TPFControllerAllocTrace_Tests;
 			productReference = 2FD5EC4B0577DA0D2BB577A23DC75A82 /* Pods-TPFControllerAllocTrace_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28DAA9880679133EC375B7072B9AEABB /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */;
+			buildPhases = (
+				D4CF7A53AFE8275DDE075747E8245F97 /* Headers */,
+				EE210BFC37CDBA0645C09C3819F41723 /* Sources */,
+				E3B880388FF17A336FBF90E30E537508 /* Frameworks */,
+				194C9DCC4899F62F4FB7DDF15C987499 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FBSnapshotTestCase;
+			productName = FBSnapshotTestCase;
+			productReference = 5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */;
 			productType = "com.apple.product-type.framework";
 		};
 		BB7C47AE03AF62942895C70C06F17C23 /* Pods-TPFControllerAllocTrace_Example */ = {
@@ -430,8 +592,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				A228581A42490087BEA28D4C01C3AD78 /* PBXTargetDependency */,
-				6CCB95A4070FF17429F55BE41186E428 /* PBXTargetDependency */,
+				BC27331FBE0D3A8879CA2D1D27E831F1 /* PBXTargetDependency */,
+				737A08D45C717C4CA1386E7F3710614F /* PBXTargetDependency */,
 			);
 			name = "Pods-TPFControllerAllocTrace_Example";
 			productName = Pods_TPFControllerAllocTrace_Example;
@@ -474,11 +636,12 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 7207C84B7470EBF7EF7C26D1AE753AA7 /* Products */;
+			productRefGroup = A975184BB750BF8B753BD08EF6194F63 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				C6539905C4D50932B36244650B93C79B /* Aspects */,
+				98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */,
 				BB7C47AE03AF62942895C70C06F17C23 /* Pods-TPFControllerAllocTrace_Example */,
 				568254CE39907467BD458E6B91FBB897 /* Pods-TPFControllerAllocTrace_Tests */,
 				3B89F64F5589E679D2540491A0F28C65 /* TPFControllerAllocTrace */,
@@ -487,6 +650,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		194C9DCC4899F62F4FB7DDF15C987499 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		23615DADD68BAB1A739438A4BA2B0977 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -494,14 +664,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		425002306A6195351471AAAE37171438 /* Resources */ = {
+		6527148C3A92259A88A13277A2499EE2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BCF42FCF056C22754CDEE6159D85CB58 /* Resources */ = {
+		E55D77293D5B4446FE97511482D5FF34 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -518,21 +688,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		233C94981747E9780C9B4655A1DF51C6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4AB40EC5B249DD4EDA159A88129856C6 /* TPFControllerAllocTrace.m in Sources */,
-				E22FFA64B049E43214A06E8C55EF2B85 /* TPFControllerAllocTrace-dummy.m in Sources */,
-				46B4F6F32820FA1F00046A0C /* TPFBlockStrongRelationDetector.m in Sources */,
-				46B4F6EB281E8B2A00046A0C /* TPFIvarReference.m in Sources */,
-				46B4F6EF2820CF8900046A0C /* TPFClassStrongLayout.m in Sources */,
-				AAA2EFB23DE28B68D437EEC200B0995D /* TPFCycleRetainManager.m in Sources */,
-				46B4F6E7281E883300046A0C /* TPFRetainCycleDetector.m in Sources */,
-				A00C526FE469C7D5C39B48B7538D470D /* TPFLinkedList.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		2FBB78DED343A566597563BF0438FF1B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -541,11 +696,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4EE13BE9955A575D9CEFA33D7AD0A922 /* Sources */ = {
+		55E3B058C63AC8DBFC269CF725E0FC61 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				248E0EAA99075412A5C025A5AA869E87 /* Pods-TPFControllerAllocTrace_Tests-dummy.m in Sources */,
+				6ED36199FA1FFA0872273E72D2C81DA4 /* TPFBlockStrongRelationDetector.m in Sources */,
+				5B82FFA07283E6E9CB40F94AC6C869BD /* TPFClassStrongLayout.m in Sources */,
+				D093E1F02DF2A85CFC2169953AF66B15 /* TPFControllerAllocTrace.m in Sources */,
+				25FFAEA4C16C633C131B68E0A07C11B7 /* TPFControllerAllocTrace-dummy.m in Sources */,
+				AF7ABAD4F01FBBFF083517827DFDFBE0 /* TPFCycleRetainManager.m in Sources */,
+				2078DD97B1DA10F69213A19049B5AAC7 /* TPFIvarReference.m in Sources */,
+				598B90E3EC81A8E3B61AABBE9B4F7BB5 /* TPFLinkedList.m in Sources */,
+				776202DE0A04343B58238CA3860D8A51 /* TPFRetainCycleDetector.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5983FD7E1CCD022424E26F9852C05FB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75C16DF2AC8D8847A77F7326131A7E69 /* Pods-TPFControllerAllocTrace_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,39 +728,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EE210BFC37CDBA0645C09C3819F41723 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */,
+				5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */,
+				30D475DF57C0C682A723231E7BCA0D14 /* FBSnapshotTestCasePlatform.m in Sources */,
+				C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */,
+				2975A09730FD83DC0897129A11EA6585 /* SwiftSupport.swift in Sources */,
+				74339C58AC4E5631FB8C0E662668A796 /* UIApplication+StrictKeyWindow.m in Sources */,
+				B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */,
+				CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */,
+				2CB61F6FA511CAACB43A50DC3A82E0DD /* UIImage+Snapshot.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6CCB95A4070FF17429F55BE41186E428 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = TPFControllerAllocTrace;
-			target = 3B89F64F5589E679D2540491A0F28C65 /* TPFControllerAllocTrace */;
-			targetProxy = 85A18591A57399670C5D6432741F5C9E /* PBXContainerItemProxy */;
-		};
-		6D2EB880B722C0985232A9C436057E94 /* PBXTargetDependency */ = {
+		39008DE3EBA6EC568FE18712ACBA6F22 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-TPFControllerAllocTrace_Example";
 			target = BB7C47AE03AF62942895C70C06F17C23 /* Pods-TPFControllerAllocTrace_Example */;
-			targetProxy = 96880682FF4434D86D44F1294F62C872 /* PBXContainerItemProxy */;
+			targetProxy = 9E694F37D3E3A2647E2D17EE08CE0985 /* PBXContainerItemProxy */;
 		};
-		76AE860423758A187E3B9364A4059068 /* PBXTargetDependency */ = {
+		737A08D45C717C4CA1386E7F3710614F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = TPFControllerAllocTrace;
+			target = 3B89F64F5589E679D2540491A0F28C65 /* TPFControllerAllocTrace */;
+			targetProxy = CB63DCFAFD02A2D7C7960FED7239EE31 /* PBXContainerItemProxy */;
+		};
+		9E1679C95102C6160F4390AF032C0448 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
+			targetProxy = 624D9C706196EC09F4220EEC0D9F3424 /* PBXContainerItemProxy */;
+		};
+		BC27331FBE0D3A8879CA2D1D27E831F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Aspects;
 			target = C6539905C4D50932B36244650B93C79B /* Aspects */;
-			targetProxy = E0994F31ED46D7104E9117288F474E6F /* PBXContainerItemProxy */;
+			targetProxy = 596537041112DD7F267451692FA1C2CE /* PBXContainerItemProxy */;
 		};
-		A228581A42490087BEA28D4C01C3AD78 /* PBXTargetDependency */ = {
+		F81A20499AE0EED9874517E64527150A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Aspects;
 			target = C6539905C4D50932B36244650B93C79B /* Aspects */;
-			targetProxy = 5D79B4B43DC53FD11633876F5ADB3269 /* PBXContainerItemProxy */;
+			targetProxy = E76C53631A046A5F2A2EDEFD3C586890 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		168E969093E9D751E4A8F41966112974 /* Release */ = {
+		03A6EA60EF6356528E92A38DBA0A6B25 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A1068BE3C38FAE3D2714A06214B780F /* TPFControllerAllocTrace.release.xcconfig */;
+			baseConfigurationReference = F490EA7C9FC2FDB1D0A6937A28EDD042 /* FBSnapshotTestCase.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -600,17 +792,83 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TPFControllerAllocTrace/TPFControllerAllocTrace-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TPFControllerAllocTrace/TPFControllerAllocTrace-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TPFControllerAllocTrace/TPFControllerAllocTrace.modulemap";
-				PRODUCT_MODULE_NAME = TPFControllerAllocTrace;
-				PRODUCT_NAME = TPFControllerAllocTrace;
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		06FC5C586DB2F0EF58DEE68EFF1B8A83 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DD881ECB80429B6FC77CFD2EF38DDA2 /* Pods-TPFControllerAllocTrace_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TPFControllerAllocTrace_Tests/Pods-TPFControllerAllocTrace_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TPFControllerAllocTrace_Tests/Pods-TPFControllerAllocTrace_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		233E0041F0B69835890776740E87BFD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93886BDC6B2460B2D34A3F23793A33B2 /* Pods-TPFControllerAllocTrace_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TPFControllerAllocTrace_Tests/Pods-TPFControllerAllocTrace_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TPFControllerAllocTrace_Tests/Pods-TPFControllerAllocTrace_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -620,7 +878,7 @@
 		};
 		3FBECDC951A8D552F6B31ED89FA50B63 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CC8550FEED48C2032851ACD2AC556BE /* Pods-TPFControllerAllocTrace_Example.release.xcconfig */;
+			baseConfigurationReference = 1973B2E632127F4EBA16BA89CC658283 /* Pods-TPFControllerAllocTrace_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -651,9 +909,9 @@
 			};
 			name = Release;
 		};
-		54B948DE08BF2ADA54E0D03D471B526B /* Debug */ = {
+		4B14ED5F2C40964D92DE1AB3AB32ABC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DED6A0507BCCB6C0985776F337D63911 /* TPFControllerAllocTrace.debug.xcconfig */;
+			baseConfigurationReference = FCBE1644D5E7885C195350AB27FE7049 /* Aspects.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -663,17 +921,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TPFControllerAllocTrace/TPFControllerAllocTrace-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TPFControllerAllocTrace/TPFControllerAllocTrace-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Aspects/Aspects-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Aspects/Aspects-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TPFControllerAllocTrace/TPFControllerAllocTrace.modulemap";
-				PRODUCT_MODULE_NAME = TPFControllerAllocTrace;
-				PRODUCT_NAME = TPFControllerAllocTrace;
+				MODULEMAP_FILE = "Target Support Files/Aspects/Aspects.modulemap";
+				PRODUCT_MODULE_NAME = Aspects;
+				PRODUCT_NAME = Aspects;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -735,17 +994,17 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		7F5197438DE377D3C55EB98C00794434 /* Debug */ = {
+		944516C1D44750F42BF956BC4E304B60 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C334B765B84D0C8D78EF3F38EA9286C5 /* Pods-TPFControllerAllocTrace_Tests.debug.xcconfig */;
+			baseConfigurationReference = 58D51D67698AD19D85A858881529490E /* TPFControllerAllocTrace.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -754,30 +1013,28 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TPFControllerAllocTrace_Tests/Pods-TPFControllerAllocTrace_Tests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TPFControllerAllocTrace/TPFControllerAllocTrace-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPFControllerAllocTrace/TPFControllerAllocTrace-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TPFControllerAllocTrace_Tests/Pods-TPFControllerAllocTrace_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/TPFControllerAllocTrace/TPFControllerAllocTrace.modulemap";
+				PRODUCT_MODULE_NAME = TPFControllerAllocTrace;
+				PRODUCT_NAME = TPFControllerAllocTrace;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		91B3F97EFEC9D6F77EDA00C8407D5C9D /* Release */ = {
+		989E586F9A99F00E61020F4A7538019D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF5C035531B90AF27DC75D87AED3B5A3 /* Pods-TPFControllerAllocTrace_Tests.release.xcconfig */;
+			baseConfigurationReference = DA4EA2F0304C97802AB58F6E00138BD5 /* TPFControllerAllocTrace.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -786,19 +1043,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-TPFControllerAllocTrace_Tests/Pods-TPFControllerAllocTrace_Tests-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/TPFControllerAllocTrace/TPFControllerAllocTrace-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPFControllerAllocTrace/TPFControllerAllocTrace-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TPFControllerAllocTrace_Tests/Pods-TPFControllerAllocTrace_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/TPFControllerAllocTrace/TPFControllerAllocTrace.modulemap";
+				PRODUCT_MODULE_NAME = TPFControllerAllocTrace;
+				PRODUCT_NAME = TPFControllerAllocTrace;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -806,9 +1062,9 @@
 			};
 			name = Release;
 		};
-		BB05A3704578659FC4A919BD4AD8B8C1 /* Debug */ = {
+		AD1D1176B2C6657761D4C14DA698EA48 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 16F58986BBFEFDD5C4AA4E6C12622A2D /* Aspects.debug.xcconfig */;
+			baseConfigurationReference = 5BA05E029D88A010E81354B033D749F9 /* Aspects.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -829,11 +1085,13 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		CA72A6FC05FFA515A46233C87282147A /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -903,7 +1161,7 @@
 		};
 		D0BCE968C536DD633E3D65A7EC9A619E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C7E696462E55F1324FC4608F5A408B4F /* Pods-TPFControllerAllocTrace_Example.debug.xcconfig */;
+			baseConfigurationReference = 3B04AEE6FB55531B365B11927CF76C69 /* Pods-TPFControllerAllocTrace_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -933,9 +1191,9 @@
 			};
 			name = Debug;
 		};
-		F5285B5AD4D1196652FB9C5449C664F8 /* Release */ = {
+		EF9B8FABBCAA838B94227450AFD4C1B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE2C1076A0C40B18AD0F44B8D1604B26 /* Aspects.release.xcconfig */;
+			baseConfigurationReference = D38338C1CCF07ADBE4ECA15BF83002D5 /* FBSnapshotTestCase.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -945,32 +1203,41 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Aspects/Aspects-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Aspects/Aspects-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Aspects/Aspects.modulemap";
-				PRODUCT_MODULE_NAME = Aspects;
-				PRODUCT_NAME = Aspects;
+				MODULEMAP_FILE = "Target Support Files/FBSnapshotTestCase/FBSnapshotTestCase.modulemap";
+				PRODUCT_MODULE_NAME = FBSnapshotTestCase;
+				PRODUCT_NAME = FBSnapshotTestCase;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2A5F000A821FDAEDAF98D6FF1218EA23 /* Build configuration list for PBXNativeTarget "TPFControllerAllocTrace" */ = {
+		28DAA9880679133EC375B7072B9AEABB /* Build configuration list for PBXNativeTarget "FBSnapshotTestCase" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				54B948DE08BF2ADA54E0D03D471B526B /* Debug */,
-				168E969093E9D751E4A8F41966112974 /* Release */,
+				EF9B8FABBCAA838B94227450AFD4C1B2 /* Debug */,
+				03A6EA60EF6356528E92A38DBA0A6B25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35C6967301B0601C6C09C6FFED47B9B0 /* Build configuration list for PBXNativeTarget "Pods-TPFControllerAllocTrace_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06FC5C586DB2F0EF58DEE68EFF1B8A83 /* Debug */,
+				233E0041F0B69835890776740E87BFD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -980,15 +1247,6 @@
 			buildConfigurations = (
 				CA72A6FC05FFA515A46233C87282147A /* Debug */,
 				7AB5E2D3F528C2D80FB9A92EB667EB88 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		69692847EA7A3053340FAF19C3F31F3C /* Build configuration list for PBXNativeTarget "Pods-TPFControllerAllocTrace_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7F5197438DE377D3C55EB98C00794434 /* Debug */,
-				91B3F97EFEC9D6F77EDA00C8407D5C9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1005,8 +1263,17 @@
 		C4598C22D39EABCF3464BB7E9073BD91 /* Build configuration list for PBXNativeTarget "Aspects" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BB05A3704578659FC4A919BD4AD8B8C1 /* Debug */,
-				F5285B5AD4D1196652FB9C5449C664F8 /* Release */,
+				4B14ED5F2C40964D92DE1AB3AB32ABC9 /* Debug */,
+				AD1D1176B2C6657761D4C14DA698EA48 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA8A2C8F7EA7E74BBE5C49DC3BC4A985 /* Build configuration list for PBXNativeTarget "TPFControllerAllocTrace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				944516C1D44750F42BF956BC4E304B60 /* Debug */,
+				989E586F9A99F00E61020F4A7538019D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

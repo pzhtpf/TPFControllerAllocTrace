@@ -19,6 +19,23 @@
     "ios": "8.0"
   },
   "source_files": "TPFControllerAllocTrace/Classes/**/*",
+  "requires_arc": [
+    "TPFControllerAllocTrace/Classes/TPFBlockStrongRelationDetector.h",
+    "TPFControllerAllocTrace/Classes/TPFBlockStrongRelationDetector.m",
+    "TPFControllerAllocTrace/Classes/TPFClassStrongLayout.h",
+    "TPFControllerAllocTrace/Classes/TPFClassStrongLayout.m",
+    "TPFControllerAllocTrace/Classes/TPFControllerAllocTrace.h",
+    "TPFControllerAllocTrace/Classes/TPFControllerAllocTrace.m",
+    "TPFControllerAllocTrace/Classes/TPFCycleRetainManager.h",
+    "TPFControllerAllocTrace/Classes/TPFCycleRetainManager.m",
+    "TPFControllerAllocTrace/Classes/TPFIvarReference.h",
+    "TPFControllerAllocTrace/Classes/TPFIvarReference.m",
+    "TPFControllerAllocTrace/Classes/TPFLinkedList.h",
+    "TPFControllerAllocTrace/Classes/TPFLinkedList.m",
+    "TPFControllerAllocTrace/Classes/TPFRetainCycleDetector.h",
+    "TPFControllerAllocTrace/Classes/TPFRetainCycleDetector.m",
+    "rcd_fishhook/**/*.{c,h}"
+  ],
   "dependencies": {
     "Aspects": [
       "~> 1.4.1"
