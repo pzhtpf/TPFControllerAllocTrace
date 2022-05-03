@@ -7,8 +7,24 @@
 
 #import "TPFRetainCycleDetector.h"
 #import <objc/runtime.h>
+#import "TPFLinkedList.h"
+
+@interface TPFRetainCycleDetector()
+
+@property (strong, nonatomic) NSMutableDictionary *layoutCache;
+
+@end
 
 @implementation TPFRetainCycleDetector
+
+- (instancetype)initWithObject:(id)object {
+    self = [super init];
+    if (self) {
+        self.layoutCache = [[NSMutableDictionary alloc] init];
+        [self analyse:object];
+    }
+    return self;
+}
 
 #pragma public API
 - (void)analyse:(id)object {
