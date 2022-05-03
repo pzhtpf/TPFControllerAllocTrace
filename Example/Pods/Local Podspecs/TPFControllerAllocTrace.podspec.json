@@ -16,29 +16,26 @@
     "tag": "0.1.2"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "9.0"
   },
   "source_files": "TPFControllerAllocTrace/Classes/**/*",
-  "requires_arc": [
+  "exclude_files": [
     "TPFControllerAllocTrace/Classes/TPFBlockStrongRelationDetector.h",
-    "TPFControllerAllocTrace/Classes/TPFBlockStrongRelationDetector.m",
-    "TPFControllerAllocTrace/Classes/TPFClassStrongLayout.h",
-    "TPFControllerAllocTrace/Classes/TPFClassStrongLayout.m",
-    "TPFControllerAllocTrace/Classes/TPFControllerAllocTrace.h",
-    "TPFControllerAllocTrace/Classes/TPFControllerAllocTrace.m",
-    "TPFControllerAllocTrace/Classes/TPFCycleRetainManager.h",
-    "TPFControllerAllocTrace/Classes/TPFCycleRetainManager.m",
-    "TPFControllerAllocTrace/Classes/TPFIvarReference.h",
-    "TPFControllerAllocTrace/Classes/TPFIvarReference.m",
-    "TPFControllerAllocTrace/Classes/TPFLinkedList.h",
-    "TPFControllerAllocTrace/Classes/TPFLinkedList.m",
-    "TPFControllerAllocTrace/Classes/TPFRetainCycleDetector.h",
-    "TPFControllerAllocTrace/Classes/TPFRetainCycleDetector.m",
-    "rcd_fishhook/**/*.{c,h}"
+    "TPFControllerAllocTrace/Classes/TPFBlockStrongRelationDetector.m"
   ],
   "dependencies": {
     "Aspects": [
       "~> 1.4.1"
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "no-arc",
+      "source_files": [
+        "TPFControllerAllocTrace/Classes/TPFBlockStrongRelationDetector.h",
+        "TPFControllerAllocTrace/Classes/TPFBlockStrongRelationDetector.m"
+      ],
+      "requires_arc": false
+    }
+  ]
 }

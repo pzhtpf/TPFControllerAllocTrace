@@ -28,22 +28,21 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/pzhtpf/TPFControllerAllocTrace.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
 
   s.source_files = 'TPFControllerAllocTrace/Classes/**/*'
   
-  mrr_files = [
-      'TPFControllerAllocTrace/TPFBlockStrongRelationDetector.h',
+  non_arc_files = [
+      'TPFControllerAllocTrace/Classes/TPFBlockStrongRelationDetector.h',
+      'TPFControllerAllocTrace/Classes/TPFBlockStrongRelationDetector.m',
     ]
 
-    files = Pathname.glob("TPFControllerAllocTrace/**/*.{h,m,mm}")
-    files = files.map {|file| file.to_path}
-    files = files.reject {|file| mrr_files.include?(file)}
+  s.exclude_files = non_arc_files
 
-    s.requires_arc = files.sort + [
-      'rcd_fishhook/**/*.{c,h}'
-    ]
-  
+  s.subspec 'no-arc' do |sp|
+     sp.source_files = non_arc_files
+     sp.requires_arc = false
+  end
   # s.resource_bundles = {
   #   'TPFControllerAllocTrace' => ['TPFControllerAllocTrace/Assets/*.png']
   # }

@@ -7,6 +7,9 @@ PODS:
     - FBSnapshotTestCase/Core
   - TPFControllerAllocTrace (0.1.2):
     - Aspects (~> 1.4.1)
+    - TPFControllerAllocTrace/no-arc (= 0.1.2)
+  - TPFControllerAllocTrace/no-arc (0.1.2):
+    - Aspects (~> 1.4.1)
 
 DEPENDENCIES:
   - FBSnapshotTestCase
@@ -24,8 +27,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  TPFControllerAllocTrace: 122347f55a5882f5574a589d67f556e58c466066
+  TPFControllerAllocTrace: 1d676cb9dc9f1be0ff5284babbb82d702ea61209
 
-PODFILE CHECKSUM: 79525e53e300a4fe3b138f2ca99d1e9d7e4fd98e
+PODFILE CHECKSUM: 7dab35862f39f3b1f8a489afac2e13a3c19c8486
 
 COCOAPODS: 1.11.3
