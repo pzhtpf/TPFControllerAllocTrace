@@ -11,6 +11,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TPFBlockStrongLayout : NSObject
 
+/**
+ Returns an array of id<FBObjectReference> objects that will have only those references
+ that are retained by block.
+ */
++ (NSArray *_Nullable)TPFGetBlockStrongReferences:(void *_Nonnull)block;
 + (BOOL)TPFObjectIsBlock:(void *_Nullable)object;
 
 @end

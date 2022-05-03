@@ -28,8 +28,7 @@
     
     self.testAllocBlock = [TestAllocBlock new];
     self.testAllocBlock.testAllocBlock  = ^{
-    
-//        [self loadData];
+        [self loadData];
     };
     
     self.strongObject = [[NSObject alloc] init];

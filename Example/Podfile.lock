@@ -27,7 +27,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Aspects: 7595ba96a6727a58ebcbfc954497fc5d2fdde546
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  TPFControllerAllocTrace: 1d676cb9dc9f1be0ff5284babbb82d702ea61209
+  TPFControllerAllocTrace: 75fd2ec7e7ca1d3c3025d6d279c54bfc32cee2e5
 
 PODFILE CHECKSUM: 7dab35862f39f3b1f8a489afac2e13a3c19c8486
 

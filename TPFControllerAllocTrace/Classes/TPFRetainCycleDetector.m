@@ -9,6 +9,7 @@
 #import <objc/runtime.h>
 #import "TPFLinkedList.h"
 #import "TPFClassStrongLayout.h"
+#import "TPFBlockStrongLayout.h"
 
 @interface TPFRetainCycleDetector ()
 
@@ -30,10 +31,18 @@
 #pragma public API
 - (void)analyse:(id)object {
     NSMutableDictionary *vertexs = [[NSMutableDictionary alloc] init];
-    TPFLinkedList *head = [self findInstanceObject:object vertexs:vertexs];
+    TPFLinkedList *head = [self findReference:object vertexs:vertexs];
     head.className = NSStringFromClass([object class]);
     head.propertyName = @"headViewController";
     [self graphIfExistCycle:head vertexs:vertexs];
+}
+
+- (TPFLinkedList *)findReference:(id)object vertexs:(NSMutableDictionary *)vertexs {
+    if ([TPFBlockStrongLayout TPFObjectIsBlock:(__bridge void * _Nullable)(object)]) {
+        return [self findBlockReference:(__bridge void * _Nullable)(object) vertexs:vertexs];
+    } else {
+        return [self findInstanceObject:object vertexs:vertexs];
+    }
 }
 
 - (TPFLinkedList *)findInstanceObject:(id)object vertexs:(NSMutableDictionary *)vertexs {
@@ -41,7 +50,6 @@
 //    node.className = NSStringFromClass([object class]);
     node.address = [NSString stringWithFormat:@"%p", object];
     [vertexs setObject:node forKey:node.address];
-
     TPFLinkedList *head;
 
     TPFClassStrongLayout *strongLayout = [[TPFClassStrongLayout alloc] init];
@@ -63,7 +71,7 @@
             NSString *addressKey = [NSString stringWithFormat:@"%p", propertyObject];
             TPFLinkedList *childNode;
             if ([vertexs objectForKey:addressKey] == nil) {
-                childNode = [self findInstanceObject:propertyObject vertexs:vertexs];
+                childNode = [self findReference:propertyObject vertexs:vertexs];
             } else {
                 childNode = [[TPFLinkedList alloc] init];
                 childNode.address = addressKey;
@@ -80,6 +88,43 @@
         }
     }
 
+    return node;
+}
+
+- (TPFLinkedList *)findBlockReference:(void *_Nonnull)block vertexs:(NSMutableDictionary *)vertexs {
+    TPFLinkedList *node = [[TPFLinkedList alloc] init];
+//    node.className = NSStringFromClass([object class]);
+    node.address = [NSString stringWithFormat:@"%p", block];
+    [vertexs setObject:node forKey:node.address];
+
+    TPFLinkedList *head;
+    
+    NSArray *blockReferences = [TPFBlockStrongLayout TPFGetBlockStrongReferences:block];
+    NSInteger count = blockReferences.count;
+    NSInteger i;
+    for (i = 0; i < count; i++) {
+        id object = blockReferences[i];
+        NSString *className = NSStringFromClass([object class]);
+        NSString *addressKey = [NSString stringWithFormat:@"%p", object];
+        TPFLinkedList *childNode;
+        if ([vertexs objectForKey:addressKey] == nil) {
+            childNode = [self findReference:object vertexs:vertexs];
+        } else {
+            childNode = [[TPFLinkedList alloc] init];
+            childNode.address = addressKey;
+        }
+        childNode.propertyName = @"";
+        childNode.className = className;
+        if (!head) {
+            head = childNode;
+            node.childrens = head;
+        } else {
+            head.next = childNode;
+            head = head.next;
+        }
+        
+    }
+    
     return node;
 }
 
