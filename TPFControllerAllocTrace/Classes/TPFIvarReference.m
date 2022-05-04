@@ -12,6 +12,7 @@
 - (instancetype)initWithIvar:(Ivar)ivar {
     if (self = [super init]) {
         _name = @(ivar_getName(ivar));
+        _className = [self _convertEncodingToClassName:ivar_getTypeEncoding(ivar)];
         _type = [self _convertEncodingToType:ivar_getTypeEncoding(ivar)];
         _offset = ivar_getOffset(ivar);
         _index = _offset / sizeof(void *);
@@ -19,6 +20,12 @@
     }
 
     return self;
+}
+
+- (NSString *)_convertEncodingToClassName:(const char *)typeEncoding {
+    NSString *string = [NSString stringWithFormat:@"%s", typeEncoding];
+    NSArray *array = [string componentsSeparatedByString:@"\""];
+    return array.count >= 2 ? array[1] : @"";
 }
 
 - (TPFType)_convertEncodingToType:(const char *)typeEncoding {

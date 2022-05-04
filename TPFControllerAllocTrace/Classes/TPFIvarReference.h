@@ -20,6 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TPFIvarReference : NSObject
 
 @property (nonatomic, copy, readonly, nullable) NSString *name;
+@property (nonatomic, copy, readonly, nullable) NSString *className;
 @property (nonatomic, readonly) TPFType type;
 @property (nonatomic, readonly) ptrdiff_t offset;
 @property (nonatomic, readonly) NSUInteger index;

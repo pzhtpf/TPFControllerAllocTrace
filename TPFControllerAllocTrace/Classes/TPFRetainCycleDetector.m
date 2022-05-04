@@ -38,8 +38,8 @@
 }
 
 - (TPFLinkedList *)findReference:(id)object vertexs:(NSMutableDictionary *)vertexs {
-    if ([TPFBlockStrongLayout TPFObjectIsBlock:(__bridge void * _Nullable)(object)]) {
-        return [self findBlockReference:(__bridge void * _Nullable)(object) vertexs:vertexs];
+    if ([TPFBlockStrongLayout TPFObjectIsBlock:(__bridge void *_Nullable)(object)]) {
+        return [self findBlockReference:(__bridge void *_Nullable)(object) vertexs:vertexs];
     } else {
         return [self findInstanceObject:object vertexs:vertexs];
     }
@@ -66,7 +66,7 @@
 
         id propertyObject = [ivarReference objectReferenceFromObject:object];
         if (propertyObject != nil) {
-            NSString *className = NSStringFromClass([propertyObject class]);
+            NSString *className = ivarReference.className.length == 0 ? NSStringFromClass([propertyObject class]) : ivarReference.className;
             [keyPathClassNames setValue:className forKey:propertyName];
             NSString *addressKey = [NSString stringWithFormat:@"%p", propertyObject];
             TPFLinkedList *childNode;
@@ -93,12 +93,11 @@
 
 - (TPFLinkedList *)findBlockReference:(void *_Nonnull)block vertexs:(NSMutableDictionary *)vertexs {
     TPFLinkedList *node = [[TPFLinkedList alloc] init];
-//    node.className = NSStringFromClass([object class]);
     node.address = [NSString stringWithFormat:@"%p", block];
     [vertexs setObject:node forKey:node.address];
 
     TPFLinkedList *head;
-    
+
     NSArray *blockReferences = [TPFBlockStrongLayout TPFGetBlockStrongReferences:block];
     NSInteger count = blockReferences.count;
     NSInteger i;
@@ -122,16 +121,19 @@
             head.next = childNode;
             head = head.next;
         }
-        
     }
-    
+
     return node;
 }
 
 - (void)graphIfExistCycle:(TPFLinkedList *)head vertexs:(NSMutableDictionary *)vertexs {
     NSMutableArray *cyclePath = [[NSMutableArray alloc] init];
     [self dfs:head path:[NSMutableArray new] visited:[NSMutableDictionary new] cyclePath:cyclePath];
-    NSLog(@"cyclePathCount:%ld", cyclePath.count);
+    if (cyclePath.count > 0) {
+        NSLog(@"发现%ld处循环引用", cyclePath.count);
+        NSLog(@"循环引用记录：\r\n%@", cyclePath);
+        NSAssert(cyclePath.count > 0, @"发现%ld处循环引用", cyclePath.count);
+    }
 }
 
 - (void)dfs:(TPFLinkedList *)head path:(NSMutableArray *)path visited:(NSMutableDictionary *)visited cyclePath:(NSMutableArray *)cyclePath {
