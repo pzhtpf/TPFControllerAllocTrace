@@ -14,6 +14,7 @@
 @interface TPFRetainCycleDetector ()
 
 @property (strong, nonatomic) NSMutableDictionary *layoutCache;
+@property (strong, nonatomic) NSMutableArray *cyclePath;
 
 @end
 
@@ -22,6 +23,7 @@
 - (instancetype)initWithObject:(id)object {
     self = [super init];
     if (self) {
+        self.cyclePath = [[NSMutableArray alloc] init];
         self.layoutCache = [[NSMutableDictionary alloc] init];
         [self analyse:object];
     }
@@ -132,7 +134,7 @@
     if (cyclePath.count > 0) {
         NSLog(@"发现%ld处循环引用", cyclePath.count);
         NSLog(@"循环引用记录：\r\n%@", cyclePath);
-        NSAssert(cyclePath.count > 0, @"发现%ld处循环引用", cyclePath.count);
+//        NSAssert(cyclePath.count == 0, @"发现%ld处循环引用", cyclePath.count);
     }
 }
 

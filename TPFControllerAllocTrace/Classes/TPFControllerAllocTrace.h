@@ -12,5 +12,6 @@
 @interface TPFControllerAllocTrace : NSObject
 
 +(instancetype)sharedControllerAllocTrace;
+@property (strong, nonatomic) NSMutableArray<NSString *> *exclusiveClass;
 
 @end

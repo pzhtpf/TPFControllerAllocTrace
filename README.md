@@ -26,6 +26,7 @@ pod "TPFControllerAllocTrace"
 ```ruby
 #if DEBUG
     [TPFControllerAllocTrace sharedControllerAllocTrace];
+    [TPFControllerAllocTrace sharedControllerAllocTrace].exclusiveClass = [@[@"UIAlertController"] copy];
 #endif
 ```
 

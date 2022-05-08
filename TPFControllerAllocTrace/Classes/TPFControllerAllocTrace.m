@@ -12,14 +12,15 @@
 
 @interface TPFControllerAllocTrace ()
 
-@property(strong,nonatomic) NSMutableDictionary *controllersDictionary;
+@property (strong, nonatomic) NSMutableDictionary *controllersDictionary;
+@property (strong, nonatomic) NSTimer *timer;
+@property (nonatomic) float duration;
 
 @end
 
 @implementation TPFControllerAllocTrace
 
-+(instancetype)sharedControllerAllocTrace{
-    
++ (instancetype)sharedControllerAllocTrace {
     static TPFControllerAllocTrace *controllerAllocTrace;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -27,92 +28,91 @@
     });
     return controllerAllocTrace;
 }
--(instancetype)init{
-    
+
+- (instancetype)init {
     self = [super init];
-    if(self){
-        
+    if (self) {
+        _duration = 10.0f;
         _controllersDictionary = [[NSMutableDictionary alloc] init];
         [self initTraceMethod];
     }
     return self;
 }
--(void)initTraceMethod{
-    
+
+- (void)initTraceMethod {
     NSError *error;
     __weak typeof(self) weakSlef = self;
     [UIViewController aspect_hookSelector:@selector(dismissViewControllerAnimated:completion:)
                               withOptions:AspectPositionAfter
-                               usingBlock:^(id <AspectInfo> aspectInfo){
+                               usingBlock:^(id <AspectInfo> aspectInfo) {
                                    UIViewController *viewController = aspectInfo.instance;
-        [[TPFCycleRetainManager shared] analyse:viewController];
-                                   NSString *className = [weakSlef getClassName:viewController];
-                                   [weakSlef.controllersDictionary setValue:[self startTimer:className] forKey:className];
+                                   [weakSlef findCycleRetain:viewController];
                                }
                                     error:&error];
-    
+
     SEL sel = NSSelectorFromString(@"dealloc");
     [UIViewController aspect_hookSelector:sel withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo) {
-        
         UIViewController *viewController = aspectInfo.instance;
-        NSString *className = [weakSlef getClassName:viewController];
-        [weakSlef invalidateTimer:className];
-        
-        NSLog(@"%@ dealloc",className);
-        
+        NSString *className = NSStringFromClass([viewController class]);
+        [weakSlef removeClassObserve:className];
+        if (weakSlef.controllersDictionary.count == 0) {
+            [self invalidateTimer];
+        }
+        NSLog(@"%@ dealloc", className);
     } error:NULL];
-    
+
     [UINavigationController aspect_hookSelector:@selector(popViewControllerAnimated:) withOptions:AspectPositionBefore usingBlock:^(id<AspectInfo> aspectInfo) {
-        
         UINavigationController *navigationController = aspectInfo.instance;
         NSArray *viewControllers = [navigationController viewControllers];
-        UIViewController  *viewController = viewControllers.lastObject;
-        [[TPFCycleRetainManager shared] analyse:viewController];
-        NSString *className = [weakSlef getClassName:viewController];
-        [weakSlef.controllersDictionary setValue:[self startTimer:className] forKey:className];
-        
+        UIViewController *viewController = viewControllers.lastObject;
+        [weakSlef findCycleRetain:viewController];
     } error:NULL];
-    
 }
--(NSString *)getClassName:(id)object{
-    
-    NSString *className = [NSString stringWithUTF8String:object_getClassName(object)];
-    NSArray *nameArrays = [className componentsSeparatedByString:@"_"];
-    if(nameArrays.count==1){
-        
-        return nameArrays[0];
-    }
-    else if(nameArrays.count==2){
-        
-        return nameArrays[1];
-    }
-    else
-        return @"Unknow";
+
+- (void)findCycleRetain:(id)object {
+    NSString *className = NSStringFromClass([object class]);
+    if ([self.exclusiveClass containsObject:className]) return;
+
+    [[TPFCycleRetainManager shared] analyse:object];
+    NSTimeInterval startTime = [[NSDate new] timeIntervalSince1970];
+    [self.controllersDictionary setValue:@(startTime) forKey:className];
+    [self startTimer];
 }
--(NSTimer *)startTimer:(NSString *)className{
-    
-    NSTimer *timer = [NSTimer scheduledTimerWithTimeInterval:10.0f target:self selector:@selector(noAllocWaring:) userInfo:@{@"className":className} repeats:NO];
-    
-    return timer;
-}
--(void)invalidateTimer:(NSString *)className{
-    
-    NSTimer *timer = [self.controllersDictionary valueForKey:className];
-    [timer invalidate];
+
+- (void)removeClassObserve:(NSString *)className {
     [self.controllersDictionary removeObjectForKey:className];
-    timer = nil;
 }
--(void)noAllocWaring:(NSTimer *)timer{
-    
-    NSDictionary *userInfo = timer.userInfo;
-    NSString *className = [userInfo valueForKey:@"className"];
-    if([self.controllersDictionary valueForKey:className]){
-        NSString *warningMessage = [NSString stringWithFormat:@"%@ 没有被释放，请检查是否发生了泄漏，循环引用。测试人员请注意，督促相关人员修复",className];
-        
-        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:nil message:warningMessage delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-        [alertView show];
-        
-        [self invalidateTimer:className];
+
+- (void)startTimer {
+    if (!self.timer && self.controllersDictionary.count > 0) {
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:self.duration target:self selector:@selector(noAllocWaring:) userInfo:nil repeats:YES];
     }
 }
+
+- (void)invalidateTimer {
+    [self.timer invalidate];
+    self.timer = nil;
+}
+
+- (void)noAllocWaring:(NSTimer *)timer {
+    NSTimeInterval currentTime = [[NSDate new] timeIntervalSince1970];
+    NSMutableArray *removeKeys = [[NSMutableArray alloc] init];
+    [self.controllersDictionary enumerateKeysAndObjectsUsingBlock:^(id _Nonnull key, id _Nonnull obj, BOOL *_Nonnull stop) {
+        NSTimeInterval startTime = [obj doubleValue];
+        if (currentTime - startTime > self.duration) {
+            [removeKeys addObject:key];
+            NSString *warningMessage = [NSString stringWithFormat:@"%@ 没有被释放，请检查是否发生了泄漏，循环引用。测试人员请注意，督促相关人员修复", key];
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+            UIAlertView * alertView = [[UIAlertView alloc] initWithTitle:nil message:warningMessage delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+            [alertView show];
+#pragma clang diagnostic pop
+        }
+    }];
+    [self.controllersDictionary removeObjectsForKeys:removeKeys];
+    if (self.controllersDictionary.count == 0) {
+        [self invalidateTimer];
+    }
+}
+
 @end

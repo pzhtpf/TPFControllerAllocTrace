@@ -41,7 +41,7 @@
 #pragma public API
 - (void)analyse:(id)object {
     if (!object) return;
-    
+        
     dispatch_async(self.retainCycleAnalyseQueue, ^{
         [self retainObject:object];
         TPFRetainCycleDetector *retainCycleDetector = [[TPFRetainCycleDetector alloc] initWithObject:object];
