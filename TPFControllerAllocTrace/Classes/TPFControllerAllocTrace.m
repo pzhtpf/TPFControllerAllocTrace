@@ -32,7 +32,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _duration = 10.0f;
+        _duration = 5.0f;
         _controllersDictionary = [[NSMutableDictionary alloc] init];
         [self initTraceMethod];
     }

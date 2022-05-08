@@ -37,6 +37,7 @@ TODO: Add long description of the pod here.
       'TPFControllerAllocTrace/Classes/TPFBlockStrongRelationDetector.m',
       'TPFControllerAllocTrace/Classes/TPFBlockStrongLayout.h',
       'TPFControllerAllocTrace/Classes/TPFBlockStrongLayout.m',
+      'TPFControllerAllocTrace/Classes/TPFBlockInterface.h',
     ]
 
   s.exclude_files = non_arc_files
