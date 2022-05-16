@@ -24,12 +24,28 @@
     "TPFControllerAllocTrace/Classes/TPFBlockStrongRelationDetector.m",
     "TPFControllerAllocTrace/Classes/TPFBlockStrongLayout.h",
     "TPFControllerAllocTrace/Classes/TPFBlockStrongLayout.m",
-    "TPFControllerAllocTrace/Classes/TPFBlockInterface.h"
+    "TPFControllerAllocTrace/Classes/TPFBlockInterface.h",
+    "TPFControllerAllocTrace/Classes/TPFClassStrongLayoutHelpers.h",
+    "TPFControllerAllocTrace/Classes/TPFClassStrongLayoutHelpers.m"
+  ],
+  "public_header_files": [
+    "TPFControllerAllocTrace/Classes/TPFRetainCycleDetector.h",
+    "TPFControllerAllocTrace/Classes/TPFControllerAllocTrace.h",
+    "TPFControllerAllocTrace/Classes/TPFCycleRetainManager.h"
   ],
   "dependencies": {
     "Aspects": [
       "~> 1.4.1"
     ]
+  },
+  "frameworks": [
+    "Foundation",
+    "CoreGraphics",
+    "UIKit"
+  ],
+  "xcconfig": {
+    "CLANG_CXX_LANGUAGE_STANDARD": "gnu++14",
+    "CLANG_CXX_LIBRARY": "libc++"
   },
   "subspecs": [
     {
@@ -39,7 +55,9 @@
         "TPFControllerAllocTrace/Classes/TPFBlockStrongRelationDetector.m",
         "TPFControllerAllocTrace/Classes/TPFBlockStrongLayout.h",
         "TPFControllerAllocTrace/Classes/TPFBlockStrongLayout.m",
-        "TPFControllerAllocTrace/Classes/TPFBlockInterface.h"
+        "TPFControllerAllocTrace/Classes/TPFBlockInterface.h",
+        "TPFControllerAllocTrace/Classes/TPFClassStrongLayoutHelpers.h",
+        "TPFControllerAllocTrace/Classes/TPFClassStrongLayoutHelpers.m"
       ],
       "requires_arc": false
     }

@@ -7,181 +7,204 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00F8BC08602BCBA2C59F92EE26B4F7B9 /* TPFClassStrongLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E15184CACA01476AAF78B45D979F420 /* TPFClassStrongLayout.m */; };
-		01BC165AADC519D72BAF045DEDB37B0E /* TPFBlockStrongRelationDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = A1EEECCF078F41FCF916BA8C22E890EF /* TPFBlockStrongRelationDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0467534354CF110044E3B0E505EEFED1 /* TPFControllerAllocTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = EA9DB9591E435F2681C401ED72124C09 /* TPFControllerAllocTrace.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0502234A69FA1681E743BCFE9860C744 /* TPFControllerAllocTrace-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = ECE434141BCEC9E9262C4C49B1607B52 /* TPFControllerAllocTrace-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0DA9C200858D6A5C009935E1382DA7CC /* TPFBlockStrongRelationDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 7286EC739856832FC58FAAB1EE176273 /* TPFBlockStrongRelationDetector.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		11432552B8E04EBB0F38CE1A343121D1 /* TPFControllerAllocTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF1078FFB41C968D94FE12065A40D95 /* TPFControllerAllocTrace.m */; };
-		1C055C66EC9B8B236C79D7E72225D44F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		00E805A2B0B93350E968B539D101D7BF /* TPFControllerAllocTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = C27AA1B98B22E8320BDD45115A7E0990 /* TPFControllerAllocTrace.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F716083725031EF8AD86032B91134F6 /* TPFControllerAllocTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = AE9CBDDF8D27E90F5E5981423FF4622C /* TPFControllerAllocTrace.m */; };
+		114B553F5AA480E6E074944109F77838 /* TPFRetainCycleDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D0CAAAC12CCAB33E0297A83F073AEE1 /* TPFRetainCycleDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1957E24E7C2ECC209687851BD922F1CF /* Type.h in Headers */ = {isa = PBXBuildFile; fileRef = 2777A553A94270FE79C0B0862F58A164 /* Type.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1C055C66EC9B8B236C79D7E72225D44F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5247A52C4220DC93EDCA1CEF947C59 /* Foundation.framework */; };
+		1CB155E2A75AA0EE35052A953E7ABE52 /* TPFBlockStrongLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B91F773BC970AAAEAE9FE999F19A08B6 /* TPFBlockStrongLayout.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1F84FE646CD1D7BAFFB58C243277AFF8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CDFA138148BF3DA69B1A54598F7485D /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		218AAFD4C55A074825F329C60BE86B53 /* Aspects.m in Sources */ = {isa = PBXBuildFile; fileRef = 197FE839C5F002E37C1EBE6FFD6AF178 /* Aspects.m */; };
 		2975A09730FD83DC0897129A11EA6585 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643893CE73E9B5350FA5FE58DEA36F9B /* SwiftSupport.swift */; };
+		2A59CE2DD292D8478195FDD9C9CB449B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E954C87C92658F47E6B385D5EF1F2F9C /* CoreGraphics.framework */; };
 		2B88C28DD20CBFA7B3AEB21A365197FE /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AE52DA8FA39BA106907B56AF2967653 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2CB61F6FA511CAACB43A50DC3A82E0DD /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A81998693A4754362128A4A4BE143CF /* UIImage+Snapshot.m */; };
-		2ECCAC52EF4C74E1032E0BC646BBE5B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		2DCAE3E805D998F26752F5D05E1FC916 /* TPFBlockStrongLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B1951F2D3AD0880EFDBFE92252CE301 /* TPFBlockStrongLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ECCAC52EF4C74E1032E0BC646BBE5B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5247A52C4220DC93EDCA1CEF947C59 /* Foundation.framework */; };
 		30D475DF57C0C682A723231E7BCA0D14 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DF39346819E396DB45AE71CCE466EC1 /* FBSnapshotTestCasePlatform.m */; };
-		328BBD9AD1F0CF8714340AA5A0BA724B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		32CD7A2F475F049A6D089B7CE044D11F /* Aspects.h in Headers */ = {isa = PBXBuildFile; fileRef = ADB4D1A955E9F2FC6E0B39496F39BC10 /* Aspects.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		373413256658309F9053CE22BF62077E /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 3754708A7E8A65D65B16BF77CE2DD324 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		4D9EAAFDF73AE0A52AC67F66F458DADD /* TPFCycleRetainManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 783C32C4DFF218319B1903302C16180E /* TPFCycleRetainManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37469A0CF61553090744D5E9C2FB2546 /* TPFIvarReference.h in Headers */ = {isa = PBXBuildFile; fileRef = E727A6000C92B9AA8962BC929C13E357 /* TPFIvarReference.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3AF2BFAE491B7EFBC4F02899C5A5CA49 /* TPFClassStrongLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 607D34C5D33AE69BB73E93929AB530DA /* TPFClassStrongLayout.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		470F27789F4E5CBAD6C9D0E957631CBA /* TPFObjectInStructReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E6F34AEAC064121CE8BAED0AD1C368E /* TPFObjectInStructReference.m */; };
+		4F006E27F0F7BBA695A18AC6CBDBC74F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668276A1EC8D88396426958E5EE8F819 /* UIKit.framework */; };
+		51DB8F6DD26C7CD15008BDB6A147C8AD /* TPFCycleRetainManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 575B54D5517C3337DF3E6A0A9FD17D0D /* TPFCycleRetainManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5558B876B579BC1E79BD3D2B19148329 /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = FA7E3E46FF27BC445667BFA3A852FBC4 /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		59FEA9364BCC7B00CEFE5E412A9D1806 /* TPFBlockStrongRelationDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = B996654969BBF2F258369F4C37B742A2 /* TPFBlockStrongRelationDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5BE525FF6FA14B999ED2CCC0AA4FA0CF /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C49C71357B6E21568C3EE4C39EB1842C /* FBSnapshotTestCase-dummy.m */; };
-		5CEB43EB3AACB8FF380A186ECA5E9520 /* TPFRetainCycleDetector.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F399EBB33218B2361070C429B95F566 /* TPFRetainCycleDetector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6015436643A863193D554F43E69A8B4D /* TPFLinkedList.h in Headers */ = {isa = PBXBuildFile; fileRef = 694C6A1F43AF180A8DD64CED6D7942C9 /* TPFLinkedList.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		62DE5FBB4569EB9E5A290A86D853B388 /* Pods-TPFControllerAllocTrace_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A559FC959A681926C00E5D0B97D1431 /* Pods-TPFControllerAllocTrace_Example-dummy.m */; };
 		640CCE9C3A28AA3CA15510899F9140EE /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E694AF33402AF8C3BA5BC98B7180FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		67F1963AA7C9EDB78127AD5F566A4949 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = F53AB0EE50D0C39C98781246A8500E9A /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6AE486895FC78491156202632D440774 /* Aspects-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B9C3B1BCEB73E4B4B59A4CA025EB7B8 /* Aspects-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6D289F0DC8129C7880B29B234037A236 /* Pods-TPFControllerAllocTrace_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E3343D3A6D4E7071FD14E03A97D88F1 /* Pods-TPFControllerAllocTrace_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6DDB01EFBAB1A40BFF2CF34E8486A526 /* TPFCycleRetainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F21E41EAB9EB045AE5321DEB55EBEDFD /* TPFCycleRetainManager.m */; };
+		70956F3030495E6B50EFC303500524C4 /* TPFObjectInStructReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B700C79CE25AAB7D2FD96CF379837B1 /* TPFObjectInStructReference.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		74339C58AC4E5631FB8C0E662668A796 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B3771F364E76CD831B38EAE69417D8F /* UIApplication+StrictKeyWindow.m */; };
 		75C16DF2AC8D8847A77F7326131A7E69 /* Pods-TPFControllerAllocTrace_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 68EC3540D6AF86EED830CE8B0ED22D87 /* Pods-TPFControllerAllocTrace_Tests-dummy.m */; };
 		7C67CBD15D9B5D0B7769B2F469478332 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 124B1CC96259D5D4E57AB3A64A2A8E14 /* FBSnapshotTestCase.m */; };
-		875A310EAF4D0C136C3FFFF5E0335BE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
-		8AACE86895E0F04BE3C3B13B94987008 /* TPFRetainCycleDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EAD93732022D773B45CBDB58397B5FE /* TPFRetainCycleDetector.m */; };
+		7FFAEBE61DED08B46F443119DE665711 /* Struct.mm in Sources */ = {isa = PBXBuildFile; fileRef = CD9AADBCFC549F251D18899F129D9A61 /* Struct.mm */; };
+		81043D624F73C4D7810B0F2724E1CBBA /* TPFBlockStrongRelationDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = B34A50BE02318E726295D387400ACA18 /* TPFBlockStrongRelationDetector.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		875A310EAF4D0C136C3FFFF5E0335BE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668276A1EC8D88396426958E5EE8F819 /* UIKit.framework */; };
 		8AE19756F0126FE92AF625E36F3D70FE /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A90AE7467B3B2DF32D20B847794D34F /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		9C61C167197BDFAEE95E7859322E3A9E /* TPFClassStrongLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C72887D571D07DDC4AA5CC647B4754 /* TPFClassStrongLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D3C5E2F56838937146191468A893244 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E658F388F01C72599CA75537950B6095 /* XCTest.framework */; };
-		AC50C2BD06089557E96C7659BE036AA7 /* TPFBlockInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 33D8499E3F7682166F584DD463E48B29 /* TPFBlockInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B361AA8402CCB3C90E6040DDCDE18B36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		90B1DCC52B6D891BEB717ED27F392596 /* TPFClassStrongLayout.mm in Sources */ = {isa = PBXBuildFile; fileRef = 58EFA34042DC4A72CFBC637306526E84 /* TPFClassStrongLayout.mm */; };
+		92E16EEC49B52973488C8BD68080EE2F /* TPFControllerAllocTrace-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A90C4761C1490B0E39C9CBC808699C84 /* TPFControllerAllocTrace-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9D3C5E2F56838937146191468A893244 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8DCF06F88670699F01F8D5C26566EC8 /* XCTest.framework */; };
+		ADC5B5A3B2F91937BE19336ED4626F6F /* TPFLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = A46E34217E8D1DC61E2F584924D60455 /* TPFLinkedList.m */; };
+		B332B3D5D5689C345A4D6F3B2A99BC9E /* TPFClassStrongLayoutHelpers.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D96583A1654B42BD7380CBA686EDA50 /* TPFClassStrongLayoutHelpers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B361AA8402CCB3C90E6040DDCDE18B36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5247A52C4220DC93EDCA1CEF947C59 /* Foundation.framework */; };
 		B52281F9F4340D4FC8ABB2FEB1FEC08E /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 1770789E772196B2122B319849301652 /* UIImage+Compare.m */; };
-		B7A5A879CF5B9BCFABCF0298B0785C63 /* TPFLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = D7F3BD2FF6717EC7570175E41F2ABBB3 /* TPFLinkedList.m */; };
-		BBBCBA83E357634EE6A6FB8CC032F969 /* TPFBlockStrongLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA319F1ADEDA60CBBE4D6ED37D2B37A /* TPFBlockStrongLayout.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BBF1B5C065E084531E1AAA520E6C0F0C /* TPFIvarReference.h in Headers */ = {isa = PBXBuildFile; fileRef = CC96A909B4C270478F231AE035542806 /* TPFIvarReference.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BFADE7427E3D3394B237FA2769EF1C24 /* TPFIvarReference.m in Sources */ = {isa = PBXBuildFile; fileRef = 2710DE917273652710B9E94C71C72EB2 /* TPFIvarReference.m */; };
+		B9669B45A3B5C8BA6F445BD750D4E6B2 /* TPFIvarReference.m in Sources */ = {isa = PBXBuildFile; fileRef = D58E720B329FAADDA79BA8726A4C3A3E /* TPFIvarReference.m */; };
 		C390C6005353FB986CB52F474CEF8588 /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = F93447081A6AA61F3CA6DB111F7E1492 /* FBSnapshotTestController.m */; };
-		C5D3382B063E3EE0D756110CB0BC684D /* TPFLinkedList.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E1F7F1FC649E9299C64666CBE6201A4 /* TPFLinkedList.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C810942D3059FC4A0F42E4945B98B849 /* TPFBlockStrongLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 927B338F7F6C13E67C8915EB64B97444 /* TPFBlockStrongLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
+		C8A9017D9C661CB7E11D9C5C360AC477 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5247A52C4220DC93EDCA1CEF947C59 /* Foundation.framework */; };
+		C9709CEC860C58BE12A7CE047C040C4D /* TPFControllerAllocTrace-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A6E1B9E89F8D757118F5B536377AC8AA /* TPFControllerAllocTrace-dummy.m */; };
+		C9F76407497DF0205D7460B36D22259F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EBA61EE46BC13994C64F0A95BEB2390 /* QuartzCore.framework */; };
 		CA54C09A12400567AFFCB407EEB7E154 /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3C6C2EB11DFC22FB7B368524101777 /* UIImage+Diff.m */; };
 		CE2A0367829B0276F62F5F4C6D8F1DBB /* Pods-TPFControllerAllocTrace_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4371C6EDD3291F0FD745A0E2F69867E3 /* Pods-TPFControllerAllocTrace_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E8BDF388FD6B23326DC29F32350C1242 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
+		D93840246EF45B218F37100DA7FD4834 /* TPFRetainCycleDetector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A0BBFCACDB08526430C2DBADCE951B3 /* TPFRetainCycleDetector.m */; };
+		DC3E12874F6D5B773015472FC305E962 /* TPFStructEncodingParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 09C3CA41379BEBD166D6D224D4512FA7 /* TPFStructEncodingParser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DEB75C3387A40D0C90DAC6DAFD3125D9 /* TPFBlockInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 6296F5D99413893CA454D2D769268E06 /* TPFBlockInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF8F679BEC7ACCA786522B5E4143E5A5 /* TPFClassStrongLayoutHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CFC5034581B6B36C0785F0CE865F371 /* TPFClassStrongLayoutHelpers.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E6C18CBF6B29BEEEE840B30B6F77D943 /* TPFStructEncodingParser.mm in Sources */ = {isa = PBXBuildFile; fileRef = 41E2903E249B296E606F6B834E32CE24 /* TPFStructEncodingParser.mm */; };
+		E8BDF388FD6B23326DC29F32350C1242 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B5247A52C4220DC93EDCA1CEF947C59 /* Foundation.framework */; };
+		EE5B710B37B9F4ADAEB713D29E871ADF /* TPFCycleRetainManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26C5332FF677FF742C73AD842CF2D8D8 /* TPFCycleRetainManager.m */; };
 		F1EFC0357C236119D052A8A80A126190 /* Aspects-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FE1321B43BFEAC6D1976985E0E1DDCA /* Aspects-dummy.m */; };
+		F8B36DF28C7DA489883CBB061C7410BE /* BaseType.h in Headers */ = {isa = PBXBuildFile; fileRef = 33F3FF611A4CD95D38A83D2EC4A21952 /* BaseType.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FD661DC7FE30C65096F3EA07473395CC /* Struct.h in Headers */ = {isa = PBXBuildFile; fileRef = BFE1CC7743A678173C31EF02160B977E /* Struct.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		FF8307B7346F4D3BA13C11AECFE6EDD0 /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B9D09297263C0C0C3F4A276D31BC905 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFCB134FBF120249AF2299E60598DE6C /* TPFControllerAllocTrace-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 345D29D335A78A5BE642416DF1E8AF23 /* TPFControllerAllocTrace-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		08802D43969BD7832534099162C9536A /* PBXContainerItemProxy */ = {
+		1ECBAEA660148A0C2DCD431DE7F72F3A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C6539905C4D50932B36244650B93C79B;
 			remoteInfo = Aspects;
 		};
-		43F6015056B4A1BB19A64F54902D09FD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = BB7C47AE03AF62942895C70C06F17C23;
-			remoteInfo = "Pods-TPFControllerAllocTrace_Example";
-		};
-		5924C45A48F0FEC35F67F28AEE71EAE8 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
-			remoteInfo = FBSnapshotTestCase;
-		};
-		8BE373C0B215D417941A40D9B55CCCF2 /* PBXContainerItemProxy */ = {
+		31C833B5CA988BA3DBA1483D28F5C23D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 3B89F64F5589E679D2540491A0F28C65;
 			remoteInfo = TPFControllerAllocTrace;
 		};
-		CAF91BD6E271CDB999A2B9FD00A3DA6D /* PBXContainerItemProxy */ = {
+		39282292DE6C91BE1A237EC67B88130C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
+			remoteInfo = FBSnapshotTestCase;
+		};
+		7D34A5A50047A452503A8D68C81B3CB0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = C6539905C4D50932B36244650B93C79B;
 			remoteInfo = Aspects;
 		};
+		D63A6861163C943701D3A30B1A252EF2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB7C47AE03AF62942895C70C06F17C23;
+			remoteInfo = "Pods-TPFControllerAllocTrace_Example";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		035DB0015D3436030B0787AA7DEF34E7 /* TPFControllerAllocTrace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPFControllerAllocTrace.debug.xcconfig; sourceTree = "<group>"; };
 		06C3C31F5CFF8B9933482B9D10732995 /* Pods-TPFControllerAllocTrace_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPFControllerAllocTrace_Tests-Info.plist"; sourceTree = "<group>"; };
+		09C3CA41379BEBD166D6D224D4512FA7 /* TPFStructEncodingParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFStructEncodingParser.h; path = TPFControllerAllocTrace/Classes/TPFStructEncodingParser.h; sourceTree = "<group>"; };
 		0A3C6C2EB11DFC22FB7B368524101777 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		0A559FC959A681926C00E5D0B97D1431 /* Pods-TPFControllerAllocTrace_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TPFControllerAllocTrace_Example-dummy.m"; sourceTree = "<group>"; };
 		0BEF354513450CFCFC730BF06AE88F98 /* Pods-TPFControllerAllocTrace_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TPFControllerAllocTrace_Example"; path = Pods_TPFControllerAllocTrace_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E3343D3A6D4E7071FD14E03A97D88F1 /* Pods-TPFControllerAllocTrace_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TPFControllerAllocTrace_Example-umbrella.h"; sourceTree = "<group>"; };
+		0EBA61EE46BC13994C64F0A95BEB2390 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		124B1CC96259D5D4E57AB3A64A2A8E14 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
 		1770789E772196B2122B319849301652 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		1973B2E632127F4EBA16BA89CC658283 /* Pods-TPFControllerAllocTrace_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPFControllerAllocTrace_Example.release.xcconfig"; sourceTree = "<group>"; };
 		197FE839C5F002E37C1EBE6FFD6AF178 /* Aspects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Aspects.m; sourceTree = "<group>"; };
 		1AE52DA8FA39BA106907B56AF2967653 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
-		1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		2710DE917273652710B9E94C71C72EB2 /* TPFIvarReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFIvarReference.m; path = TPFControllerAllocTrace/Classes/TPFIvarReference.m; sourceTree = "<group>"; };
+		26C5332FF677FF742C73AD842CF2D8D8 /* TPFCycleRetainManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFCycleRetainManager.m; path = TPFControllerAllocTrace/Classes/TPFCycleRetainManager.m; sourceTree = "<group>"; };
+		2777A553A94270FE79C0B0862F58A164 /* Type.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Type.h; path = TPFControllerAllocTrace/Classes/Type.h; sourceTree = "<group>"; };
+		2D96583A1654B42BD7380CBA686EDA50 /* TPFClassStrongLayoutHelpers.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFClassStrongLayoutHelpers.h; path = TPFControllerAllocTrace/Classes/TPFClassStrongLayoutHelpers.h; sourceTree = "<group>"; };
 		2DD881ECB80429B6FC77CFD2EF38DDA2 /* Pods-TPFControllerAllocTrace_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPFControllerAllocTrace_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2FD5EC4B0577DA0D2BB577A23DC75A82 /* Pods-TPFControllerAllocTrace_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TPFControllerAllocTrace_Tests"; path = Pods_TPFControllerAllocTrace_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		31E694AF33402AF8C3BA5BC98B7180FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
-		3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		32A3AF6D21CB17F04B1E9BA5233E32E8 /* TPFControllerAllocTrace.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TPFControllerAllocTrace.modulemap; sourceTree = "<group>"; };
-		33D8499E3F7682166F584DD463E48B29 /* TPFBlockInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFBlockInterface.h; path = TPFControllerAllocTrace/Classes/TPFBlockInterface.h; sourceTree = "<group>"; };
-		345D29D335A78A5BE642416DF1E8AF23 /* TPFControllerAllocTrace-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPFControllerAllocTrace-dummy.m"; sourceTree = "<group>"; };
+		33F3FF611A4CD95D38A83D2EC4A21952 /* BaseType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BaseType.h; path = TPFControllerAllocTrace/Classes/BaseType.h; sourceTree = "<group>"; };
 		36C61049C9501D0DD50141133F2319CB /* TPFControllerAllocTrace */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TPFControllerAllocTrace; path = TPFControllerAllocTrace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3754708A7E8A65D65B16BF77CE2DD324 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		3A81998693A4754362128A4A4BE143CF /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		3B04AEE6FB55531B365B11927CF76C69 /* Pods-TPFControllerAllocTrace_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPFControllerAllocTrace_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3E01DBD8AA916AA478A4EBC79F36F526 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		406E61BDB76251C796D11FDD642E9AF6 /* Pods-TPFControllerAllocTrace_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPFControllerAllocTrace_Example-Info.plist"; sourceTree = "<group>"; };
-		412F122F3BB237A1CC50D24838ECA9A8 /* TPFControllerAllocTrace.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPFControllerAllocTrace.debug.xcconfig; sourceTree = "<group>"; };
+		41E2903E249B296E606F6B834E32CE24 /* TPFStructEncodingParser.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = TPFStructEncodingParser.mm; path = TPFControllerAllocTrace/Classes/TPFStructEncodingParser.mm; sourceTree = "<group>"; };
 		4371C6EDD3291F0FD745A0E2F69867E3 /* Pods-TPFControllerAllocTrace_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TPFControllerAllocTrace_Tests-umbrella.h"; sourceTree = "<group>"; };
-		4708928A3DF7CCDC942760BB3B63BE50 /* TPFControllerAllocTrace-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TPFControllerAllocTrace-Info.plist"; sourceTree = "<group>"; };
-		4DF1078FFB41C968D94FE12065A40D95 /* TPFControllerAllocTrace.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFControllerAllocTrace.m; path = TPFControllerAllocTrace/Classes/TPFControllerAllocTrace.m; sourceTree = "<group>"; };
-		4EAD93732022D773B45CBDB58397B5FE /* TPFRetainCycleDetector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFRetainCycleDetector.m; path = TPFControllerAllocTrace/Classes/TPFRetainCycleDetector.m; sourceTree = "<group>"; };
+		4A0BBFCACDB08526430C2DBADCE951B3 /* TPFRetainCycleDetector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFRetainCycleDetector.m; path = TPFControllerAllocTrace/Classes/TPFRetainCycleDetector.m; sourceTree = "<group>"; };
+		4B700C79CE25AAB7D2FD96CF379837B1 /* TPFObjectInStructReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFObjectInStructReference.h; path = TPFControllerAllocTrace/Classes/TPFObjectInStructReference.h; sourceTree = "<group>"; };
 		4FE1321B43BFEAC6D1976985E0E1DDCA /* Aspects-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Aspects-dummy.m"; sourceTree = "<group>"; };
 		566BEF80AC06168197B5EFFC846EEC93 /* Pods-TPFControllerAllocTrace_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TPFControllerAllocTrace_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		575B54D5517C3337DF3E6A0A9FD17D0D /* TPFCycleRetainManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFCycleRetainManager.h; path = TPFControllerAllocTrace/Classes/TPFCycleRetainManager.h; sourceTree = "<group>"; };
+		58EFA34042DC4A72CFBC637306526E84 /* TPFClassStrongLayout.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = TPFClassStrongLayout.mm; path = TPFControllerAllocTrace/Classes/TPFClassStrongLayout.mm; sourceTree = "<group>"; };
+		5B5247A52C4220DC93EDCA1CEF947C59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5B9D09297263C0C0C3F4A276D31BC905 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
 		5BA05E029D88A010E81354B033D749F9 /* Aspects.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Aspects.release.xcconfig; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CDFA138148BF3DA69B1A54598F7485D /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
-		5F399EBB33218B2361070C429B95F566 /* TPFRetainCycleDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFRetainCycleDetector.h; path = TPFControllerAllocTrace/Classes/TPFRetainCycleDetector.h; sourceTree = "<group>"; };
+		5CFC5034581B6B36C0785F0CE865F371 /* TPFClassStrongLayoutHelpers.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFClassStrongLayoutHelpers.m; path = TPFControllerAllocTrace/Classes/TPFClassStrongLayoutHelpers.m; sourceTree = "<group>"; };
+		5E6F34AEAC064121CE8BAED0AD1C368E /* TPFObjectInStructReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFObjectInStructReference.m; path = TPFControllerAllocTrace/Classes/TPFObjectInStructReference.m; sourceTree = "<group>"; };
+		607D34C5D33AE69BB73E93929AB530DA /* TPFClassStrongLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFClassStrongLayout.h; path = TPFControllerAllocTrace/Classes/TPFClassStrongLayout.h; sourceTree = "<group>"; };
+		6296F5D99413893CA454D2D769268E06 /* TPFBlockInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFBlockInterface.h; path = TPFControllerAllocTrace/Classes/TPFBlockInterface.h; sourceTree = "<group>"; };
 		643893CE73E9B5350FA5FE58DEA36F9B /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		668276A1EC8D88396426958E5EE8F819 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		673D136FC31927D2C9C7465D416EED41 /* TPFControllerAllocTrace-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPFControllerAllocTrace-prefix.pch"; sourceTree = "<group>"; };
 		68EC3540D6AF86EED830CE8B0ED22D87 /* Pods-TPFControllerAllocTrace_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TPFControllerAllocTrace_Tests-dummy.m"; sourceTree = "<group>"; };
+		694C6A1F43AF180A8DD64CED6D7942C9 /* TPFLinkedList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFLinkedList.h; path = TPFControllerAllocTrace/Classes/TPFLinkedList.h; sourceTree = "<group>"; };
 		6A19FBE5575CF7605D2DF311DBA0AD51 /* Pods-TPFControllerAllocTrace_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TPFControllerAllocTrace_Example-frameworks.sh"; sourceTree = "<group>"; };
+		6B1951F2D3AD0880EFDBFE92252CE301 /* TPFBlockStrongLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFBlockStrongLayout.h; path = TPFControllerAllocTrace/Classes/TPFBlockStrongLayout.h; sourceTree = "<group>"; };
 		6D48E28FC3F528435447EB8D2A8BB270 /* Pods-TPFControllerAllocTrace_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPFControllerAllocTrace_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		6DF39346819E396DB45AE71CCE466EC1 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		6E15184CACA01476AAF78B45D979F420 /* TPFClassStrongLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFClassStrongLayout.m; path = TPFControllerAllocTrace/Classes/TPFClassStrongLayout.m; sourceTree = "<group>"; };
-		6E1F7F1FC649E9299C64666CBE6201A4 /* TPFLinkedList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFLinkedList.h; path = TPFControllerAllocTrace/Classes/TPFLinkedList.h; sourceTree = "<group>"; };
-		7286EC739856832FC58FAAB1EE176273 /* TPFBlockStrongRelationDetector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFBlockStrongRelationDetector.m; path = TPFControllerAllocTrace/Classes/TPFBlockStrongRelationDetector.m; sourceTree = "<group>"; };
-		783C32C4DFF218319B1903302C16180E /* TPFCycleRetainManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFCycleRetainManager.h; path = TPFControllerAllocTrace/Classes/TPFCycleRetainManager.h; sourceTree = "<group>"; };
+		7C7F2208044BEAF182CC969BAA298E7A /* TPFControllerAllocTrace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPFControllerAllocTrace.release.xcconfig; sourceTree = "<group>"; };
+		7D0CAAAC12CCAB33E0297A83F073AEE1 /* TPFRetainCycleDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFRetainCycleDetector.h; path = TPFControllerAllocTrace/Classes/TPFRetainCycleDetector.h; sourceTree = "<group>"; };
 		86E22B8E70D8EA90283F28A772E5751C /* Pods-TPFControllerAllocTrace_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TPFControllerAllocTrace_Tests.modulemap"; sourceTree = "<group>"; };
-		8AA319F1ADEDA60CBBE4D6ED37D2B37A /* TPFBlockStrongLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFBlockStrongLayout.m; path = TPFControllerAllocTrace/Classes/TPFBlockStrongLayout.m; sourceTree = "<group>"; };
-		927B338F7F6C13E67C8915EB64B97444 /* TPFBlockStrongLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFBlockStrongLayout.h; path = TPFControllerAllocTrace/Classes/TPFBlockStrongLayout.h; sourceTree = "<group>"; };
 		93886BDC6B2460B2D34A3F23793A33B2 /* Pods-TPFControllerAllocTrace_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TPFControllerAllocTrace_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		9808BF74538141204E4EB5B49809FE77 /* Aspects */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Aspects; path = Aspects.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A90AE7467B3B2DF32D20B847794D34F /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		9B3771F364E76CD831B38EAE69417D8F /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		9B9C3B1BCEB73E4B4B59A4CA025EB7B8 /* Aspects-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Aspects-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1EEECCF078F41FCF916BA8C22E890EF /* TPFBlockStrongRelationDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFBlockStrongRelationDetector.h; path = TPFControllerAllocTrace/Classes/TPFBlockStrongRelationDetector.h; sourceTree = "<group>"; };
+		A46E34217E8D1DC61E2F584924D60455 /* TPFLinkedList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFLinkedList.m; path = TPFControllerAllocTrace/Classes/TPFLinkedList.m; sourceTree = "<group>"; };
+		A6E1B9E89F8D757118F5B536377AC8AA /* TPFControllerAllocTrace-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TPFControllerAllocTrace-dummy.m"; sourceTree = "<group>"; };
+		A90C4761C1490B0E39C9CBC808699C84 /* TPFControllerAllocTrace-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPFControllerAllocTrace-umbrella.h"; sourceTree = "<group>"; };
 		ADB4D1A955E9F2FC6E0B39496F39BC10 /* Aspects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Aspects.h; sourceTree = "<group>"; };
-		B4C72887D571D07DDC4AA5CC647B4754 /* TPFClassStrongLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFClassStrongLayout.h; path = TPFControllerAllocTrace/Classes/TPFClassStrongLayout.h; sourceTree = "<group>"; };
+		AE9CBDDF8D27E90F5E5981423FF4622C /* TPFControllerAllocTrace.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFControllerAllocTrace.m; path = TPFControllerAllocTrace/Classes/TPFControllerAllocTrace.m; sourceTree = "<group>"; };
+		B34A50BE02318E726295D387400ACA18 /* TPFBlockStrongRelationDetector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFBlockStrongRelationDetector.m; path = TPFControllerAllocTrace/Classes/TPFBlockStrongRelationDetector.m; sourceTree = "<group>"; };
+		B8DCF06F88670699F01F8D5C26566EC8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B91F773BC970AAAEAE9FE999F19A08B6 /* TPFBlockStrongLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFBlockStrongLayout.m; path = TPFControllerAllocTrace/Classes/TPFBlockStrongLayout.m; sourceTree = "<group>"; };
+		B996654969BBF2F258369F4C37B742A2 /* TPFBlockStrongRelationDetector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFBlockStrongRelationDetector.h; path = TPFControllerAllocTrace/Classes/TPFBlockStrongRelationDetector.h; sourceTree = "<group>"; };
 		BBE771D520AEFC4D7D91171AC9B3A01A /* Aspects-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Aspects-prefix.pch"; sourceTree = "<group>"; };
-		BC015F7CAC5956F0746802615D5D2A06 /* TPFControllerAllocTrace.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TPFControllerAllocTrace.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BEE507466084D52588FD6E1CFB88D936 /* Pods-TPFControllerAllocTrace_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TPFControllerAllocTrace_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		BFE1CC7743A678173C31EF02160B977E /* Struct.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Struct.h; path = TPFControllerAllocTrace/Classes/Struct.h; sourceTree = "<group>"; };
 		C118C5DE49AE2A96CAE62E7D59E1A6CE /* Aspects-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Aspects-Info.plist"; sourceTree = "<group>"; };
+		C27AA1B98B22E8320BDD45115A7E0990 /* TPFControllerAllocTrace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFControllerAllocTrace.h; path = TPFControllerAllocTrace/Classes/TPFControllerAllocTrace.h; sourceTree = "<group>"; };
 		C49C71357B6E21568C3EE4C39EB1842C /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
-		C8629D3FA0D3A7EBEE72BD1C2BB562A9 /* TPFControllerAllocTrace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TPFControllerAllocTrace.release.xcconfig; sourceTree = "<group>"; };
-		CC96A909B4C270478F231AE035542806 /* TPFIvarReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFIvarReference.h; path = TPFControllerAllocTrace/Classes/TPFIvarReference.h; sourceTree = "<group>"; };
+		C5C7473CFCE92820A4873EF125E5E0E5 /* TPFControllerAllocTrace.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = TPFControllerAllocTrace.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CD9AADBCFC549F251D18899F129D9A61 /* Struct.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = Struct.mm; path = TPFControllerAllocTrace/Classes/Struct.mm; sourceTree = "<group>"; };
 		D38338C1CCF07ADBE4ECA15BF83002D5 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
-		D7F3BD2FF6717EC7570175E41F2ABBB3 /* TPFLinkedList.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFLinkedList.m; path = TPFControllerAllocTrace/Classes/TPFLinkedList.m; sourceTree = "<group>"; };
+		D58E720B329FAADDA79BA8726A4C3A3E /* TPFIvarReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFIvarReference.m; path = TPFControllerAllocTrace/Classes/TPFIvarReference.m; sourceTree = "<group>"; };
 		DF5DD14182F53BBD808F444125B8113A /* Pods-TPFControllerAllocTrace_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TPFControllerAllocTrace_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		E059445BB7EAEA88509FC995DE4289E8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E0768A46F7E0074CA10E87DB2560606A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E25D58DC098F131FB264D39A33D55E6A /* TPFControllerAllocTrace.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = TPFControllerAllocTrace.modulemap; sourceTree = "<group>"; };
 		E4FFA2E57F588F992530838C21222725 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		EA9DB9591E435F2681C401ED72124C09 /* TPFControllerAllocTrace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFControllerAllocTrace.h; path = TPFControllerAllocTrace/Classes/TPFControllerAllocTrace.h; sourceTree = "<group>"; };
-		ECAF4206B5E8E03D4960E1DF66BAF4E2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		ECE434141BCEC9E9262C4C49B1607B52 /* TPFControllerAllocTrace-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPFControllerAllocTrace-umbrella.h"; sourceTree = "<group>"; };
-		EECAFE6CCC4BFFBB6AF326C30858B200 /* TPFControllerAllocTrace-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TPFControllerAllocTrace-prefix.pch"; sourceTree = "<group>"; };
-		F21E41EAB9EB045AE5321DEB55EBEDFD /* TPFCycleRetainManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TPFCycleRetainManager.m; path = TPFControllerAllocTrace/Classes/TPFCycleRetainManager.m; sourceTree = "<group>"; };
+		E727A6000C92B9AA8962BC929C13E357 /* TPFIvarReference.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TPFIvarReference.h; path = TPFControllerAllocTrace/Classes/TPFIvarReference.h; sourceTree = "<group>"; };
+		E954C87C92658F47E6B385D5EF1F2F9C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		F011180F539113BE10E7A4A6B154E071 /* TPFControllerAllocTrace-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "TPFControllerAllocTrace-Info.plist"; sourceTree = "<group>"; };
 		F459A2F826A3621E3E48148FB05E4D40 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		F490EA7C9FC2FDB1D0A6937A28EDD042 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
 		F53AB0EE50D0C39C98781246A8500E9A /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		F53C8841F890A6A81B43E314B010B5CC /* Aspects.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Aspects.modulemap; sourceTree = "<group>"; };
 		F93447081A6AA61F3CA6DB111F7E1492 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		FA7B3782A4F6CBDFF82927A2E1F4B5AD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		FA7E3E46FF27BC445667BFA3A852FBC4 /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		FCBE1644D5E7885C195350AB27FE7049 /* Aspects.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Aspects.debug.xcconfig; sourceTree = "<group>"; };
 		FE3814F3CD455AFE4597ACBC52DA0A11 /* Pods-TPFControllerAllocTrace_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TPFControllerAllocTrace_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -189,14 +212,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0FF9CD7E199923AF13C538093B6EF0A7 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				328BBD9AD1F0CF8714340AA5A0BA724B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		74A4ACA62BD7486A2B641507C25F3A17 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -210,6 +225,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E8BDF388FD6B23326DC29F32350C1242 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9D853C8CAB50B0B8FC6A06CCAA60D978 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2A59CE2DD292D8478195FDD9C9CB449B /* CoreGraphics.framework in Frameworks */,
+				C8A9017D9C661CB7E11D9C5C360AC477 /* Foundation.framework in Frameworks */,
+				4F006E27F0F7BBA695A18AC6CBDBC74F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,29 +260,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08C7ACC86B260396D381A8221E73FF52 /* TPFControllerAllocTrace */ = {
-			isa = PBXGroup;
-			children = (
-				B4C72887D571D07DDC4AA5CC647B4754 /* TPFClassStrongLayout.h */,
-				6E15184CACA01476AAF78B45D979F420 /* TPFClassStrongLayout.m */,
-				EA9DB9591E435F2681C401ED72124C09 /* TPFControllerAllocTrace.h */,
-				4DF1078FFB41C968D94FE12065A40D95 /* TPFControllerAllocTrace.m */,
-				783C32C4DFF218319B1903302C16180E /* TPFCycleRetainManager.h */,
-				F21E41EAB9EB045AE5321DEB55EBEDFD /* TPFCycleRetainManager.m */,
-				CC96A909B4C270478F231AE035542806 /* TPFIvarReference.h */,
-				2710DE917273652710B9E94C71C72EB2 /* TPFIvarReference.m */,
-				6E1F7F1FC649E9299C64666CBE6201A4 /* TPFLinkedList.h */,
-				D7F3BD2FF6717EC7570175E41F2ABBB3 /* TPFLinkedList.m */,
-				5F399EBB33218B2361070C429B95F566 /* TPFRetainCycleDetector.h */,
-				4EAD93732022D773B45CBDB58397B5FE /* TPFRetainCycleDetector.m */,
-				F8549D63C446A86BD2DFFB035654EB5E /* no-arc */,
-				18C39E9603949DB7831FBE085AB27705 /* Pod */,
-				FDD117C18F2A295720A06A41F4F1F421 /* Support Files */,
-			);
-			name = TPFControllerAllocTrace;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		11336A603CC56412063F41A48E6C4DF0 /* FBSnapshotTestCase */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,16 +269,6 @@
 			);
 			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
-			sourceTree = "<group>";
-		};
-		18C39E9603949DB7831FBE085AB27705 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				E059445BB7EAEA88509FC995DE4289E8 /* LICENSE */,
-				ECAF4206B5E8E03D4960E1DF66BAF4E2 /* README.md */,
-				BC015F7CAC5956F0746802615D5D2A06 /* TPFControllerAllocTrace.podspec */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		1CDBBF315EDA7BF223AF2054E0E3D419 /* Pods */ = {
@@ -303,6 +295,30 @@
 			);
 			name = "Pods-TPFControllerAllocTrace_Tests";
 			path = "Target Support Files/Pods-TPFControllerAllocTrace_Tests";
+			sourceTree = "<group>";
+		};
+		4351326FD88881BF037F3C9AEED4E8D9 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FA7B3782A4F6CBDFF82927A2E1F4B5AD /* LICENSE */,
+				E0768A46F7E0074CA10E87DB2560606A /* README.md */,
+				C5C7473CFCE92820A4873EF125E5E0E5 /* TPFControllerAllocTrace.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		5669F84E4A11871411CCFE4BADCF40F0 /* no-arc */ = {
+			isa = PBXGroup;
+			children = (
+				6296F5D99413893CA454D2D769268E06 /* TPFBlockInterface.h */,
+				6B1951F2D3AD0880EFDBFE92252CE301 /* TPFBlockStrongLayout.h */,
+				B91F773BC970AAAEAE9FE999F19A08B6 /* TPFBlockStrongLayout.m */,
+				B996654969BBF2F258369F4C37B742A2 /* TPFBlockStrongRelationDetector.h */,
+				B34A50BE02318E726295D387400ACA18 /* TPFBlockStrongRelationDetector.m */,
+				2D96583A1654B42BD7380CBA686EDA50 /* TPFClassStrongLayoutHelpers.h */,
+				5CFC5034581B6B36C0785F0CE865F371 /* TPFClassStrongLayoutHelpers.m */,
+			);
+			name = "no-arc";
 			sourceTree = "<group>";
 		};
 		60FB955D1BDDAEEF8ADD256DA41935EB /* SwiftSupport */ = {
@@ -348,12 +364,24 @@
 			path = Aspects;
 			sourceTree = "<group>";
 		};
-		8E45D173A2DB765A9F92EA095F61C99B /* Development Pods */ = {
+		910C97625947E856848B3D6751A179B8 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				08C7ACC86B260396D381A8221E73FF52 /* TPFControllerAllocTrace */,
+				CE148F67A5FCA5C97023885C013E8D99 /* TPFControllerAllocTrace */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		9EEDEB494775F3532130FDFAC7BE92F7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E954C87C92658F47E6B385D5EF1F2F9C /* CoreGraphics.framework */,
+				5B5247A52C4220DC93EDCA1CEF947C59 /* Foundation.framework */,
+				0EBA61EE46BC13994C64F0A95BEB2390 /* QuartzCore.framework */,
+				668276A1EC8D88396426958E5EE8F819 /* UIKit.framework */,
+				B8DCF06F88670699F01F8D5C26566EC8 /* XCTest.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		A001E9C32EF6C7BBBEE0C4653F0190AD /* Core */ = {
@@ -406,12 +434,27 @@
 			path = "Target Support Files/Pods-TPFControllerAllocTrace_Example";
 			sourceTree = "<group>";
 		};
-		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FB2668559AE577E6E8078C0C291AD417 /* iOS */,
+				9EEDEB494775F3532130FDFAC7BE92F7 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD9E708F62C73FE8311DF7BB5A6A1EEC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E25D58DC098F131FB264D39A33D55E6A /* TPFControllerAllocTrace.modulemap */,
+				A6E1B9E89F8D757118F5B536377AC8AA /* TPFControllerAllocTrace-dummy.m */,
+				F011180F539113BE10E7A4A6B154E071 /* TPFControllerAllocTrace-Info.plist */,
+				673D136FC31927D2C9C7465D416EED41 /* TPFControllerAllocTrace-prefix.pch */,
+				A90C4761C1490B0E39C9CBC808699C84 /* TPFControllerAllocTrace-umbrella.h */,
+				035DB0015D3436030B0787AA7DEF34E7 /* TPFControllerAllocTrace.debug.xcconfig */,
+				7C7F2208044BEAF182CC969BAA298E7A /* TPFControllerAllocTrace.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/TPFControllerAllocTrace";
 			sourceTree = "<group>";
 		};
 		C52A2799C44F093F2DC69BB81B414666 /* Support Files */ = {
@@ -429,73 +472,72 @@
 			path = "../Target Support Files/Aspects";
 			sourceTree = "<group>";
 		};
+		CE148F67A5FCA5C97023885C013E8D99 /* TPFControllerAllocTrace */ = {
+			isa = PBXGroup;
+			children = (
+				33F3FF611A4CD95D38A83D2EC4A21952 /* BaseType.h */,
+				BFE1CC7743A678173C31EF02160B977E /* Struct.h */,
+				CD9AADBCFC549F251D18899F129D9A61 /* Struct.mm */,
+				607D34C5D33AE69BB73E93929AB530DA /* TPFClassStrongLayout.h */,
+				58EFA34042DC4A72CFBC637306526E84 /* TPFClassStrongLayout.mm */,
+				C27AA1B98B22E8320BDD45115A7E0990 /* TPFControllerAllocTrace.h */,
+				AE9CBDDF8D27E90F5E5981423FF4622C /* TPFControllerAllocTrace.m */,
+				575B54D5517C3337DF3E6A0A9FD17D0D /* TPFCycleRetainManager.h */,
+				26C5332FF677FF742C73AD842CF2D8D8 /* TPFCycleRetainManager.m */,
+				E727A6000C92B9AA8962BC929C13E357 /* TPFIvarReference.h */,
+				D58E720B329FAADDA79BA8726A4C3A3E /* TPFIvarReference.m */,
+				694C6A1F43AF180A8DD64CED6D7942C9 /* TPFLinkedList.h */,
+				A46E34217E8D1DC61E2F584924D60455 /* TPFLinkedList.m */,
+				4B700C79CE25AAB7D2FD96CF379837B1 /* TPFObjectInStructReference.h */,
+				5E6F34AEAC064121CE8BAED0AD1C368E /* TPFObjectInStructReference.m */,
+				7D0CAAAC12CCAB33E0297A83F073AEE1 /* TPFRetainCycleDetector.h */,
+				4A0BBFCACDB08526430C2DBADCE951B3 /* TPFRetainCycleDetector.m */,
+				09C3CA41379BEBD166D6D224D4512FA7 /* TPFStructEncodingParser.h */,
+				41E2903E249B296E606F6B834E32CE24 /* TPFStructEncodingParser.mm */,
+				2777A553A94270FE79C0B0862F58A164 /* Type.h */,
+				5669F84E4A11871411CCFE4BADCF40F0 /* no-arc */,
+				4351326FD88881BF037F3C9AEED4E8D9 /* Pod */,
+				BD9E708F62C73FE8311DF7BB5A6A1EEC /* Support Files */,
+			);
+			name = TPFControllerAllocTrace;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				8E45D173A2DB765A9F92EA095F61C99B /* Development Pods */,
-				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
+				910C97625947E856848B3D6751A179B8 /* Development Pods */,
+				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
 				1CDBBF315EDA7BF223AF2054E0E3D419 /* Pods */,
 				A975184BB750BF8B753BD08EF6194F63 /* Products */,
 				712D66BED2A1058FFF289AE3FFBE04C8 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		F8549D63C446A86BD2DFFB035654EB5E /* no-arc */ = {
-			isa = PBXGroup;
-			children = (
-				33D8499E3F7682166F584DD463E48B29 /* TPFBlockInterface.h */,
-				927B338F7F6C13E67C8915EB64B97444 /* TPFBlockStrongLayout.h */,
-				8AA319F1ADEDA60CBBE4D6ED37D2B37A /* TPFBlockStrongLayout.m */,
-				A1EEECCF078F41FCF916BA8C22E890EF /* TPFBlockStrongRelationDetector.h */,
-				7286EC739856832FC58FAAB1EE176273 /* TPFBlockStrongRelationDetector.m */,
-			);
-			name = "no-arc";
-			sourceTree = "<group>";
-		};
-		FB2668559AE577E6E8078C0C291AD417 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */,
-				3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */,
-				1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */,
-				E658F388F01C72599CA75537950B6095 /* XCTest.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		FDD117C18F2A295720A06A41F4F1F421 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				32A3AF6D21CB17F04B1E9BA5233E32E8 /* TPFControllerAllocTrace.modulemap */,
-				345D29D335A78A5BE642416DF1E8AF23 /* TPFControllerAllocTrace-dummy.m */,
-				4708928A3DF7CCDC942760BB3B63BE50 /* TPFControllerAllocTrace-Info.plist */,
-				EECAFE6CCC4BFFBB6AF326C30858B200 /* TPFControllerAllocTrace-prefix.pch */,
-				ECE434141BCEC9E9262C4C49B1607B52 /* TPFControllerAllocTrace-umbrella.h */,
-				412F122F3BB237A1CC50D24838ECA9A8 /* TPFControllerAllocTrace.debug.xcconfig */,
-				C8629D3FA0D3A7EBEE72BD1C2BB562A9 /* TPFControllerAllocTrace.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/TPFControllerAllocTrace";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1C60602E508ACC67CFD7C05A4F36C11A /* Headers */ = {
+		46C6B5B194E2C11E6A2CACABDE7956D2 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC50C2BD06089557E96C7659BE036AA7 /* TPFBlockInterface.h in Headers */,
-				C810942D3059FC4A0F42E4945B98B849 /* TPFBlockStrongLayout.h in Headers */,
-				01BC165AADC519D72BAF045DEDB37B0E /* TPFBlockStrongRelationDetector.h in Headers */,
-				9C61C167197BDFAEE95E7859322E3A9E /* TPFClassStrongLayout.h in Headers */,
-				0467534354CF110044E3B0E505EEFED1 /* TPFControllerAllocTrace.h in Headers */,
-				0502234A69FA1681E743BCFE9860C744 /* TPFControllerAllocTrace-umbrella.h in Headers */,
-				4D9EAAFDF73AE0A52AC67F66F458DADD /* TPFCycleRetainManager.h in Headers */,
-				BBF1B5C065E084531E1AAA520E6C0F0C /* TPFIvarReference.h in Headers */,
-				C5D3382B063E3EE0D756110CB0BC684D /* TPFLinkedList.h in Headers */,
-				5CEB43EB3AACB8FF380A186ECA5E9520 /* TPFRetainCycleDetector.h in Headers */,
+				F8B36DF28C7DA489883CBB061C7410BE /* BaseType.h in Headers */,
+				FD661DC7FE30C65096F3EA07473395CC /* Struct.h in Headers */,
+				DEB75C3387A40D0C90DAC6DAFD3125D9 /* TPFBlockInterface.h in Headers */,
+				2DCAE3E805D998F26752F5D05E1FC916 /* TPFBlockStrongLayout.h in Headers */,
+				59FEA9364BCC7B00CEFE5E412A9D1806 /* TPFBlockStrongRelationDetector.h in Headers */,
+				3AF2BFAE491B7EFBC4F02899C5A5CA49 /* TPFClassStrongLayout.h in Headers */,
+				B332B3D5D5689C345A4D6F3B2A99BC9E /* TPFClassStrongLayoutHelpers.h in Headers */,
+				00E805A2B0B93350E968B539D101D7BF /* TPFControllerAllocTrace.h in Headers */,
+				92E16EEC49B52973488C8BD68080EE2F /* TPFControllerAllocTrace-umbrella.h in Headers */,
+				51DB8F6DD26C7CD15008BDB6A147C8AD /* TPFCycleRetainManager.h in Headers */,
+				37469A0CF61553090744D5E9C2FB2546 /* TPFIvarReference.h in Headers */,
+				6015436643A863193D554F43E69A8B4D /* TPFLinkedList.h in Headers */,
+				70956F3030495E6B50EFC303500524C4 /* TPFObjectInStructReference.h in Headers */,
+				114B553F5AA480E6E074944109F77838 /* TPFRetainCycleDetector.h in Headers */,
+				DC3E12874F6D5B773015472FC305E962 /* TPFStructEncodingParser.h in Headers */,
+				1957E24E7C2ECC209687851BD922F1CF /* Type.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,17 +586,17 @@
 /* Begin PBXNativeTarget section */
 		3B89F64F5589E679D2540491A0F28C65 /* TPFControllerAllocTrace */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0FA2F7E0017AC1246F625478BC1C38A /* Build configuration list for PBXNativeTarget "TPFControllerAllocTrace" */;
+			buildConfigurationList = 9FF04852C4724C3F75589330F452DC04 /* Build configuration list for PBXNativeTarget "TPFControllerAllocTrace" */;
 			buildPhases = (
-				1C60602E508ACC67CFD7C05A4F36C11A /* Headers */,
-				E1DD6B8D6363606E9C6DAA1AEFDF2C8C /* Sources */,
-				0FF9CD7E199923AF13C538093B6EF0A7 /* Frameworks */,
-				2768DEE7107C8BA6A0218783D06975FB /* Resources */,
+				46C6B5B194E2C11E6A2CACABDE7956D2 /* Headers */,
+				5DBD246961A0B9CB2E4ECE4834DA9E63 /* Sources */,
+				9D853C8CAB50B0B8FC6A06CCAA60D978 /* Frameworks */,
+				14346F3B42C9590E6A9A9BFFFB131F61 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1635ECE4E394FC810F4A87FC97DE4FAA /* PBXTargetDependency */,
+				A2312C382FC2387560D7DE10BC3E34A7 /* PBXTargetDependency */,
 			);
 			name = TPFControllerAllocTrace;
 			productName = TPFControllerAllocTrace;
@@ -573,8 +615,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				5FB7E8BCCF49049D6E3D4B713176E8C6 /* PBXTargetDependency */,
-				4A4F3BBE9788BFA9F95A92F82B418B3A /* PBXTargetDependency */,
+				F033E4FB0524D87FD67DC78E18D744F6 /* PBXTargetDependency */,
+				6AA3BC3E3E77B5BA8B7FE029B786761C /* PBXTargetDependency */,
 			);
 			name = "Pods-TPFControllerAllocTrace_Tests";
 			productName = Pods_TPFControllerAllocTrace_Tests;
@@ -611,8 +653,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				D2E2FFA207909246DB285611C052D650 /* PBXTargetDependency */,
-				E05FA46A5CC1733BD6868A4304501E70 /* PBXTargetDependency */,
+				0506B804DAEA02BF70EE6853AB7018AA /* PBXTargetDependency */,
+				ADD41FE2962FB7C0C8C45BF074BD63E3 /* PBXTargetDependency */,
 			);
 			name = "Pods-TPFControllerAllocTrace_Example";
 			productName = Pods_TPFControllerAllocTrace_Example;
@@ -669,6 +711,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		14346F3B42C9590E6A9A9BFFFB131F61 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		194C9DCC4899F62F4FB7DDF15C987499 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -677,13 +726,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		23615DADD68BAB1A739438A4BA2B0977 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2768DEE7107C8BA6A0218783D06975FB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -723,28 +765,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5DBD246961A0B9CB2E4ECE4834DA9E63 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FFAEBE61DED08B46F443119DE665711 /* Struct.mm in Sources */,
+				1CB155E2A75AA0EE35052A953E7ABE52 /* TPFBlockStrongLayout.m in Sources */,
+				81043D624F73C4D7810B0F2724E1CBBA /* TPFBlockStrongRelationDetector.m in Sources */,
+				90B1DCC52B6D891BEB717ED27F392596 /* TPFClassStrongLayout.mm in Sources */,
+				DF8F679BEC7ACCA786522B5E4143E5A5 /* TPFClassStrongLayoutHelpers.m in Sources */,
+				0F716083725031EF8AD86032B91134F6 /* TPFControllerAllocTrace.m in Sources */,
+				C9709CEC860C58BE12A7CE047C040C4D /* TPFControllerAllocTrace-dummy.m in Sources */,
+				EE5B710B37B9F4ADAEB713D29E871ADF /* TPFCycleRetainManager.m in Sources */,
+				B9669B45A3B5C8BA6F445BD750D4E6B2 /* TPFIvarReference.m in Sources */,
+				ADC5B5A3B2F91937BE19336ED4626F6F /* TPFLinkedList.m in Sources */,
+				470F27789F4E5CBAD6C9D0E957631CBA /* TPFObjectInStructReference.m in Sources */,
+				D93840246EF45B218F37100DA7FD4834 /* TPFRetainCycleDetector.m in Sources */,
+				E6C18CBF6B29BEEEE840B30B6F77D943 /* TPFStructEncodingParser.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A0EF248A494F07E4DEB9B48D95906016 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				218AAFD4C55A074825F329C60BE86B53 /* Aspects.m in Sources */,
 				F1EFC0357C236119D052A8A80A126190 /* Aspects-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E1DD6B8D6363606E9C6DAA1AEFDF2C8C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BBBCBA83E357634EE6A6FB8CC032F969 /* TPFBlockStrongLayout.m in Sources */,
-				0DA9C200858D6A5C009935E1382DA7CC /* TPFBlockStrongRelationDetector.m in Sources */,
-				00F8BC08602BCBA2C59F92EE26B4F7B9 /* TPFClassStrongLayout.m in Sources */,
-				11432552B8E04EBB0F38CE1A343121D1 /* TPFControllerAllocTrace.m in Sources */,
-				FFCB134FBF120249AF2299E60598DE6C /* TPFControllerAllocTrace-dummy.m in Sources */,
-				6DDB01EFBAB1A40BFF2CF34E8486A526 /* TPFCycleRetainManager.m in Sources */,
-				BFADE7427E3D3394B237FA2769EF1C24 /* TPFIvarReference.m in Sources */,
-				B7A5A879CF5B9BCFABCF0298B0785C63 /* TPFLinkedList.m in Sources */,
-				8AACE86895E0F04BE3C3B13B94987008 /* TPFRetainCycleDetector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -767,35 +813,35 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1635ECE4E394FC810F4A87FC97DE4FAA /* PBXTargetDependency */ = {
+		0506B804DAEA02BF70EE6853AB7018AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Aspects;
 			target = C6539905C4D50932B36244650B93C79B /* Aspects */;
-			targetProxy = 08802D43969BD7832534099162C9536A /* PBXContainerItemProxy */;
+			targetProxy = 7D34A5A50047A452503A8D68C81B3CB0 /* PBXContainerItemProxy */;
 		};
-		4A4F3BBE9788BFA9F95A92F82B418B3A /* PBXTargetDependency */ = {
+		6AA3BC3E3E77B5BA8B7FE029B786761C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-TPFControllerAllocTrace_Example";
 			target = BB7C47AE03AF62942895C70C06F17C23 /* Pods-TPFControllerAllocTrace_Example */;
-			targetProxy = 43F6015056B4A1BB19A64F54902D09FD /* PBXContainerItemProxy */;
+			targetProxy = D63A6861163C943701D3A30B1A252EF2 /* PBXContainerItemProxy */;
 		};
-		5FB7E8BCCF49049D6E3D4B713176E8C6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = FBSnapshotTestCase;
-			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
-			targetProxy = 5924C45A48F0FEC35F67F28AEE71EAE8 /* PBXContainerItemProxy */;
-		};
-		D2E2FFA207909246DB285611C052D650 /* PBXTargetDependency */ = {
+		A2312C382FC2387560D7DE10BC3E34A7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Aspects;
 			target = C6539905C4D50932B36244650B93C79B /* Aspects */;
-			targetProxy = CAF91BD6E271CDB999A2B9FD00A3DA6D /* PBXContainerItemProxy */;
+			targetProxy = 1ECBAEA660148A0C2DCD431DE7F72F3A /* PBXContainerItemProxy */;
 		};
-		E05FA46A5CC1733BD6868A4304501E70 /* PBXTargetDependency */ = {
+		ADD41FE2962FB7C0C8C45BF074BD63E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TPFControllerAllocTrace;
 			target = 3B89F64F5589E679D2540491A0F28C65 /* TPFControllerAllocTrace */;
-			targetProxy = 8BE373C0B215D417941A40D9B55CCCF2 /* PBXContainerItemProxy */;
+			targetProxy = 31C833B5CA988BA3DBA1483D28F5C23D /* PBXContainerItemProxy */;
+		};
+		F033E4FB0524D87FD67DC78E18D744F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
+			targetProxy = 39282292DE6C91BE1A237EC67B88130C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -991,6 +1037,37 @@
 			};
 			name = Debug;
 		};
+		83F0691116131B6D4F3F84F32040133D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C7F2208044BEAF182CC969BAA298E7A /* TPFControllerAllocTrace.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/TPFControllerAllocTrace/TPFControllerAllocTrace-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/TPFControllerAllocTrace/TPFControllerAllocTrace-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/TPFControllerAllocTrace/TPFControllerAllocTrace.modulemap";
+				PRODUCT_MODULE_NAME = TPFControllerAllocTrace;
+				PRODUCT_NAME = TPFControllerAllocTrace;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		AD1D1176B2C6657761D4C14DA698EA48 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5BA05E029D88A010E81354B033D749F9 /* Aspects.release.xcconfig */;
@@ -1011,37 +1088,6 @@
 				MODULEMAP_FILE = "Target Support Files/Aspects/Aspects.modulemap";
 				PRODUCT_MODULE_NAME = Aspects;
 				PRODUCT_NAME = Aspects;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BE255FC765E5699656495636310A5711 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8629D3FA0D3A7EBEE72BD1C2BB562A9 /* TPFControllerAllocTrace.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/TPFControllerAllocTrace/TPFControllerAllocTrace-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TPFControllerAllocTrace/TPFControllerAllocTrace-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TPFControllerAllocTrace/TPFControllerAllocTrace.modulemap";
-				PRODUCT_MODULE_NAME = TPFControllerAllocTrace;
-				PRODUCT_NAME = TPFControllerAllocTrace;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -1181,9 +1227,9 @@
 			};
 			name = Release;
 		};
-		DDBD65DC403F76A23F71A2F4E3895F7E /* Debug */ = {
+		E933D9BAD1234BD5A4B05C6014B44CF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 412F122F3BB237A1CC50D24838ECA9A8 /* TPFControllerAllocTrace.debug.xcconfig */;
+			baseConfigurationReference = 035DB0015D3436030B0787AA7DEF34E7 /* TPFControllerAllocTrace.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1280,20 +1326,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		9FF04852C4724C3F75589330F452DC04 /* Build configuration list for PBXNativeTarget "TPFControllerAllocTrace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E933D9BAD1234BD5A4B05C6014B44CF1 /* Debug */,
+				83F0691116131B6D4F3F84F32040133D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C4598C22D39EABCF3464BB7E9073BD91 /* Build configuration list for PBXNativeTarget "Aspects" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4B14ED5F2C40964D92DE1AB3AB32ABC9 /* Debug */,
 				AD1D1176B2C6657761D4C14DA698EA48 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		F0FA2F7E0017AC1246F625478BC1C38A /* Build configuration list for PBXNativeTarget "TPFControllerAllocTrace" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DDBD65DC403F76A23F71A2F4E3895F7E /* Debug */,
-				BE255FC765E5699656495636310A5711 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

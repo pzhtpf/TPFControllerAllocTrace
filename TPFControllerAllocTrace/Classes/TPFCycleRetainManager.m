@@ -7,6 +7,7 @@
 
 #import "TPFCycleRetainManager.h"
 #import "TPFRetainCycleDetector.h"
+#import "TPFLinkedList.h"
 #import <objc/runtime.h>
 
 @interface TPFCycleRetainManager ()

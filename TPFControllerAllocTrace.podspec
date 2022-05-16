@@ -38,6 +38,8 @@ TODO: Add long description of the pod here.
       'TPFControllerAllocTrace/Classes/TPFBlockStrongLayout.h',
       'TPFControllerAllocTrace/Classes/TPFBlockStrongLayout.m',
       'TPFControllerAllocTrace/Classes/TPFBlockInterface.h',
+      'TPFControllerAllocTrace/Classes/TPFClassStrongLayoutHelpers.h',
+      'TPFControllerAllocTrace/Classes/TPFClassStrongLayoutHelpers.m',
     ]
 
   s.exclude_files = non_arc_files
@@ -50,7 +52,16 @@ TODO: Add long description of the pod here.
   #   'TPFControllerAllocTrace' => ['TPFControllerAllocTrace/Assets/*.png']
   # }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-    s.dependency 'Aspects', '~> 1.4.1'
+#   s.public_header_files = 'TPFControllerAllocTrace/Classes/**/*.h'
+   s.public_header_files = [
+      'TPFControllerAllocTrace/Classes/TPFRetainCycleDetector.h',
+      'TPFControllerAllocTrace/Classes/TPFControllerAllocTrace.h',
+      'TPFControllerAllocTrace/Classes/TPFCycleRetainManager.h',
+    ]
+   s.dependency 'Aspects', '~> 1.4.1'
+   s.framework = "Foundation", "CoreGraphics", "UIKit"
+   s.xcconfig = {
+       'CLANG_CXX_LANGUAGE_STANDARD' => 'gnu++14',
+       'CLANG_CXX_LIBRARY' => 'libc++'
+   }
 end

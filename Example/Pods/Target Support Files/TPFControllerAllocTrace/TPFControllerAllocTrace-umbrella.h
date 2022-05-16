@@ -10,15 +10,13 @@
 #endif
 #endif
 
-#import "TPFClassStrongLayout.h"
+#import "TPFRetainCycleDetector.h"
 #import "TPFControllerAllocTrace.h"
 #import "TPFCycleRetainManager.h"
-#import "TPFIvarReference.h"
-#import "TPFLinkedList.h"
-#import "TPFRetainCycleDetector.h"
 #import "TPFBlockStrongRelationDetector.h"
 #import "TPFBlockStrongLayout.h"
 #import "TPFBlockInterface.h"
+#import "TPFClassStrongLayoutHelpers.h"
 
 FOUNDATION_EXPORT double TPFControllerAllocTraceVersionNumber;
 FOUNDATION_EXPORT const unsigned char TPFControllerAllocTraceVersionString[];

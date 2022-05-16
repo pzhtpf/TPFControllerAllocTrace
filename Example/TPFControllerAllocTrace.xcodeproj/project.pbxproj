@@ -11,6 +11,7 @@
 		1E612BF91E94DE3E00B677EF /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E612BF51E94DE3E00B677EF /* SecondViewController.xib */; };
 		1E612BFA1E94DE3E00B677EF /* TestAllocBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E612BF71E94DE3E00B677EF /* TestAllocBlock.m */; };
 		328D814765469BB65FD04EA5 /* Pods_TPFControllerAllocTrace_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D38862B4D100361C0E01AB7B /* Pods_TPFControllerAllocTrace_Example.framework */; };
+		46BA1F6D2831E3A6004B8805 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BA1F6C2831E3A6004B8805 /* libc++.tbd */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -47,6 +48,7 @@
 		1E612BF61E94DE3E00B677EF /* TestAllocBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAllocBlock.h; sourceTree = "<group>"; };
 		1E612BF71E94DE3E00B677EF /* TestAllocBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAllocBlock.m; sourceTree = "<group>"; };
 		45D976FE8092139F798550D4 /* Pods-TPFControllerAllocTrace_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPFControllerAllocTrace_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TPFControllerAllocTrace_Example/Pods-TPFControllerAllocTrace_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		46BA1F6C2831E3A6004B8805 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		6003F58A195388D20070C39A /* TPFControllerAllocTrace_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPFControllerAllocTrace_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46BA1F6D2831E3A6004B8805 /* libc++.tbd in Frameworks */,
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
@@ -127,6 +130,7 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				46BA1F6C2831E3A6004B8805 /* libc++.tbd */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
@@ -553,6 +557,7 @@
 			baseConfigurationReference = 45D976FE8092139F798550D4 /* Pods-TPFControllerAllocTrace_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TPFControllerAllocTrace/TPFControllerAllocTrace-Prefix.pch";
 				INFOPLIST_FILE = "TPFControllerAllocTrace/TPFControllerAllocTrace-Info.plist";
@@ -569,6 +574,7 @@
 			baseConfigurationReference = DEE7832407F502342AD14533 /* Pods-TPFControllerAllocTrace_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TPFControllerAllocTrace/TPFControllerAllocTrace-Prefix.pch";
 				INFOPLIST_FILE = "TPFControllerAllocTrace/TPFControllerAllocTrace-Info.plist";

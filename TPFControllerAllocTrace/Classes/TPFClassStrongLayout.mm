@@ -7,6 +7,15 @@
 
 #import "TPFClassStrongLayout.h"
 #import <objc/runtime.h>
+#import "TPFObjectInStructReference.h"
+
+#import <math.h>
+#import <memory>
+#import <vector>
+
+#import "TPFStructEncodingParser.h"
+#import "Struct.h"
+#import "Type.h"
 
 @interface TPFClassStrongLayout ()
 
@@ -15,6 +24,78 @@
 @end
 
 @implementation TPFClassStrongLayout
+
+/**
+ If we stumble upon a struct, we need to go through it and check if it doesn't retain some objects.
+ */
+static NSArray *TPFGetReferencesForObjectsInStructEncoding(TPFIvarReference *ivar, std::string encoding) {
+  NSMutableArray<TPFObjectInStructReference *> *references = [NSMutableArray new];
+
+  std::string ivarName = std::string([ivar.name cStringUsingEncoding:NSUTF8StringEncoding]);
+  TPF::RetainCycleDetector::Parser::Struct parsedStruct =
+  TPF::RetainCycleDetector::Parser::parseStructEncodingWithName(encoding, ivarName);
+  
+  std::vector<std::shared_ptr<TPF::RetainCycleDetector::Parser::Type>> types = parsedStruct.flattenTypes();
+  
+  ptrdiff_t offset = ivar.offset;
+  
+  for (auto &type: types) {
+    NSUInteger size, align;
+
+    std::string typeEncoding = type->typeEncoding;
+    if (typeEncoding[0] == '^') {
+      // It's a pointer, let's skip
+      size = sizeof(void *);
+      align = _Alignof(void *);
+    } else {
+      @try {
+        NSGetSizeAndAlignment(typeEncoding.c_str(),
+                              &size,
+                              &align);
+      } @catch (NSException *e) {
+        /**
+         If we failed, we probably have C++ and ObjC cannot get it's size and alignment. We are skipping.
+         If we would like to support it, we would need to derive size and alignment of type from the string.
+         C++ does not have reflection so we can't really do that unless we create the mapping ourselves.
+         */
+        break;
+      }
+    }
+
+
+    // The object must be aligned
+    NSUInteger overAlignment = offset % align;
+    NSUInteger whatsMissing = (overAlignment == 0) ? 0 : align - overAlignment;
+    offset += whatsMissing;
+
+    if (typeEncoding[0] == '@') {
+    
+      // The index that ivar layout will ask for is going to be aligned with pointer size
+
+      // Prepare additional context
+      NSString *typeEncodingName = [NSString stringWithCString:type->name.c_str() encoding:NSUTF8StringEncoding];
+      
+      NSMutableArray *namePath = [NSMutableArray new];
+      
+      for (auto &name: type->typePath) {
+        NSString *nameString = [NSString stringWithCString:name.c_str() encoding:NSUTF8StringEncoding];
+        if (nameString) {
+          [namePath addObject:nameString];
+        }
+      }
+      
+      if (typeEncodingName) {
+        [namePath addObject:typeEncodingName];
+      }
+      [references addObject:[[TPFObjectInStructReference alloc] initWithIndex:(offset / sizeof(void *))
+                                                                    namePath:namePath]];
+    }
+
+    offset += size;
+  }
+
+  return references;
+}
 
 NSArray* TPFGetClassReferences(Class aCls)
 {
@@ -28,10 +109,10 @@ NSArray* TPFGetClassReferences(Class aCls)
         TPFIvarReference *wrapper = [[TPFIvarReference alloc] initWithIvar:ivar];
 
         if (wrapper.type == TPFStructType) { /* 结构体的暂且先不处理 */
-//      std::string encoding = std::string(ivar_getTypeEncoding(wrapper.ivar));
-//      NSArray<TPFObjectInStructReference *> *references = TPFGetReferencesForObjectsInStructEncoding(wrapper, encoding);
-//
-//      [result addObjectsFromArray:references];
+          std::string encoding = std::string(ivar_getTypeEncoding(wrapper.ivar));
+          NSArray<TPFObjectInStructReference *> *references = TPFGetReferencesForObjectsInStructEncoding(wrapper, encoding);
+
+          [result addObjectsFromArray:references];
         } else {
             [result addObject:wrapper];
         }
