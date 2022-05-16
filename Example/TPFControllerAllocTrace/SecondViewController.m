@@ -26,14 +26,16 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     
-    self.testAllocBlock = [TestAllocBlock new];
-    self.testAllocBlock.testAllocBlock  = ^{
-        [self loadData];
-    };
+//    self.testAllocBlock = [TestAllocBlock new];
+//    self.testAllocBlock.testAllocBlock  = ^{
+//        [self loadData];
+//    };
+//
+//    self.strongObject = [[NSObject alloc] init];
+//    self.weakObject = self.strongObject;
+//    self.defaultObject = self;
     
-    self.strongObject = [[NSObject alloc] init];
-    self.weakObject = self.strongObject;
-    self.defaultObject = self;
+    blockLiteralTest.reserved = self;
 }
 -(void)loadData{
 

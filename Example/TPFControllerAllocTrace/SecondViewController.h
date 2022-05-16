@@ -8,8 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+struct CycleRetainTest {
+    NSDate *cycleRetainTestDate;
+};
+
+struct BlockLiteralTest {
+    UIViewController *reserved;
+    UIView *structView;
+    struct CycleRetainTest *cycleRetainTest;
+};
+
+@interface SecondViewController : UIViewController {
+    struct BlockLiteralTest blockLiteralTest;
+}
 
 - (IBAction)closeAction:(id)sender;
 - (IBAction)pushAction:(id)sender;
+
 @end
